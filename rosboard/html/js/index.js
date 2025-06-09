@@ -47,6 +47,9 @@ $(() => {
     percentPosition: true,
   });
   $grid.masonry("layout");
+
+  // Initialize control panel button handlers
+  initControlPanel();
 });
 
 setInterval(() => {
@@ -69,7 +72,6 @@ function updateStoredSubscriptions() {
 }
 
 function newCard() {
-  // creates a new card, adds it to the grid, and returns it.
   let card = $("<div></div>").addClass('card')
     .appendTo($('.grid'));
   return card;
@@ -108,11 +110,6 @@ let currentTopics = {};
 let currentTopicsStr = "";
 
 let onTopics = function(topics) {
-  
-  // check if topics has actually changed, if not, don't do anything
-  // lazy shortcut to deep compares, might possibly even be faster than
-  // implementing a deep compare due to
-  // native optimization of JSON.stringify
   let newTopicsStr = JSON.stringify(topics);
   if(newTopicsStr === currentTopicsStr) return;
   currentTopics = topics;
@@ -187,10 +184,6 @@ function addTopicTreeToNav(topicTree, el, level = 0, path = "") {
 }
 
 function initSubscribe({topicName, topicType}) {
-  // creates a subscriber for topicName
-  // and also initializes a viewer (if it doesn't already exist)
-  // in advance of arrival of the first data
-  // this way the user gets a snappy UI response because the viewer appears immediately
   if(!subscriptions[topicName]) {
     subscriptions[topicName] = {
       topicType: topicType,
@@ -226,7 +219,6 @@ function initDefaultTransport() {
 }
 
 function treeifyPaths(paths) {
-  // turn a bunch of ros topics into a tree
   let result = [];
   let level = {result};
 
@@ -252,12 +244,12 @@ function versionCheck(currentVersionText) {
     let currentVersion = currentVersionText.split(".").map(num => parseInt(num, 10));
     let latestVersionInt = latestVersion[0] * 1000000 + latestVersion[1] * 1000 + latestVersion[2];
     let currentVersionInt = currentVersion[0] * 1000000 + currentVersion[1] * 1000 + currentVersion[2];
-    if(currentVersion < latestVersion && Date.now() - lastBotherTime > 1800000) {
+    if(currentVersionInt < latestVersionInt && Date.now() - lastBotherTime > 1800000) {
       lastBotherTime = Date.now();
       snackbarContainer.MaterialSnackbar.showSnackbar({
         message: "New version of ROSboard available (" + currentVersionText + " -> " + matches[1] + ").",
         actionText: "Check it out",
-        actionHandler: ()=> {window.location.href="https://github.com/dheera/rosboard/"},
+        actionHandler: () => {window.location.href="https://github.com/dheera/rosboard/"},
       });
     }
   });
@@ -289,3 +281,62 @@ Viewer.onSwitchViewer = (viewerInstance, newViewerType) => {
   delete(subscriptions[topicName].viewer);
   subscriptions[topicName].viewer = new newViewerType(card, topicName, topicType);
 };
+
+// Control panel button handlers
+function initControlPanel() {
+  const serverUrl = 'http://localhost:3000';
+  const showSnackbar = (message, isError = false) => {
+    snackbarContainer.MaterialSnackbar.showSnackbar({
+      message: message,
+      timeout: isError ? 5000 : 3000,
+    });
+  };
+
+  const handleButtonClick = async (endpoint, data = null, buttonId) => {
+    const button = $(`#${buttonId}`);
+    button.prop('disabled', true);
+    try {
+      const response = await fetch(`${serverUrl}${endpoint}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: data ? JSON.stringify(data) : undefined,
+      });
+      const result = await response.json();
+      if (result.success) {
+        showSnackbar(result.message || 'Action completed');
+      } else {
+        showSnackbar(`Error: ${result.error}`, true);
+      }
+    } catch (error) {
+      console.error(`Error calling ${endpoint}:`, error);
+      showSnackbar(`Error: ${error.message}`, true);
+    } finally {
+      button.prop('disabled', false);
+    }
+  };
+
+  $('#turn-on-button').click(() => handleButtonClick('/turn-on', null, 'turn-on-button'));
+  $('#turn-off-button').click(() => handleButtonClick('/turn-off', null, 'turn-off-button'));
+  $('#start-mapping-button').click(() => handleButtonClick('/start-mapping', null, 'start-mapping-button'));
+  $('#stop-mapping-button').click(() => handleButtonClick('/stop-mapping', null, 'stop-mapping-button'));
+  $('#save-map-button').click(() => {
+    const mapName = $('#save-map-input').val().trim();
+    if (!mapName) {
+      showSnackbar('Please enter a map name', true);
+      return;
+    }
+    handleButtonClick('/save-map', { mapName }, 'save-map-button');
+  });
+  $('#full-lift-button').click(() => handleButtonClick('/full-lift', null, 'full-lift-button'));
+  $('#full-lower-button').click(() => handleButtonClick('/full-lower', null, 'full-lower-button'));
+  $('#start-navigation-button').click(() => handleButtonClick('/start-navigation', null, 'start-navigation-button'));
+  $('#stop-navigation-button').click(() => handleButtonClick('/stop-navigation', null, 'stop-navigation-button'));
+  $('#load-map-button').click(() => {
+    const mapName = $('#load-map-input').val().trim();
+    if (!mapName) {
+      showSnackbar('Please enter a map name', true);
+      return;
+    }
+    handleButtonClick('/load-map', { mapName }, 'load-map-button');
+  });
+}
