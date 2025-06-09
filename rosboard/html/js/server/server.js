@@ -122,24 +122,24 @@ app.post('/save-map', async (req, res) => {
         const installArgs = [
             'service', 'call', '/slam_toolbox/save_map',
             'slam_toolbox/srv/SaveMap',
-            `{name: {data: "${installFilename}"}}`
+            `{name: "${installFilename}"}`
         ];
         console.log(`Executing install command: ${installCommand} ${installArgs.join(' ')}`);
         await runRos2Command(installCommand, installArgs);
 
         // Save to source directory
         await fs.mkdir(srcMapDir, { recursive: true });
-        console.log(`Created directory: ${srcMapDir}`);
+        console.log(`Created directory to source: ${srcMapDir}`);
         const defaultCommand = 'ros2';
         const defaultArgs = [
             'service', 'call', '/slam_toolbox/save_map',
             'slam_toolbox/srv/SaveMap',
-            `{name: {data: "${path.join(tempMapDir, safeMapName)}"}}`
+            `{name: "${path.join(tempMapDir, safeMapName)}"}`
         ];
         console.log(`Executing save_map command: ${defaultCommand} ${defaultArgs.join(' ')}`);
         await runRos2Command(defaultCommand, defaultArgs);
 
-        // Move files from temporary to source directory
+        // Move files from temp to source directory
         const tempPgm = path.join(tempMapDir, `${safeMapName}.pgm`);
         const tempYaml = path.join(tempMapDir, `${safeMapName}.yaml`);
         const srcPgm = path.join(srcMapDir, `${safeMapName}.pgm`);
@@ -151,9 +151,9 @@ app.post('/save-map', async (req, res) => {
             await fs.rename(tempPgm, srcPgm);
             await fs.rename(tempYaml, srcYaml);
             console.log(`Moved ${safeMapName}.pgm and ${safeMapName}.yaml to ${srcMapDir}`);
-        } catch (moveError) {
-            console.error(`Failed to move files: ${moveError.message}`);
-            throw new Error(`Failed to move map files to ${srcMapDir}: ${moveError.message}`);
+        } catch (error) {
+            console.error(`Failed to move files: ${error.message}`);
+            throw new Error(`Failed to move map files to ${srcMapDir}: ${error.message}`);
         }
 
         res.json({ success: true, message: `Saved map '${safeMapName}' to ${installMapDir} and ${srcMapDir}` });
@@ -191,12 +191,12 @@ app.post('/turn-on', (req, res) => {
             console.log(`Robot launch process exited with code ${code} at ${new Date().toISOString()}`);
             launchProcess = null;
             if (code !== 0) {
-                console.error(`Robot launch process failed: ${stderrData}`);
+                console.error(`Launch process failed: ${stderrData}`);
             }
         });
 
         launchProcess.on('error', (error) => {
-            console.error(`Robot launch process error: ${error.message}`);
+            console.error(`Error starting robot launch process: ${error.message}`);
             launchProcess = null;
         });
 
@@ -231,7 +231,9 @@ app.post('/start-mapping', (req, res) => {
     }
 
     const command = 'bash';
-    const args = ['-c', 'source /opt/ros/humble/setup.bash && source ~/autofork_ws/install/setup.bash && ros2 launch autofork_launch online_async_mapper_launch.py slam_params_file:=$(ros2 pkg prefix autofork_navigation)/share/autofork_navigation/config/slam_config/mapper_params_online_async.yaml use_sim_time:=true'];
+    const args = [
+        '-c', 'source /opt/ros/humble/setup.bash && source ~/autofork_ws/install/setup.bash && ros2 launch autofork_launch online_async_mapper_launch.py slam_params_file:=$(ros2 pkg prefix autofork_navigation)/share/autofork_navigation/config/slam_config/mapper_params_online_async.yaml use_sim_time:=true'
+    ];
 
     try {
         mappingProcess = spawn(command, args, { stdio: ['ignore', 'pipe', 'pipe'] });
@@ -281,42 +283,6 @@ app.post('/stop-mapping', (req, res) => {
         res.json({ success: true, message: 'Mapping process stopped' });
     } catch (error) {
         console.error(`Error stopping mapping process: ${error.message}`);
-        res.status(500).json({ success: false, error: error.message });
-    }
-});
-
-// Full lift: Publish to /lift_control
-app.post('/full-lift', async (req, res) => {
-    try {
-        const command = 'ros2';
-        const args = [
-            'topic', 'pub', '--once', '/lift_control',
-            'std_msgs/Bool',
-            '{data: true}'
-        ];
-        console.log(`Executing lift command: ${command} ${args.join(' ')}`);
-        await runRos2Command(command, args);
-        res.json({ success: true, message: 'Full lift command sent' });
-    } catch (error) {
-        console.error(`Error sending full lift command: ${error.message}`);
-        res.status(500).json({ success: false, error: error.message });
-    }
-});
-
-// Full lower: Publish to /lift_control
-app.post('/full-lower', async (req, res) => {
-    try {
-        const command = 'ros2';
-        const args = [
-            'topic', 'pub', '--once', '/lift_control',
-            'std_msgs/Bool',
-            '{data: false}'
-        ];
-        console.log(`Executing lower command: ${command} ${args.join(' ')}`);
-        await runRos2Command(command, args);
-        res.json({ success: true, message: 'Full lower command sent' });
-    } catch (error) {
-        console.error(`Error sending full lower command: ${error.message}`);
         res.status(500).json({ success: false, error: error.message });
     }
 });

@@ -196,7 +196,7 @@ function initSubscribe({topicName, topicType}) {
     try {
       subscriptions[topicName].viewer = new viewer(card, topicName, topicType);
     } catch(e) {
-      console.log(e);
+      console.error(e);
       card.remove();
     }
     $grid.masonry("appended", card);
@@ -327,8 +327,6 @@ function initControlPanel() {
     }
     handleButtonClick('/save-map', { mapName }, 'save-map-button');
   });
-  $('#full-lift-button').click(() => handleButtonClick('/full-lift', null, 'full-lift-button'));
-  $('#full-lower-button').click(() => handleButtonClick('/full-lower', null, 'full-lower-button'));
   $('#start-navigation-button').click(() => handleButtonClick('/start-navigation', null, 'start-navigation-button'));
   $('#stop-navigation-button').click(() => handleButtonClick('/stop-navigation', null, 'stop-navigation-button'));
   $('#load-map-button').click(() => {
@@ -338,5 +336,34 @@ function initControlPanel() {
       return;
     }
     handleButtonClick('/load-map', { mapName }, 'load-map-button');
+  });
+
+  // Fork control buttons
+  $('#full-lift-button').click(async () => {
+    const button = $('#full-lift-button');
+    button.prop('disabled', true);
+    try {
+      const result = await window.control.fullLift();
+      showSnackbar(result.message || 'Forks lifted', !result.success);
+    } catch (error) {
+      console.error('Error lifting forks:', error);
+      showSnackbar(`Error: ${error.message}`, true);
+    } finally {
+      button.prop('disabled', false);
+    }
+  });
+
+  $('#full-lower-button').click(async () => {
+    const button = $('#full-lower-button');
+    button.prop('disabled', true);
+    try {
+      const result = await window.control.fullLower();
+      showSnackbar(result.message || 'Forks lowered', !result.success);
+    } catch (error) {
+      console.error('Error lowering forks:', error);
+      showSnackbar(`Error: ${error.message}`, true);
+    } finally {
+      button.prop('disabled', false);
+    }
   });
 }

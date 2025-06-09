@@ -1,876 +1,909 @@
 Server running at http://localhost:3000
-Started robot launch process with PID 107148 at 2025-06-09T21:34:52.255Z
-Robot launch stdout: [INFO] [launch]: All log files can be found below /home/alip/.ros/log/2025-06-10-01-04-52-704183-alip-107148
+Started robot launch process with PID 141780 at 2025-06-09T22:44:42.918Z
+Robot launch stdout: [INFO] [launch]: All log files can be found below /home/alip/.ros/log/2025-06-10-02-14-43-367296-alip-141780
+
+Robot launch stdout: [INFO] [launch]: Default logging verbosity is set to INFO
+
+Robot launch stdout: [INFO] [gzserver-1]: process started with pid [141854]
+
+Robot launch stdout: [INFO] [gzclient-2]: process started with pid [141856]
+[INFO] [robot_state_publisher-3]: process started with pid [141858]
+[INFO] [spawn_entity.py-4]: process started with pid [141860]
+[INFO] [spawner-5]: process started with pid [141862]
+[INFO] [spawner-6]: process started with pid [141864]
+
+Robot launch stdout: [robot_state_publisher-3] [INFO] [1749509083.946326078] [robot_state_publisher]: got segment RGBD_camera
+
+Robot launch stdout: [robot_state_publisher-3] [INFO] [1749509083.946498983] [robot_state_publisher]: got segment RGBD_camera_optical
+
+Robot launch stdout: [robot_state_publisher-3] [INFO] [1749509083.946519676] [robot_state_publisher]: got segment back_wheel_assembly_L
+[robot_state_publisher-3] [INFO] [1749509083.946532271] [robot_state_publisher]: got segment back_wheel_assembly_R
+[robot_state_publisher-3] [INFO] [1749509083.946542611] [robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-3] [INFO] [1749509083.946552568] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-3] [INFO] [1749509083.946563211] [robot_state_publisher]: got segment chassis
+[robot_state_publisher-3] [INFO] [1749509083.946572954] [robot_state_publisher]: got segment clamp_L
+[robot_state_publisher-3] [INFO] [1749509083.946582596] [robot_state_publisher]: got segment clamp_R
+[robot_state_publisher-3] [INFO] [1749509083.946592100] [robot_state_publisher]: got segment fork_L
+[robot_state_publisher-3] [INFO] [1749509083.946601480] [robot_state_publisher]: got segment fork_R
+
+Robot launch stdout: [robot_state_publisher-3] [INFO] [1749509083.946610781] [robot_state_publisher]: got segment fork_wheel_LL
+[robot_state_publisher-3] [INFO] [1749509083.946620734] [robot_state_publisher]: got segment fork_wheel_LR
+[robot_state_publisher-3] [INFO] [1749509083.946649358] [robot_state_publisher]: got segment fork_wheel_RL
+[robot_state_publisher-3] [INFO] [1749509083.946659515] [robot_state_publisher]: got segment fork_wheel_RR
+[robot_state_publisher-3] [INFO] [1749509083.946670049] [robot_state_publisher]: got segment lidar_nav
+
+Robot launch stdout: [robot_state_publisher-3] [INFO] [1749509083.946679708] [robot_state_publisher]: got segment lidar_safe
+[robot_state_publisher-3] [INFO] [1749509083.946689050] [robot_state_publisher]: got segment main_wheel
+[robot_state_publisher-3] [INFO] [1749509083.946699230] [robot_state_publisher]: got segment wheel_assembly_tilt
+[robot_state_publisher-3] [INFO] [1749509083.946709049] [robot_state_publisher]: got segment wheel_bL_rot
+[robot_state_publisher-3] [INFO] [1749509083.946718732] [robot_state_publisher]: got segment wheel_bL_tilt
+[robot_state_publisher-3] [INFO] [1749509083.946729425] [robot_state_publisher]: got segment wheel_bR_rot
+[robot_state_publisher-3] [INFO] [1749509083.946738815] [robot_state_publisher]: got segment wheel_bR_tilt
+
+Robot launch stdout: [spawner-6] [INFO] [1749509084.210880045] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
+
+Robot launch stdout: [spawner-5] [INFO] [1749509084.215483327] [spawner_tri_cycle_controller]: waiting for service /controller_manager/list_controllers to become available...
+
+Robot launch stdout: [spawn_entity.py-4] [INFO] [1749509084.267429227] [spawn_entity]: Spawn Entity started
+
+Robot launch stdout: [spawn_entity.py-4] [INFO] [1749509084.267644240] [spawn_entity]: Loading entity published on topic robot_description
+
+Robot launch stdout: [spawn_entity.py-4] [INFO] [1749509084.268554416] [spawn_entity]: Waiting for entity xml on robot_description
+
+Robot launch stdout: [spawn_entity.py-4] [INFO] [1749509084.270267010] [spawn_entity]: Waiting for service /spawn_entity, timeout = 30
+
+Robot launch stdout: [spawn_entity.py-4] [INFO] [1749509084.270444721] [spawn_entity]: Waiting for service /spawn_entity
+
+Robot launch stdout: [spawn_entity.py-4] [INFO] [1749509085.273793899] [spawn_entity]: Calling service /spawn_entity
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.003224387] [camera_controller]: Publishing camera info to [/camera/camera_info]
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.004071974] [camera_controller]: Publishing depth camera info to [/camera/depth/camera_info]
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.004248457] [camera_controller]: Publishing pointcloud to [/camera/points]
+
+Robot launch stdout: [gzserver-1] [WARN] [1749509086.011503628] [rcl]: Found remap rule '~/out:=scan/navigation'. This syntax is deprecated. Use '--ros-args --remap ~/out:=scan/navigation' instead.
+
+Robot launch stdout: [gzserver-1] [WARN] [1749509086.012898357] [rcl]: Found remap rule '~/out:=scan/navigation'. This syntax is deprecated. Use '--ros-args --remap ~/out:=scan/navigation' instead.
+
+Robot launch stdout: [spawn_entity.py-4] [INFO] [1749509086.061503673] [spawn_entity]: Spawn status: SpawnEntity: Successfully spawned entity [Autofork]
+
+Robot launch stdout: [gzserver-1] [WARN] [1749509086.113256257] [rcl]: Found remap rule '~/out:=scan/safety'. This syntax is deprecated. Use '--ros-args --remap ~/out:=scan/safety' instead.
+
+Robot launch stdout: [gzserver-1] [WARN] [1749509086.114853878] [rcl]: Found remap rule '~/out:=scan/safety'. This syntax is deprecated. Use '--ros-args --remap ~/out:=scan/safety' instead.
+
+Robot launch stdout: [INFO] [spawn_entity.py-4]: process has finished cleanly [pid 141860]
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.354171805] [gazebo_ros2_control]: Loading gazebo_ros2_control plugin
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.355830198] [gazebo_ros2_control]: Starting gazebo_ros2_control plugin in namespace: /
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.355861356] [gazebo_ros2_control]: Starting gazebo_ros2_control plugin in ros 2 node: gazebo_ros2_control
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.356933268] [gazebo_ros2_control]: connected to service!! robot_state_publisher
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.357544675] [gazebo_ros2_control]: Received urdf from param server, parsing...
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.357583743] [gazebo_ros2_control]: Loading parameter files /home/alip/autofork_ws/install/autofork_control/share/autofork_control/config/gazebo_controller.yaml
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.363593217] [gazebo_ros2_control]: Loading joint: wheel_assembly_tilt_joint
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.363624959] [gazebo_ros2_control]: 	State:
+[gzserver-1] [INFO] [1749509086.363637503] [gazebo_ros2_control]: 		 velocity
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.363649312] [gazebo_ros2_control]: 		 position
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.363659610] [gazebo_ros2_control]: 	Command:
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.363669672] [gazebo_ros2_control]: 		 position
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.363796898] [gazebo_ros2_control]: Loading joint: main_wheel_joint
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.363859192] [gazebo_ros2_control]: 	State:
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.363891840] [gazebo_ros2_control]: 		 velocity
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.363916868] [gazebo_ros2_control]: 		 position
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.363938908] [gazebo_ros2_control]: 	Command:
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.363969445] [gazebo_ros2_control]: 		 velocity
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.364084234] [gazebo_ros2_control]: Loading joint: fork_L_joint
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.364109677] [gazebo_ros2_control]: 	State:
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.364129504] [gazebo_ros2_control]: 		 position
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.364149424] [gazebo_ros2_control]: 	Command:
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.364168849] [gazebo_ros2_control]: 		 position
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.364290494] [gazebo_ros2_control]: Loading joint: fork_R_joint
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.364316567] [gazebo_ros2_control]: 	State:
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.364337112] [gazebo_ros2_control]: 		 position
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.364356532] [gazebo_ros2_control]: 	Command:
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.364376697] [gazebo_ros2_control]: 		 position
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.364498465] [gazebo_ros2_control]: Loading joint: clamp_L_joint
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.364525260] [gazebo_ros2_control]: 	State:
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.364545836] [gazebo_ros2_control]: 		 position
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.364566178] [gazebo_ros2_control]: 	Command:
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.364585905] [gazebo_ros2_control]: 		 position
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.364687548] [gazebo_ros2_control]: Loading joint: clamp_R_joint
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.364713267] [gazebo_ros2_control]: 	State:
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.364733336] [gazebo_ros2_control]: 		 position
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.364752905] [gazebo_ros2_control]: 	Command:
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.364773339] [gazebo_ros2_control]: 		 position
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.364901797] [gazebo_ros2_control]: Loading joint: fork_wheel_LL_joint
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.364928524] [gazebo_ros2_control]: 	State:
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.364953978] [gazebo_ros2_control]: 		 position
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.364984991] [gazebo_ros2_control]: 		 velocity
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.365006202] [gazebo_ros2_control]: 	Command:
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.365056055] [gazebo_ros2_control]: 		 velocity
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.365165120] [gazebo_ros2_control]: Loading joint: fork_wheel_LR_joint
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.365190773] [gazebo_ros2_control]: 	State:
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.365211613] [gazebo_ros2_control]: 		 position
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.365231642] [gazebo_ros2_control]: 		 velocity
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.365252327] [gazebo_ros2_control]: 	Command:
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.365277113] [gazebo_ros2_control]: 		 velocity
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.365375952] [gazebo_ros2_control]: Loading joint: fork_wheel_RL_joint
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.365407191] [gazebo_ros2_control]: 	State:
+[gzserver-1] [INFO] [1749509086.365428730] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1749509086.365449710] [gazebo_ros2_control]: 		 velocity
+[gzserver-1] [INFO] [1749509086.365470249] [gazebo_ros2_control]: 	Command:
+[gzserver-1] [INFO] [1749509086.365495351] [gazebo_ros2_control]: 		 velocity
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.365592979] [gazebo_ros2_control]: Loading joint: fork_wheel_RR_joint
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.365616837] [gazebo_ros2_control]: 	State:
+[gzserver-1] [INFO] [1749509086.365638451] [gazebo_ros2_control]: 		 position
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.365659241] [gazebo_ros2_control]: 		 velocity
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.365679055] [gazebo_ros2_control]: 	Command:
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.365703941] [gazebo_ros2_control]: 		 velocity
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.365798842] [gazebo_ros2_control]: Loading joint: wheel_bL_tilt_joint
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.365822813] [gazebo_ros2_control]: 	State:
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.365843462] [gazebo_ros2_control]: 		 position
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.365864979] [gazebo_ros2_control]: 		 velocity
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.365886970] [gazebo_ros2_control]: 	Command:
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.365914655] [gazebo_ros2_control]: 		 velocity
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.366013199] [gazebo_ros2_control]: Loading joint: wheel_bR_tilt_joint
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.366039535] [gazebo_ros2_control]: 	State:
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.366068954] [gazebo_ros2_control]: 		 position
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.366092473] [gazebo_ros2_control]: 		 velocity
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.366116502] [gazebo_ros2_control]: 	Command:
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.366149065] [gazebo_ros2_control]: 		 velocity
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.366259459] [gazebo_ros2_control]: Loading joint: wheel_bL_rot_joint
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.366286301] [gazebo_ros2_control]: 	State:
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.366307402] [gazebo_ros2_control]: 		 position
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.366327334] [gazebo_ros2_control]: 		 velocity
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.366347315] [gazebo_ros2_control]: 	Command:
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.366372611] [gazebo_ros2_control]: 		 velocity
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.366475616] [gazebo_ros2_control]: Loading joint: wheel_bR_rot_joint
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.366500312] [gazebo_ros2_control]: 	State:
+[gzserver-1] [INFO] [1749509086.366520876] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1749509086.366540695] [gazebo_ros2_control]: 		 velocity
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.366560305] [gazebo_ros2_control]: 	Command:
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.366584104] [gazebo_ros2_control]: 		 velocity
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.366733135] [resource_manager]: Initialize hardware 'GazeboSystem' 
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.366893942] [resource_manager]: Successful initialization of hardware 'GazeboSystem'
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.367001068] [resource_manager]: 'configure' hardware 'GazeboSystem' 
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.367013687] [resource_manager]: Successful 'configure' of hardware 'GazeboSystem'
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.367027129] [resource_manager]: 'activate' hardware 'GazeboSystem' 
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.367035757] [resource_manager]: Successful 'activate' of hardware 'GazeboSystem'
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.367123270] [gazebo_ros2_control]: Loading controller_manager
+
+Robot launch stdout: [gzserver-1] [WARN] [1749509086.374950811] [gazebo_ros2_control]:  Desired controller update period (0.02 s) is slower than the gazebo simulation period (0.001 s).
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.375049766] [gazebo_ros2_control]: Loaded gazebo_ros2_control.
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.465228068] [controller_manager]: Loading controller 'joint_state_broadcaster'
+
+Robot launch stdout: [spawner-6] [INFO] [1749509086.488898408] [spawner_joint_state_broadcaster]: [94mLoaded [1mjoint_state_broadcaster[0m
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.489272647] [controller_manager]: Loading controller 'tri_cycle_controller'
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.521874888] [controller_manager]: Configuring controller 'joint_state_broadcaster'
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.522169942] [joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
+
+Robot launch stdout: [spawner-5] [INFO] [1749509086.522819654] [spawner_tri_cycle_controller]: [94mLoaded [1mtri_cycle_controller[0m
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.553404510] [controller_manager]: Configuring controller 'tri_cycle_controller'
+
+Robot launch stdout: [spawner-6] [INFO] [1749509086.651348121] [spawner_joint_state_broadcaster]: [92mConfigured and activated [1mjoint_state_broadcaster[0m
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.681578721] [tri_cycle_controller]: On activate: Initialize Joints
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.681651809] [tri_cycle_controller]: Get Wheel Joint Instance
+[gzserver-1] [INFO] [1749509086.681674588] [tri_cycle_controller]: Get Steering Joint Instance
+
+Robot launch stdout: [spawner-5] [INFO] [1749509086.713375716] [spawner_tri_cycle_controller]: [92mConfigured and activated [1mtri_cycle_controller[0m
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.714258167] [controller_manager]: Loading controller 'forks_position_controller'
+
+Robot launch stdout: [spawner-5] [INFO] [1749509086.743886516] [spawner_tri_cycle_controller]: [94mLoaded [1mforks_position_controller[0m
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.744146455] [controller_manager]: Configuring controller 'forks_position_controller'
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.744773491] [forks_position_controller]: configure successful
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.805028667] [forks_position_controller]: activate successful
+
+Robot launch stdout: [spawner-5] [INFO] [1749509086.838414132] [spawner_tri_cycle_controller]: [92mConfigured and activated [1mforks_position_controller[0m
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.839481753] [controller_manager]: Loading controller 'clamps_position_controller'
+
+Robot launch stdout: [spawner-5] [INFO] [1749509086.870033001] [spawner_tri_cycle_controller]: [94mLoaded [1mclamps_position_controller[0m
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.870262832] [controller_manager]: Configuring controller 'clamps_position_controller'
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.870650371] [clamps_position_controller]: configure successful
+
+Robot launch stdout: [INFO] [spawner-6]: process has finished cleanly [pid 141864]
+
+Robot launch stdout: [gzserver-1] [INFO] [1749509086.929286356] [clamps_position_controller]: activate successful
+
+Robot launch stdout: [spawner-5] [INFO] [1749509086.959542419] [spawner_tri_cycle_controller]: [92mConfigured and activated [1mclamps_position_controller[0m
+
+Robot launch stdout: [INFO] [spawner-5]: process has finished cleanly [pid 141862]
+
+Previous localization process stopped (if any) at 2025-06-09T22:45:59.794Z
+Started localization process with PID 142884 for map 'map_v2' at 2025-06-09T22:45:59.796Z
+Localization stdout: [INFO] [launch]: All log files can be found below /home/alip/.ros/log/2025-06-10-02-16-00-250806-alip-142884
 [INFO] [launch]: Default logging verbosity is set to INFO
 
-Robot launch stdout: [INFO] [gzserver-1]: process started with pid [107166]
+Localization stdout: [INFO] [map_server-1]: process started with pid [142902]
 
-Robot launch stdout: [INFO] [gzclient-2]: process started with pid [107168]
-[INFO] [robot_state_publisher-3]: process started with pid [107170]
-[INFO] [spawn_entity.py-4]: process started with pid [107172]
-[INFO] [spawner-5]: process started with pid [107174]
-[INFO] [spawner-6]: process started with pid [107176]
+Localization stdout: [INFO] [amcl-2]: process started with pid [142904]
+[INFO] [lifecycle_manager-3]: process started with pid [142906]
 
-Robot launch stdout: [robot_state_publisher-3] [INFO] [1749504893.287988626] [robot_state_publisher]: got segment RGBD_camera
-
-Robot launch stdout: [robot_state_publisher-3] [INFO] [1749504893.288114674] [robot_state_publisher]: got segment RGBD_camera_optical
-
-Robot launch stdout: [robot_state_publisher-3] [INFO] [1749504893.288125767] [robot_state_publisher]: got segment back_wheel_assembly_L
-[robot_state_publisher-3] [INFO] [1749504893.288133096] [robot_state_publisher]: got segment back_wheel_assembly_R
-[robot_state_publisher-3] [INFO] [1749504893.288138773] [robot_state_publisher]: got segment base_footprint
-[robot_state_publisher-3] [INFO] [1749504893.288145463] [robot_state_publisher]: got segment base_link
-[robot_state_publisher-3] [INFO] [1749504893.288150967] [robot_state_publisher]: got segment chassis
-
-Robot launch stdout: [robot_state_publisher-3] [INFO] [1749504893.288156108] [robot_state_publisher]: got segment clamp_L
-[robot_state_publisher-3] [INFO] [1749504893.288161425] [robot_state_publisher]: got segment clamp_R
-[robot_state_publisher-3] [INFO] [1749504893.288166611] [robot_state_publisher]: got segment fork_L
-[robot_state_publisher-3] [INFO] [1749504893.288172032] [robot_state_publisher]: got segment fork_R
-[robot_state_publisher-3] [INFO] [1749504893.288177407] [robot_state_publisher]: got segment fork_wheel_LL
-[robot_state_publisher-3] [INFO] [1749504893.288182837] [robot_state_publisher]: got segment fork_wheel_LR
-[robot_state_publisher-3] [INFO] [1749504893.288188023] [robot_state_publisher]: got segment fork_wheel_RL
-[robot_state_publisher-3] [INFO] [1749504893.288193201] [robot_state_publisher]: got segment fork_wheel_RR
-[robot_state_publisher-3] [INFO] [1749504893.288198446] [robot_state_publisher]: got segment lidar_nav
-[robot_state_publisher-3] [INFO] [1749504893.288204050] [robot_state_publisher]: got segment lidar_safe
-
-Robot launch stdout: [robot_state_publisher-3] [INFO] [1749504893.288209243] [robot_state_publisher]: got segment main_wheel
-[robot_state_publisher-3] [INFO] [1749504893.288214350] [robot_state_publisher]: got segment wheel_assembly_tilt
-[robot_state_publisher-3] [INFO] [1749504893.288219799] [robot_state_publisher]: got segment wheel_bL_rot
-[robot_state_publisher-3] [INFO] [1749504893.288225204] [robot_state_publisher]: got segment wheel_bL_tilt
-[robot_state_publisher-3] [INFO] [1749504893.288230563] [robot_state_publisher]: got segment wheel_bR_rot
-
-Robot launch stdout: [robot_state_publisher-3] [INFO] [1749504893.288235880] [robot_state_publisher]: got segment wheel_bR_tilt
-
-Robot launch stdout: [spawner-5] [INFO] [1749504893.554911608] [spawner_tri_cycle_controller]: waiting for service /controller_manager/list_controllers to become available...
-
-Robot launch stdout: [spawner-6] [INFO] [1749504893.574860052] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
-
-Robot launch stdout: [spawn_entity.py-4] [INFO] [1749504893.636436730] [spawn_entity]: Spawn Entity started
-
-Robot launch stdout: [spawn_entity.py-4] [INFO] [1749504893.636676845] [spawn_entity]: Loading entity published on topic robot_description
-
-Robot launch stdout: [spawn_entity.py-4] [INFO] [1749504893.637598009] [spawn_entity]: Waiting for entity xml on robot_description
-
-Robot launch stdout: [spawn_entity.py-4] [INFO] [1749504893.639597137] [spawn_entity]: Waiting for service /spawn_entity, timeout = 30
-
-Robot launch stdout: [spawn_entity.py-4] [INFO] [1749504893.639791504] [spawn_entity]: Waiting for service /spawn_entity
-
-Robot launch stdout: [spawn_entity.py-4] [INFO] [1749504894.392782372] [spawn_entity]: Calling service /spawn_entity
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.267453593] [camera_controller]: Publishing camera info to [/camera/camera_info]
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.268339579] [camera_controller]: Publishing depth camera info to [/camera/depth/camera_info]
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.268506562] [camera_controller]: Publishing pointcloud to [/camera/points]
-
-Robot launch stdout: [gzserver-1] [WARN] [1749504895.275289786] [rcl]: Found remap rule '~/out:=scan/navigation'. This syntax is deprecated. Use '--ros-args --remap ~/out:=scan/navigation' instead.
-
-Robot launch stdout: [gzserver-1] [WARN] [1749504895.276897729] [rcl]: Found remap rule '~/out:=scan/navigation'. This syntax is deprecated. Use '--ros-args --remap ~/out:=scan/navigation' instead.
-
-Robot launch stdout: [spawn_entity.py-4] [INFO] [1749504895.323697075] [spawn_entity]: Spawn status: SpawnEntity: Successfully spawned entity [Autofork]
-
-Robot launch stdout: [gzserver-1] [WARN] [1749504895.377642207] [rcl]: Found remap rule '~/out:=scan/safety'. This syntax is deprecated. Use '--ros-args --remap ~/out:=scan/safety' instead.
-
-Robot launch stdout: [gzserver-1] [WARN] [1749504895.379286131] [rcl]: Found remap rule '~/out:=scan/safety'. This syntax is deprecated. Use '--ros-args --remap ~/out:=scan/safety' instead.
-
-Robot launch stdout: [INFO] [spawn_entity.py-4]: process has finished cleanly [pid 107172]
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.614255148] [gazebo_ros2_control]: Loading gazebo_ros2_control plugin
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.616263948] [gazebo_ros2_control]: Starting gazebo_ros2_control plugin in namespace: /
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.616298277] [gazebo_ros2_control]: Starting gazebo_ros2_control plugin in ros 2 node: gazebo_ros2_control
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.617680456] [gazebo_ros2_control]: connected to service!! robot_state_publisher
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.618074388] [gazebo_ros2_control]: Received urdf from param server, parsing...
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.618142436] [gazebo_ros2_control]: Loading parameter files /home/alip/autofork_ws/install/autofork_control/share/autofork_control/config/gazebo_controller.yaml
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.629026708] [gazebo_ros2_control]: Loading joint: wheel_assembly_tilt_joint
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.629086888] [gazebo_ros2_control]: 	State:
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.629116945] [gazebo_ros2_control]: 		 velocity
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.629144822] [gazebo_ros2_control]: 		 position
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.629168587] [gazebo_ros2_control]: 	Command:
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.629191599] [gazebo_ros2_control]: 		 position
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.629398187] [gazebo_ros2_control]: Loading joint: main_wheel_joint
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.629432714] [gazebo_ros2_control]: 	State:
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.629454365] [gazebo_ros2_control]: 		 velocity
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.629475672] [gazebo_ros2_control]: 		 position
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.629495689] [gazebo_ros2_control]: 	Command:
-[gzserver-1] [INFO] [1749504895.629521059] [gazebo_ros2_control]: 		 velocity
-[gzserver-1] [INFO] [1749504895.629627206] [gazebo_ros2_control]: Loading joint: fork_L_joint
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.629653285] [gazebo_ros2_control]: 	State:
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.629673645] [gazebo_ros2_control]: 		 position
-[gzserver-1] [INFO] [1749504895.629693074] [gazebo_ros2_control]: 	Command:
-[gzserver-1] [INFO] [1749504895.629712154] [gazebo_ros2_control]: 		 position
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.629836532] [gazebo_ros2_control]: Loading joint: fork_R_joint
-[gzserver-1] [INFO] [1749504895.629864688] [gazebo_ros2_control]: 	State:
-[gzserver-1] [INFO] [1749504895.629885806] [gazebo_ros2_control]: 		 position
-[gzserver-1] [INFO] [1749504895.629905404] [gazebo_ros2_control]: 	Command:
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.629924361] [gazebo_ros2_control]: 		 position
-[gzserver-1] [INFO] [1749504895.630037120] [gazebo_ros2_control]: Loading joint: clamp_L_joint
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.630064428] [gazebo_ros2_control]: 	State:
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.630084553] [gazebo_ros2_control]: 		 position
-[gzserver-1] [INFO] [1749504895.630103195] [gazebo_ros2_control]: 	Command:
-[gzserver-1] [INFO] [1749504895.630121601] [gazebo_ros2_control]: 		 position
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.630218697] [gazebo_ros2_control]: Loading joint: clamp_R_joint
-[gzserver-1] [INFO] [1749504895.630242768] [gazebo_ros2_control]: 	State:
-[gzserver-1] [INFO] [1749504895.630263261] [gazebo_ros2_control]: 		 position
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.630283043] [gazebo_ros2_control]: 	Command:
-[gzserver-1] [INFO] [1749504895.630303693] [gazebo_ros2_control]: 		 position
-[gzserver-1] [INFO] [1749504895.630439494] [gazebo_ros2_control]: Loading joint: fork_wheel_LL_joint
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.630476986] [gazebo_ros2_control]: 	State:
-[gzserver-1] [INFO] [1749504895.630498175] [gazebo_ros2_control]: 		 position
-[gzserver-1] [INFO] [1749504895.630522988] [gazebo_ros2_control]: 		 velocity
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.630544657] [gazebo_ros2_control]: 	Command:
-[gzserver-1] [INFO] [1749504895.630596184] [gazebo_ros2_control]: 		 velocity
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.630706032] [gazebo_ros2_control]: Loading joint: fork_wheel_LR_joint
-[gzserver-1] [INFO] [1749504895.630762464] [gazebo_ros2_control]: 	State:
-[gzserver-1] [INFO] [1749504895.630780710] [gazebo_ros2_control]: 		 position
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.630790727] [gazebo_ros2_control]: 		 velocity
-[gzserver-1] [INFO] [1749504895.630801226] [gazebo_ros2_control]: 	Command:
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.630816069] [gazebo_ros2_control]: 		 velocity
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.630876039] [gazebo_ros2_control]: Loading joint: fork_wheel_RL_joint
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.630884951] [gazebo_ros2_control]: 	State:
-[gzserver-1] [INFO] [1749504895.630893324] [gazebo_ros2_control]: 		 position
-[gzserver-1] [INFO] [1749504895.630902667] [gazebo_ros2_control]: 		 velocity
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.630913530] [gazebo_ros2_control]: 	Command:
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.630928195] [gazebo_ros2_control]: 		 velocity
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.630996909] [gazebo_ros2_control]: Loading joint: fork_wheel_RR_joint
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.631006314] [gazebo_ros2_control]: 	State:
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.631013347] [gazebo_ros2_control]: 		 position
-[gzserver-1] [INFO] [1749504895.631020462] [gazebo_ros2_control]: 		 velocity
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.631027227] [gazebo_ros2_control]: 	Command:
-[gzserver-1] [INFO] [1749504895.631036021] [gazebo_ros2_control]: 		 velocity
-[gzserver-1] [INFO] [1749504895.631091581] [gazebo_ros2_control]: Loading joint: wheel_bL_tilt_joint
-[gzserver-1] [INFO] [1749504895.631105524] [gazebo_ros2_control]: 	State:
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.631117905] [gazebo_ros2_control]: 		 position
-[gzserver-1] [INFO] [1749504895.631131039] [gazebo_ros2_control]: 		 velocity
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.631144303] [gazebo_ros2_control]: 	Command:
-[gzserver-1] [INFO] [1749504895.631161293] [gazebo_ros2_control]: 		 velocity
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.631223359] [gazebo_ros2_control]: Loading joint: wheel_bR_tilt_joint
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.631236305] [gazebo_ros2_control]: 	State:
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.631248112] [gazebo_ros2_control]: 		 position
-[gzserver-1] [INFO] [1749504895.631262031] [gazebo_ros2_control]: 		 velocity
-[gzserver-1] [INFO] [1749504895.631273651] [gazebo_ros2_control]: 	Command:
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.631288946] [gazebo_ros2_control]: 		 velocity
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.631348375] [gazebo_ros2_control]: Loading joint: wheel_bL_rot_joint
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.631357904] [gazebo_ros2_control]: 	State:
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.631366193] [gazebo_ros2_control]: 		 position
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.631373151] [gazebo_ros2_control]: 		 velocity
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.631380860] [gazebo_ros2_control]: 	Command:
-[gzserver-1] [INFO] [1749504895.631396636] [gazebo_ros2_control]: 		 velocity
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.631445314] [gazebo_ros2_control]: Loading joint: wheel_bR_rot_joint
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.631459046] [gazebo_ros2_control]: 	State:
-[gzserver-1] [INFO] [1749504895.631468718] [gazebo_ros2_control]: 		 position
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.631480197] [gazebo_ros2_control]: 		 velocity
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.631490538] [gazebo_ros2_control]: 	Command:
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.631503166] [gazebo_ros2_control]: 		 velocity
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.631579484] [resource_manager]: Initialize hardware 'GazeboSystem' 
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.631672095] [resource_manager]: Successful initialization of hardware 'GazeboSystem'
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.631735295] [resource_manager]: 'configure' hardware 'GazeboSystem' 
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.631742152] [resource_manager]: Successful 'configure' of hardware 'GazeboSystem'
-[gzserver-1] [INFO] [1749504895.631749949] [resource_manager]: 'activate' hardware 'GazeboSystem' 
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.631754050] [resource_manager]: Successful 'activate' of hardware 'GazeboSystem'
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.631818649] [gazebo_ros2_control]: Loading controller_manager
-
-Robot launch stdout: [gzserver-1] [WARN] [1749504895.640494380] [gazebo_ros2_control]:  Desired controller update period (0.02 s) is slower than the gazebo simulation period (0.001 s).
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.640687324] [gazebo_ros2_control]: Loaded gazebo_ros2_control.
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.809010558] [controller_manager]: Loading controller 'tri_cycle_controller'
-
-Robot launch stdout: [spawner-5] [INFO] [1749504895.822732143] [spawner_tri_cycle_controller]: [94mLoaded [1mtri_cycle_controller[0m
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.823370430] [controller_manager]: Configuring controller 'tri_cycle_controller'
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.885661655] [tri_cycle_controller]: On activate: Initialize Joints
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.885772736] [tri_cycle_controller]: Get Wheel Joint Instance
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.885804018] [tri_cycle_controller]: Get Steering Joint Instance
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.917167304] [controller_manager]: Loading controller 'joint_state_broadcaster'
-
-Robot launch stdout: [spawner-5] [INFO] [1749504895.917815233] [spawner_tri_cycle_controller]: [92mConfigured and activated [1mtri_cycle_controller[0m
-
-Robot launch stdout: [spawner-6] [INFO] [1749504895.950035715] [spawner_joint_state_broadcaster]: [94mLoaded [1mjoint_state_broadcaster[0m
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.950578823] [controller_manager]: Loading controller 'forks_position_controller'
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.994439332] [controller_manager]: Configuring controller 'joint_state_broadcaster'
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504895.994639832] [joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
-[spawner-5] [INFO] [1749504895.995114889] [spawner_tri_cycle_controller]: [94mLoaded [1mforks_position_controller[0m
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504896.029220322] [controller_manager]: Configuring controller 'forks_position_controller'
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504896.030293296] [forks_position_controller]: configure successful
-
-Robot launch stdout: [spawner-6] [INFO] [1749504896.126152547] [spawner_joint_state_broadcaster]: [92mConfigured and activated [1mjoint_state_broadcaster[0m
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504896.160771665] [forks_position_controller]: activate successful
-
-Robot launch stdout: [spawner-5] [INFO] [1749504896.191996170] [spawner_tri_cycle_controller]: [92mConfigured and activated [1mforks_position_controller[0m
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504896.192954870] [controller_manager]: Loading controller 'clamps_position_controller'
-
-Robot launch stdout: [spawner-5] [INFO] [1749504896.222392874] [spawner_tri_cycle_controller]: [94mLoaded [1mclamps_position_controller[0m
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504896.222655285] [controller_manager]: Configuring controller 'clamps_position_controller'
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504896.222983433] [clamps_position_controller]: configure successful
-
-Robot launch stdout: [gzserver-1] [INFO] [1749504896.281777605] [clamps_position_controller]: activate successful
-
-Robot launch stdout: [spawner-5] [INFO] [1749504896.316981283] [spawner_tri_cycle_controller]: [92mConfigured and activated [1mclamps_position_controller[0m
-
-Robot launch stdout: [INFO] [spawner-6]: process has finished cleanly [pid 107176]
-
-Robot launch stdout: [INFO] [spawner-5]: process has finished cleanly [pid 107174]
-
-Executing lift command: ros2 topic pub --once /lift_control std_msgs/Bool {data: true}
-Stdout: Waiting for at least 1 matching subscription(s)...
-
-Executing lower command: ros2 topic pub --once /lift_control std_msgs/Bool {data: false}
-Stdout: Waiting for at least 1 matching subscription(s)...
-
-Stdout: Waiting for at least 1 matching subscription(s)...
-
-Stdout: Waiting for at least 1 matching subscription(s)...
-
-Stdout: Waiting for at least 1 matching subscription(s)...
-
-Stdout: Waiting for at least 1 matching subscription(s)...
-
-Stdout: Waiting for at least 1 matching subscription(s)...
-
-Stdout: Waiting for at least 1 matching subscription(s)...
-
-Stdout: Waiting for at least 1 matching subscription(s)...
-
-Stdout: Waiting for at least 1 matching subscription(s)...
-
-Stdout: Waiting for at least 1 matching subscription(s)...
-
-Stdout: Waiting for at least 1 matching subscription(s)...
-
-Stdout: Waiting for at least 1 matching subscription(s)...
-
-Stdout: Waiting for at least 1 matching subscription(s)...
-
-Stdout: Waiting for at least 1 matching subscription(s)...
-
-Stdout: Waiting for at least 1 matching subscription(s)...
-
-Stdout: Waiting for at least 1 matching subscription(s)...
-
-Stdout: Waiting for at least 1 matching subscription(s)...
-
-Previous localization process stopped (if any) at 2025-06-09T21:35:15.993Z
-Started localization process with PID 107682 for map 'map_v2' at 2025-06-09T21:35:15.994Z
-Stdout: Waiting for at least 1 matching subscription(s)...
-
-Localization stdout: [INFO] [launch]: All log files can be found below /home/alip/.ros/log/2025-06-10-01-05-16-476307-alip-107682
-[INFO] [launch]: Default logging verbosity is set to INFO
-
-Localization stdout: [INFO] [map_server-1]: process started with pid [107732]
-
-Localization stdout: [INFO] [amcl-2]: process started with pid [107734]
-[INFO] [lifecycle_manager-3]: process started with pid [107736]
-
-Localization stdout: [lifecycle_manager-3] [INFO] [1749504916.612172368] [lifecycle_manager_localization]: Creating
-
-Localization stdout: [amcl-2] [INFO] [1749504916.612995865] [amcl]: 
+Localization stdout: [amcl-2] [INFO] [1749509160.375909288] [amcl]: 
 
 Localization stdout: [amcl-2] 	amcl lifecycle node launched. 
 [amcl-2] 	Waiting on external lifecycle transitions to activate
 [amcl-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
 
-Localization stdout: [amcl-2] [INFO] [1749504916.613369780] [amcl]: Creating
+Localization stdout: [amcl-2] [INFO] [1749509160.376231842] [amcl]: Creating
 
-Localization stdout: [lifecycle_manager-3] [INFO] [1749504916.613499554] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+Localization stdout: [lifecycle_manager-3] [INFO] [1749509160.382048141] [lifecycle_manager_localization]: Creating
 
-Localization stdout: [map_server-1] [INFO] [1749504916.618681455] [map_server]: 
+Localization stdout: [lifecycle_manager-3] [INFO] [1749509160.383081893] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+
+Localization stdout: [map_server-1] [INFO] [1749509160.383947662] [map_server]: 
 
 Localization stdout: [map_server-1] 	map_server lifecycle node launched. 
 [map_server-1] 	Waiting on external lifecycle transitions to activate
 [map_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
 
-Localization stdout: [map_server-1] [INFO] [1749504916.618762244] [map_server]: Creating
+Localization stdout: [map_server-1] [INFO] [1749509160.384012185] [map_server]: Creating
 
-Localization stdout: [lifecycle_manager-3] [INFO] [1749504916.618948535] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+Localization stdout: [lifecycle_manager-3] [INFO] [1749509160.484235238] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
 
-Localization stdout: [lifecycle_manager-3] [INFO] [1749504916.619012056] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+Localization stdout: [lifecycle_manager-3] [INFO] [1749509160.484322018] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
 
-Localization stdout: [map_server-1] [INFO] [1749504916.636593002] [map_server]: Configuring
+Localization stdout: [map_server-1] [INFO] [1749509160.484554923] [map_server]: Configuring
 
-Localization stdout: [map_server-1] [INFO] [1749504916.636690747] [map_io]: Loading yaml file: /home/alip/autofork_ws/src/autofork/autofork_navigation/maps/map_v2/map_v2.yaml
+Localization stdout: [map_server-1] [INFO] [1749509160.484618496] [map_io]: Loading yaml file: /home/alip/autofork_ws/src/autofork/autofork_navigation/maps/map_v2/map_v2.yaml
 
-Localization stdout: [map_server-1] [INFO] [1749504916.636996498] [map_io]: resolution: 0.01
+Localization stdout: [map_server-1] [INFO] [1749509160.484792832] [map_io]: resolution: 0.01
 
-Localization stdout: [map_server-1] [INFO] [1749504916.637011326] [map_io]: origin[0]: -16.6
-[map_server-1] [INFO] [1749504916.637019379] [map_io]: origin[1]: -14.2
+Localization stdout: [map_server-1] [INFO] [1749509160.484797948] [map_io]: origin[0]: -16.6
 
-Localization stdout: [map_server-1] [INFO] [1749504916.637026179] [map_io]: origin[2]: 0
+Localization stdout: [map_server-1] [INFO] [1749509160.484800813] [map_io]: origin[1]: -14.2
+[map_server-1] [INFO] [1749509160.484803293] [map_io]: origin[2]: 0
 
-Localization stdout: [map_server-1] [INFO] [1749504916.637056592] [map_io]: free_thresh: 0.25
+Localization stdout: [map_server-1] [INFO] [1749509160.484805920] [map_io]: free_thresh: 0.25
+[map_server-1] [INFO] [1749509160.484808481] [map_io]: occupied_thresh: 0.65
 
-Localization stdout: [map_server-1] [INFO] [1749504916.637060915] [map_io]: occupied_thresh: 0.65
-[map_server-1] [INFO] [1749504916.637064859] [map_io]: mode: trinary
-[map_server-1] [INFO] [1749504916.637068361] [map_io]: negate: 0
+Localization stdout: [map_server-1] [INFO] [1749509160.484811441] [map_io]: mode: trinary
 
-Localization stdout: [map_server-1] [INFO] [1749504916.637199827] [map_io]: Loading image_file: /home/alip/autofork_ws/src/autofork/autofork_navigation/maps/map_v2/map_v2.pgm
+Localization stdout: [map_server-1] [INFO] [1749509160.484819501] [map_io]: negate: 0
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Localization stdout: [map_server-1] [INFO] [1749509160.484932858] [map_io]: Loading image_file: /home/alip/autofork_ws/src/autofork/autofork_navigation/maps/map_v2/map_v2.pgm
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Localization stdout: [map_server-1] [INFO] [1749509161.001977262] [map_io]: Read map /home/alip/autofork_ws/src/autofork/autofork_navigation/maps/map_v2/map_v2.pgm: 3576 X 2515 map @ 0.01 m/cell
 
-Localization stdout: [map_server-1] [INFO] [1749504917.184052012] [map_io]: Read map /home/alip/autofork_ws/src/autofork/autofork_navigation/maps/map_v2/map_v2.pgm: 3576 X 2515 map @ 0.01 m/cell
+Localization stdout: [lifecycle_manager-3] [INFO] [1749509161.012586142] [lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m
 
-Localization stdout: [lifecycle_manager-3] [INFO] [1749504917.195858994] [lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m
+Localization stdout: [amcl-2] [INFO] [1749509161.012708327] [amcl]: Configuring
 
-Localization stdout: [amcl-2] [INFO] [1749504917.196057523] [amcl]: Configuring
+Localization stdout: [amcl-2] [INFO] [1749509161.012806511] [amcl]: initTransforms
 
-Localization stdout: [amcl-2] [INFO] [1749504917.196188738] [amcl]: initTransforms
+Localization stdout: [amcl-2] [INFO] [1749509161.016337739] [amcl]: initPubSub
 
-Localization stdout: [amcl-2] [INFO] [1749504917.199120808] [amcl]: initPubSub
+Localization stdout: [amcl-2] [INFO] [1749509161.017318162] [amcl]: Subscribed to map topic.
 
-Localization stdout: [amcl-2] [INFO] [1749504917.200088944] [amcl]: Subscribed to map topic.
+Localization stdout: [lifecycle_manager-3] [INFO] [1749509161.018254562] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
 
-Localization stdout: [lifecycle_manager-3] [INFO] [1749504917.201147889] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
+Localization stdout: [map_server-1] [INFO] [1749509161.018332942] [map_server]: Activating
 
-Localization stdout: [map_server-1] [INFO] [1749504917.201296739] [map_server]: Activating
+Localization stdout: [map_server-1] [INFO] [1749509161.024737153] [map_server]: Creating bond (map_server) to lifecycle manager.
 
-Localization stdout: [map_server-1] [INFO] [1749504917.207519659] [map_server]: Creating bond (map_server) to lifecycle manager.
+Localization stdout: [lifecycle_manager-3] [INFO] [1749509161.126199036] [lifecycle_manager_localization]: Server map_server connected with bond.
 
-Localization stdout: [lifecycle_manager-3] [INFO] [1749504917.309315826] [lifecycle_manager_localization]: Server map_server connected with bond.
+Localization stdout: [lifecycle_manager-3] [INFO] [1749509161.126268654] [lifecycle_manager_localization]: [34m[1mActivating amcl[0m[0m
 
-Localization stdout: [lifecycle_manager-3] [INFO] [1749504917.309371418] [lifecycle_manager_localization]: [34m[1mActivating amcl[0m[0m
+Localization stdout: [amcl-2] [INFO] [1749509161.126466003] [amcl]: Activating
+[amcl-2] [INFO] [1749509161.126538141] [amcl]: Creating bond (amcl) to lifecycle manager.
 
-Localization stdout: [amcl-2] [INFO] [1749504917.309520053] [amcl]: Activating
-[amcl-2] [INFO] [1749504917.309569856] [amcl]: Creating bond (amcl) to lifecycle manager.
+Localization stdout: [amcl-2] [INFO] [1749509161.137260363] [amcl]: Received a 3576 X 2515 map @ 0.010 m/pix
 
-Localization stdout: [amcl-2] [INFO] [1749504917.324825461] [amcl]: Received a 3576 X 2515 map @ 0.010 m/pix
+Localization stdout: [amcl-2] [INFO] [1749509161.291823083] [amcl]: createLaserObject
 
-Localization stdout: [amcl-2] [INFO] [1749504917.480520238] [amcl]: createLaserObject
+Localization stdout: [lifecycle_manager-3] [INFO] [1749509161.297763967] [lifecycle_manager_localization]: Server amcl connected with bond.
 
-Localization stdout: [lifecycle_manager-3] [INFO] [1749504917.481105427] [lifecycle_manager_localization]: Server amcl connected with bond.
+Localization stdout: [lifecycle_manager-3] [INFO] [1749509161.297831090] [lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
 
-Localization stdout: [lifecycle_manager-3] [INFO] [1749504917.481150810] [lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
-[lifecycle_manager-3] [INFO] [1749504917.481168088] [lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
+Localization stdout: [lifecycle_manager-3] [INFO] [1749509161.297857711] [lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Started navigation process with PID 142979 at 2025-06-09T22:46:03.804Z
+Localization stdout: [amcl-2] [WARN] [1749509164.133680757] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [INFO] [launch]: All log files can be found below /home/alip/.ros/log/2025-06-10-02-16-04-274804-alip-142979
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [INFO] [launch]: Default logging verbosity is set to INFO
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [INFO] [controller_server-1]: process started with pid [142997]
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [INFO] [smoother_server-2]: process started with pid [142999]
+[INFO] [planner_server-3]: process started with pid [143001]
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [INFO] [behavior_server-4]: process started with pid [143003]
 
-Localization stdout: [amcl-2] [WARN] [1749504920.272002085] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+Navigation stdout: [INFO] [bt_navigator-5]: process started with pid [143005]
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [INFO] [waypoint_follower-6]: process started with pid [143007]
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [INFO] [velocity_smoother-7]: process started with pid [143009]
 
-Started navigation process with PID 107779 at 2025-06-09T21:35:21.144Z
-Navigation stdout: [INFO] [launch]: All log files can be found below /home/alip/.ros/log/2025-06-10-01-05-21-619194-alip-107779
-[INFO] [launch]: Default logging verbosity is set to INFO
+Navigation stdout: [INFO] [lifecycle_manager-8]: process started with pid [143011]
 
-Navigation stdout: [INFO] [controller_server-1]: process started with pid [107831]
+Navigation stdout: [lifecycle_manager-8] [INFO] [1749509164.406451185] [lifecycle_manager_navigation]: Creating
 
-Navigation stdout: [INFO] [smoother_server-2]: process started with pid [107833]
-[INFO] [planner_server-3]: process started with pid [107835]
+Navigation stdout: [lifecycle_manager-8] [INFO] [1749509164.407687000] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
 
-Navigation stdout: [INFO] [behavior_server-4]: process started with pid [107837]
+Navigation stdout: [controller_server-1] [INFO] [1749509164.409388427] [controller_server]: 
 
-Navigation stdout: [INFO] [bt_navigator-5]: process started with pid [107839]
+Navigation stdout: [controller_server-1] 	controller_server lifecycle node launched. 
+[controller_server-1] 	Waiting on external lifecycle transitions to activate
+[controller_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
 
-Navigation stdout: [INFO] [waypoint_follower-6]: process started with pid [107841]
+Navigation stdout: [behavior_server-4] [INFO] [1749509164.409749757] [behavior_server]: 
+[behavior_server-4] 	behavior_server lifecycle node launched. 
+[behavior_server-4] 	Waiting on external lifecycle transitions to activate
 
-Navigation stdout: [INFO] [velocity_smoother-7]: process started with pid [107843]
+Navigation stdout: [behavior_server-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
 
-Navigation stdout: [INFO] [lifecycle_manager-8]: process started with pid [107845]
-
-Navigation stdout: [waypoint_follower-6] [INFO] [1749504921.755722133] [waypoint_follower]: 
+Navigation stdout: [waypoint_follower-6] [INFO] [1749509164.411585360] [waypoint_follower]: 
 
 Navigation stdout: [waypoint_follower-6] 	waypoint_follower lifecycle node launched. 
 [waypoint_follower-6] 	Waiting on external lifecycle transitions to activate
-[waypoint_follower-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
 
-Navigation stdout: [waypoint_follower-6] [INFO] [1749504921.756124967] [waypoint_follower]: Creating
+Navigation stdout: [waypoint_follower-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
 
-Navigation stdout: [velocity_smoother-7] [INFO] [1749504921.760158900] [velocity_smoother]: 
+Navigation stdout: [waypoint_follower-6] [INFO] [1749509164.412196797] [waypoint_follower]: Creating
+
+Navigation stdout: [controller_server-1] [INFO] [1749509164.412691965] [controller_server]: Creating controller server
+
+Navigation stdout: [controller_server-1] [INFO] [1749509164.415925516] [local_costmap.local_costmap]: 
+
+Navigation stdout: [controller_server-1] 	local_costmap lifecycle node launched. 
+[controller_server-1] 	Waiting on external lifecycle transitions to activate
+[controller_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+
+Navigation stdout: [controller_server-1] [INFO] [1749509164.416342610] [local_costmap.local_costmap]: Creating Costmap
+
+Navigation stdout: [planner_server-3] [INFO] [1749509164.425754136] [planner_server]: 
+
+Navigation stdout: [planner_server-3] 	planner_server lifecycle node launched. 
+[planner_server-3] 	Waiting on external lifecycle transitions to activate
+[planner_server-3] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+
+Navigation stdout: [velocity_smoother-7] [INFO] [1749509164.426475335] [velocity_smoother]: 
 [velocity_smoother-7] 	velocity_smoother lifecycle node launched. 
 [velocity_smoother-7] 	Waiting on external lifecycle transitions to activate
 [velocity_smoother-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
 
-Navigation stdout: [planner_server-3] [INFO] [1749504921.761143000] [planner_server]: 
-[planner_server-3] 	planner_server lifecycle node launched. 
-[planner_server-3] 	Waiting on external lifecycle transitions to activate
-[planner_server-3] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
-[bt_navigator-5] [INFO] [1749504921.762319351] [bt_navigator]: 
+Navigation stdout: [planner_server-3] [INFO] [1749509164.427090986] [planner_server]: Creating
+
+Navigation stdout: [bt_navigator-5] [INFO] [1749509164.427097415] [bt_navigator]: 
 [bt_navigator-5] 	bt_navigator lifecycle node launched. 
 
 Navigation stdout: [bt_navigator-5] 	Waiting on external lifecycle transitions to activate
 [bt_navigator-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
-[bt_navigator-5] [INFO] [1749504921.762397346] [bt_navigator]: Creating
-[planner_server-3] [INFO] [1749504921.762867269] [planner_server]: Creating
-[behavior_server-4] [INFO] [1749504921.763107152] [behavior_server]: 
-[behavior_server-4] 	behavior_server lifecycle node launched. 
-[behavior_server-4] 	Waiting on external lifecycle transitions to activate
-[behavior_server-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
 
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749504921.764357753] [lifecycle_manager_navigation]: Creating
+Navigation stdout: [bt_navigator-5] [INFO] [1749509164.427169470] [bt_navigator]: Creating
+[smoother_server-2] [INFO] [1749509164.427239640] [smoother_server]: 
+[smoother_server-2] 	smoother_server lifecycle node launched. 
 
-Navigation stdout: [smoother_server-2] [INFO] [1749504921.764333174] [smoother_server]: 
+Navigation stdout: [smoother_server-2] 	Waiting on external lifecycle transitions to activate
+[smoother_server-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
 
-Navigation stdout: [smoother_server-2] 	smoother_server lifecycle node launched. 
-[smoother_server-2] 	Waiting on external lifecycle transitions to activate
+Navigation stdout: [smoother_server-2] [INFO] [1749509164.428882174] [smoother_server]: Creating smoother server
 
-Navigation stdout: [smoother_server-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
-
-Navigation stdout: [smoother_server-2] [INFO] [1749504921.765568636] [smoother_server]: Creating smoother server
-
-Navigation stdout: [planner_server-3] [INFO] [1749504921.765806421] [global_costmap.global_costmap]: 
+Navigation stdout: [planner_server-3] [INFO] [1749509164.429976303] [global_costmap.global_costmap]: 
 
 Navigation stdout: [planner_server-3] 	global_costmap lifecycle node launched. 
 [planner_server-3] 	Waiting on external lifecycle transitions to activate
 [planner_server-3] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
 
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749504921.765975111] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+Navigation stdout: [planner_server-3] [INFO] [1749509164.430290490] [global_costmap.global_costmap]: Creating Costmap
 
-Navigation stdout: [planner_server-3] [INFO] [1749504921.766162605] [global_costmap.global_costmap]: Creating Costmap
+Navigation stdout: [lifecycle_manager-8] [INFO] [1749509164.514611966] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
 
-Navigation stdout: [controller_server-1] [INFO] [1749504921.771648723] [controller_server]: 
-[controller_server-1] 	controller_server lifecycle node launched. 
-[controller_server-1] 	Waiting on external lifecycle transitions to activate
+Navigation stdout: [lifecycle_manager-8] [INFO] [1749509164.514668698] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
 
-Navigation stdout: [controller_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+Navigation stdout: [controller_server-1] [INFO] [1749509164.514798015] [controller_server]: Configuring controller interface
 
-Navigation stdout: [controller_server-1] [INFO] [1749504921.776032356] [controller_server]: Creating controller server
+Navigation stdout: [controller_server-1] [INFO] [1749509164.514904215] [controller_server]: getting goal checker plugins..
+[controller_server-1] [INFO] [1749509164.514990349] [controller_server]: Controller frequency set to 20.0000Hz
 
-Navigation stdout: [controller_server-1] [INFO] [1749504921.782424140] [local_costmap.local_costmap]: 
-[controller_server-1] 	local_costmap lifecycle node launched. 
-[controller_server-1] 	Waiting on external lifecycle transitions to activate
-[controller_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+Navigation stdout: [controller_server-1] [INFO] [1749509164.515021860] [local_costmap.local_costmap]: Configuring
 
-Navigation stdout: [controller_server-1] [INFO] [1749504921.782834283] [local_costmap.local_costmap]: Creating Costmap
+Navigation stdout: [controller_server-1] [INFO] [1749509164.516786250] [local_costmap.local_costmap]: Using plugin "voxel_layer"
 
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749504921.884274393] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+Navigation stdout: [controller_server-1] [INFO] [1749509164.518865409] [local_costmap.local_costmap]: Subscribed to Topics: scan
 
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749504921.884348207] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+Navigation stdout: [controller_server-1] [INFO] [1749509164.521838576] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
 
-Navigation stdout: [controller_server-1] [INFO] [1749504921.884559617] [controller_server]: Configuring controller interface
+Navigation stdout: [controller_server-1] [INFO] [1749509164.521914538] [local_costmap.local_costmap]: Using plugin "inflation_layer"
 
-Navigation stdout: [controller_server-1] [INFO] [1749504921.884797154] [controller_server]: getting goal checker plugins..
+Navigation stdout: [controller_server-1] [INFO] [1749509164.522484196] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
 
-Navigation stdout: [controller_server-1] [INFO] [1749504921.884987782] [controller_server]: Controller frequency set to 20.0000Hz
+Navigation stdout: [controller_server-1] [INFO] [1749509164.524862579] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
 
-Navigation stdout: [controller_server-1] [INFO] [1749504921.885038572] [local_costmap.local_costmap]: Configuring
+Navigation stdout: [controller_server-1] [INFO] [1749509164.525390300] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
 
-Navigation stdout: [controller_server-1] [INFO] [1749504921.889755922] [local_costmap.local_costmap]: Using plugin "voxel_layer"
+Navigation stdout: [controller_server-1] [INFO] [1749509164.525643348] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
 
-Navigation stdout: [controller_server-1] [INFO] [1749504921.894548030] [local_costmap.local_costmap]: Subscribed to Topics: scan
+Navigation stdout: [controller_server-1] [INFO] [1749509164.527050662] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
 
-Navigation stdout: [controller_server-1] [INFO] [1749504921.899095246] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+Navigation stdout: [controller_server-1] [INFO] [1749509164.527668211] [controller_server]: Setting transform_tolerance to 0.200000
 
-Navigation stdout: [controller_server-1] [INFO] [1749504921.899182936] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+Navigation stdout: [controller_server-1] [INFO] [1749509164.532862592] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
 
-Navigation stdout: [controller_server-1] [INFO] [1749504921.900707842] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+Navigation stdout: [controller_server-1] [INFO] [1749509164.533211034] [controller_server]: Critic plugin initialized
 
-Navigation stdout: [controller_server-1] [INFO] [1749504921.908382302] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+Navigation stdout: [controller_server-1] [INFO] [1749509164.533303337] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [controller_server-1] [INFO] [1749509164.533639312] [controller_server]: Critic plugin initialized
 
-Navigation stdout: [controller_server-1] [INFO] [1749504921.909776138] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+Navigation stdout: [controller_server-1] [INFO] [1749509164.533726492] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
 
-Navigation stdout: [controller_server-1] [INFO] [1749504921.910593442] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+Navigation stdout: [controller_server-1] [INFO] [1749509164.533859415] [controller_server]: Critic plugin initialized
 
-Navigation stdout: [controller_server-1] [INFO] [1749504921.913446768] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+Navigation stdout: [controller_server-1] [INFO] [1749509164.533945677] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
 
-Navigation stdout: [controller_server-1] [INFO] [1749504921.914144091] [controller_server]: Setting transform_tolerance to 0.200000
+Navigation stdout: [controller_server-1] [INFO] [1749509164.534177333] [controller_server]: Critic plugin initialized
 
-Navigation stdout: [controller_server-1] [INFO] [1749504921.922731970] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+Navigation stdout: [controller_server-1] [INFO] [1749509164.534304318] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
 
-Navigation stdout: [controller_server-1] [INFO] [1749504921.923484711] [controller_server]: Critic plugin initialized
+Navigation stdout: [controller_server-1] [INFO] [1749509164.534561593] [controller_server]: Critic plugin initialized
 
-Navigation stdout: [controller_server-1] [INFO] [1749504921.923738145] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+Navigation stdout: [controller_server-1] [INFO] [1749509164.534644336] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
 
-Navigation stdout: [controller_server-1] [INFO] [1749504921.924618089] [controller_server]: Critic plugin initialized
+Navigation stdout: [controller_server-1] [INFO] [1749509164.534780025] [controller_server]: Critic plugin initialized
 
-Navigation stdout: [controller_server-1] [INFO] [1749504921.924999243] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+Navigation stdout: [controller_server-1] [INFO] [1749509164.534858810] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
 
-Navigation stdout: [controller_server-1] [INFO] [1749504921.925414828] [controller_server]: Critic plugin initialized
+Navigation stdout: [controller_server-1] [INFO] [1749509164.535002466] [controller_server]: Critic plugin initialized
 
-Navigation stdout: [controller_server-1] [INFO] [1749504921.925659111] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+Navigation stdout: [controller_server-1] [INFO] [1749509164.535021866] [controller_server]: Controller Server has FollowPath  controllers available.
 
-Navigation stdout: [controller_server-1] [INFO] [1749504921.926321739] [controller_server]: Critic plugin initialized
+Navigation stdout: [lifecycle_manager-8] [INFO] [1749509164.537072696] [lifecycle_manager_navigation]: [34m[1mConfiguring smoother_server[0m[0m
 
-Navigation stdout: [controller_server-1] [INFO] [1749504921.926573217] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+Navigation stdout: [smoother_server-2] [INFO] [1749509164.537231053] [smoother_server]: Configuring smoother server
 
-Navigation stdout: [controller_server-1] [INFO] [1749504921.927331075] [controller_server]: Critic plugin initialized
+Navigation stdout: [smoother_server-2] [INFO] [1749509164.540286563] [smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
 
-Navigation stdout: [controller_server-1] [INFO] [1749504921.927538504] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+Navigation stdout: [smoother_server-2] [INFO] [1749509164.540622199] [smoother_server]: Smoother Server has simple_smoother  smoothers available.
 
-Navigation stdout: [controller_server-1] [INFO] [1749504921.928002959] [controller_server]: Critic plugin initialized
+Navigation stdout: [lifecycle_manager-8] [INFO] [1749509164.542177124] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
 
-Navigation stdout: [controller_server-1] [INFO] [1749504921.928221025] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+Navigation stdout: [planner_server-3] [INFO] [1749509164.542286774] [planner_server]: Configuring
 
-Navigation stdout: [controller_server-1] [INFO] [1749504921.928590374] [controller_server]: Critic plugin initialized
+Navigation stdout: [planner_server-3] [INFO] [1749509164.542320409] [global_costmap.global_costmap]: Configuring
 
-Navigation stdout: [controller_server-1] [INFO] [1749504921.928636332] [controller_server]: Controller Server has FollowPath  controllers available.
+Navigation stdout: [planner_server-3] [INFO] [1749509164.544628307] [global_costmap.global_costmap]: Using plugin "static_layer"
 
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749504921.933727171] [lifecycle_manager_navigation]: [34m[1mConfiguring smoother_server[0m[0m
+Navigation stdout: [planner_server-3] [INFO] [1749509164.546639619] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
 
-Navigation stdout: [smoother_server-2] [INFO] [1749504921.933984178] [smoother_server]: Configuring smoother server
+Navigation stdout: [planner_server-3] [INFO] [1749509164.547000600] [global_costmap.global_costmap]: Initialized plugin "static_layer"
 
-Navigation stdout: [smoother_server-2] [INFO] [1749504921.939838093] [smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+Navigation stdout: [planner_server-3] [INFO] [1749509164.547022023] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
 
-Navigation stdout: [smoother_server-2] [INFO] [1749504921.940536775] [smoother_server]: Smoother Server has simple_smoother  smoothers available.
+Navigation stdout: [planner_server-3] [INFO] [1749509164.547334025] [global_costmap.global_costmap]: Subscribed to Topics: scan
 
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749504921.943130496] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+Navigation stdout: [planner_server-3] [INFO] [1749509164.549372007] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
 
-Navigation stdout: [planner_server-3] [INFO] [1749504921.943509230] [planner_server]: Configuring
-[planner_server-3] [INFO] [1749504921.943580662] [global_costmap.global_costmap]: Configuring
+Navigation stdout: [planner_server-3] [INFO] [1749509164.549429808] [global_costmap.global_costmap]: Using plugin "inflation_layer"
 
-Navigation stdout: [planner_server-3] [INFO] [1749504921.947529405] [global_costmap.global_costmap]: Using plugin "static_layer"
+Navigation stdout: [planner_server-3] [INFO] [1749509164.550060254] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
 
-Navigation stdout: [planner_server-3] [INFO] [1749504921.949896737] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+Navigation stdout: [planner_server-3] [INFO] [1749509164.554048426] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
 
-Navigation stdout: [planner_server-3] [INFO] [1749504921.950378025] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+Navigation stdout: [planner_server-3] [INFO] [1749509164.554088442] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
 
-Navigation stdout: [planner_server-3] [INFO] [1749504921.950412117] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+Navigation stdout: [planner_server-3] [INFO] [1749509164.554366667] [planner_server]: Planner Server has GridBased  planners available.
 
-Navigation stdout: [planner_server-3] [INFO] [1749504921.950790128] [global_costmap.global_costmap]: Subscribed to Topics: scan
+Navigation stdout: [lifecycle_manager-8] [INFO] [1749509164.557579662] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
 
-Navigation stdout: [planner_server-3] [INFO] [1749504921.953603501] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
-[planner_server-3] [INFO] [1749504921.953656762] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+Navigation stdout: [behavior_server-4] [INFO] [1749509164.557702447] [behavior_server]: Configuring
 
-Navigation stdout: [planner_server-3] [INFO] [1749504921.954399236] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+Navigation stdout: [behavior_server-4] [INFO] [1749509164.561209007] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
 
-Navigation stdout: [planner_server-3] [INFO] [1749504921.958225230] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
-[planner_server-3] [INFO] [1749504921.958272036] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+Navigation stdout: [behavior_server-4] [INFO] [1749509164.562041746] [behavior_server]: Configuring spin
 
-Navigation stdout: [planner_server-3] [INFO] [1749504921.958606425] [planner_server]: Planner Server has GridBased  planners available.
+Navigation stdout: [behavior_server-4] [INFO] [1749509164.563606027] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
 
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749504921.962305699] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+Navigation stdout: [behavior_server-4] [INFO] [1749509164.564091128] [behavior_server]: Configuring backup
 
-Navigation stdout: [behavior_server-4] [INFO] [1749504921.962517165] [behavior_server]: Configuring
+Navigation stdout: [behavior_server-4] [INFO] [1749509164.565309602] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
 
-Navigation stdout: [behavior_server-4] [INFO] [1749504921.965941712] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+Navigation stdout: [behavior_server-4] [INFO] [1749509164.565763771] [behavior_server]: Configuring drive_on_heading
 
-Navigation stdout: [behavior_server-4] [INFO] [1749504921.966510307] [behavior_server]: Configuring spin
+Navigation stdout: [behavior_server-4] [INFO] [1749509164.566932007] [behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors/AssistedTeleop
 
-Navigation stdout: [behavior_server-4] [INFO] [1749504921.968272960] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+Navigation stdout: [behavior_server-4] [INFO] [1749509164.567878326] [behavior_server]: Configuring assisted_teleop
 
-Navigation stdout: [behavior_server-4] [INFO] [1749504921.968861051] [behavior_server]: Configuring backup
+Navigation stdout: [behavior_server-4] [INFO] [1749509164.570109681] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
 
-Navigation stdout: [behavior_server-4] [INFO] [1749504921.970623779] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+Navigation stdout: [behavior_server-4] [INFO] [1749509164.570832241] [behavior_server]: Configuring wait
 
-Navigation stdout: [behavior_server-4] [INFO] [1749504921.971185217] [behavior_server]: Configuring drive_on_heading
+Navigation stdout: [lifecycle_manager-8] [INFO] [1749509164.572610463] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
 
-Navigation stdout: [behavior_server-4] [INFO] [1749504921.972711139] [behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors/AssistedTeleop
+Navigation stdout: [bt_navigator-5] [INFO] [1749509164.572732472] [bt_navigator]: Configuring
 
-Navigation stdout: [behavior_server-4] [INFO] [1749504921.973781446] [behavior_server]: Configuring assisted_teleop
+Navigation stdout: [planner_server-3] [INFO] [1749509164.581248675] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 3576 X 2515 at 0.010000 m/pix
 
-Navigation stdout: [behavior_server-4] [INFO] [1749504921.976006468] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+Navigation stdout: [lifecycle_manager-8] [INFO] [1749509164.599222104] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
 
-Navigation stdout: [behavior_server-4] [INFO] [1749504921.976652968] [behavior_server]: Configuring wait
+Navigation stdout: [waypoint_follower-6] [INFO] [1749509164.599378220] [waypoint_follower]: Configuring
 
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749504921.978209873] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+Navigation stdout: [waypoint_follower-6] [INFO] [1749509164.603082308] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
 
-Navigation stdout: [bt_navigator-5] [INFO] [1749504921.978412519] [bt_navigator]: Configuring
+Navigation stdout: [lifecycle_manager-8] [INFO] [1749509164.603547293] [lifecycle_manager_navigation]: [34m[1mConfiguring velocity_smoother[0m[0m
 
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749504922.004352796] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+Navigation stdout: [velocity_smoother-7] [INFO] [1749509164.603698281] [velocity_smoother]: Configuring velocity smoother
 
-Navigation stdout: [waypoint_follower-6] [INFO] [1749504922.004496395] [waypoint_follower]: Configuring
+Navigation stdout: [lifecycle_manager-8] [INFO] [1749509164.605159749] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
 
-Navigation stdout: [waypoint_follower-6] [INFO] [1749504922.007816263] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+Navigation stdout: [controller_server-1] [INFO] [1749509164.605285383] [controller_server]: Activating
 
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749504922.008271646] [lifecycle_manager_navigation]: [34m[1mConfiguring velocity_smoother[0m[0m
+Navigation stdout: [controller_server-1] [INFO] [1749509164.605328664] [local_costmap.local_costmap]: Activating
+[controller_server-1] [INFO] [1749509164.605346115] [local_costmap.local_costmap]: Checking transform
 
-Navigation stdout: [velocity_smoother-7] [INFO] [1749504922.008442022] [velocity_smoother]: Configuring velocity smoother
+Navigation stdout: [controller_server-1] [INFO] [1749509164.605431487] [local_costmap.local_costmap]: start
 
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749504922.010243350] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+Navigation stdout: [controller_server-1] [INFO] [1749509164.855774044] [controller_server]: Creating bond (controller_server) to lifecycle manager.
 
-Navigation stdout: [controller_server-1] [INFO] [1749504922.010438246] [controller_server]: Activating
+Navigation stdout: [lifecycle_manager-8] [INFO] [1749509164.957521280] [lifecycle_manager_navigation]: Server controller_server connected with bond.
 
-Navigation stdout: [controller_server-1] [INFO] [1749504922.010476564] [local_costmap.local_costmap]: Activating
-[controller_server-1] [INFO] [1749504922.010490813] [local_costmap.local_costmap]: Checking transform
+Navigation stdout: [lifecycle_manager-8] [INFO] [1749509164.957566109] [lifecycle_manager_navigation]: [34m[1mActivating smoother_server[0m[0m
 
-Navigation stdout: [controller_server-1] [INFO] [1749504922.010562578] [local_costmap.local_costmap]: start
+Navigation stdout: [smoother_server-2] [INFO] [1749509164.957714961] [smoother_server]: Activating
+[smoother_server-2] [INFO] [1749509164.957754768] [smoother_server]: Creating bond (smoother_server) to lifecycle manager.
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [lifecycle_manager-8] [INFO] [1749509165.059132247] [lifecycle_manager_navigation]: Server smoother_server connected with bond.
 
-Navigation stdout: [planner_server-3] [INFO] [1749504922.184021717] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 3576 X 2515 at 0.010000 m/pix
+Navigation stdout: [lifecycle_manager-8] [INFO] [1749509165.059181578] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
 
-Navigation stdout: [controller_server-1] [INFO] [1749504922.260951610] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+Navigation stdout: [planner_server-3] [INFO] [1749509165.059334121] [planner_server]: Activating
 
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749504922.363170630] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+Navigation stdout: [planner_server-3] [INFO] [1749509165.059412611] [global_costmap.global_costmap]: Activating
+[planner_server-3] [INFO] [1749509165.059444556] [global_costmap.global_costmap]: Checking transform
+[planner_server-3] [INFO] [1749509165.059483764] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
 
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749504922.363209700] [lifecycle_manager_navigation]: [34m[1mActivating smoother_server[0m[0m
+Navigation stdout: [planner_server-3] [INFO] [1749509165.559543135] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
 
-Navigation stdout: [smoother_server-2] [INFO] [1749504922.363378790] [smoother_server]: Activating
-[smoother_server-2] [INFO] [1749504922.363423399] [smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+Navigation stdout: [planner_server-3] [INFO] [1749509166.059539033] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
 
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749504922.464868252] [lifecycle_manager_navigation]: Server smoother_server connected with bond.
+Navigation stdout: [planner_server-3] [INFO] [1749509166.559541845] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
 
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749504922.464945063] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+Navigation stdout: [planner_server-3] [INFO] [1749509167.059540737] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
 
-Navigation stdout: [planner_server-3] [INFO] [1749504922.465178382] [planner_server]: Activating
+Localization stdout: [amcl-2] [WARN] [1749509167.244336136] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
 
-Navigation stdout: [planner_server-3] [INFO] [1749504922.465254177] [global_costmap.global_costmap]: Activating
-[planner_server-3] [INFO] [1749504922.465285157] [global_costmap.global_costmap]: Checking transform
+Navigation stdout: [planner_server-3] [INFO] [1749509167.559539738] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
 
-Navigation stdout: [planner_server-3] [INFO] [1749504922.465325640] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+Navigation stdout: [planner_server-3] [INFO] [1749509168.059542477] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [planner_server-3] [INFO] [1749509168.559540482] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
 
-Navigation stdout: [planner_server-3] [INFO] [1749504922.965382765] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+Navigation stdout: [planner_server-3] [INFO] [1749509169.059537984] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [planner_server-3] [INFO] [1749509169.559570748] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
 
-Localization stdout: [amcl-2] [WARN] [1749504923.423977274] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+Navigation stdout: [planner_server-3] [INFO] [1749509170.059539580] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
 
-Navigation stdout: [planner_server-3] [INFO] [1749504923.465393113] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+Localization stdout: [amcl-2] [WARN] [1749509170.337975493] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [planner_server-3] [INFO] [1749509170.559538620] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
 
-Navigation stdout: [planner_server-3] [INFO] [1749504923.965373547] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+Navigation stdout: [planner_server-3] [INFO] [1749509171.059541116] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [planner_server-3] [INFO] [1749509171.559541887] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
 
-Navigation stdout: [planner_server-3] [INFO] [1749504924.465374772] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+Localization stdout: [amcl-2] [INFO] [1749509171.663020082] [amcl]: initialPoseReceived
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Localization stdout: [amcl-2] [WARN] [1749509171.663134805] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1749509170.000000 but the latest data is at time 1309.207000, when looking up transform from frame [odom] to frame [base_footprint])
 
-Navigation stdout: [planner_server-3] [INFO] [1749504924.965370737] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+Localization stdout: [amcl-2] [INFO] [1749509171.663153829] [amcl]: Setting pose (1309.140000): 1.000 2.000 0.000
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [planner_server-3] [INFO] [1749509172.059562112] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 1309.467000 but the earliest data is at time 1310.227000, when looking up transform from frame [base_link] to frame [map]
 
-Navigation stdout: [planner_server-3] [INFO] [1749504925.465371194] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+Navigation stdout: [planner_server-3] [INFO] [1749509172.559544348] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 1309.807000 but the earliest data is at time 1310.227000, when looking up transform from frame [base_link] to frame [map]
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [planner_server-3] [INFO] [1749509173.059539263] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 1310.167000 but the earliest data is at time 1310.227000, when looking up transform from frame [base_link] to frame [map]
 
-Navigation stdout: [planner_server-3] [INFO] [1749504925.965429852] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+Navigation stdout: [planner_server-3] [INFO] [1749509173.559606500] [global_costmap.global_costmap]: start
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [planner_server-3] [INFO] [1749509174.710116948] [planner_server]: Activating plugin GridBased of type NavfnPlanner
 
-Navigation stdout: [planner_server-3] [INFO] [1749504926.465369641] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+Navigation stdout: [planner_server-3] [INFO] [1749509174.710488872] [planner_server]: Creating bond (planner_server) to lifecycle manager.
 
-Localization stdout: [amcl-2] [WARN] [1749504926.521710379] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+Navigation stdout: [lifecycle_manager-8] [INFO] [1749509174.812661943] [lifecycle_manager_navigation]: Server planner_server connected with bond.
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [lifecycle_manager-8] [INFO] [1749509174.812703829] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
 
-Navigation stdout: [planner_server-3] [INFO] [1749504926.965426377] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+Navigation stdout: [behavior_server-4] [INFO] [1749509174.812885489] [behavior_server]: Activating
 
-Localization stdout: [amcl-2] [INFO] [1749504927.042510233] [amcl]: initialPoseReceived
+Navigation stdout: [behavior_server-4] [INFO] [1749509174.812913047] [behavior_server]: Activating spin
 
-Localization stdout: [amcl-2] [WARN] [1749504927.042633170] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1749504926.000000 but the latest data is at time 1272.080000, when looking up transform from frame [odom] to frame [base_footprint])
-[amcl-2] [INFO] [1749504927.042653431] [amcl]: Setting pose (1272.040000): 1.000 2.000 0.000
+Navigation stdout: [behavior_server-4] [INFO] [1749509174.812925789] [behavior_server]: Activating backup
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [behavior_server-4] [INFO] [1749509174.812936407] [behavior_server]: Activating drive_on_heading
 
-Navigation stdout: [planner_server-3] [INFO] [1749504927.465413481] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 1272.360000 but the earliest data is at time 1273.140000, when looking up transform from frame [base_link] to frame [map]
+Navigation stdout: [behavior_server-4] [INFO] [1749509174.812946419] [behavior_server]: Activating assisted_teleop
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [behavior_server-4] [INFO] [1749509174.812956025] [behavior_server]: Activating wait
 
-Navigation stdout: [planner_server-3] [INFO] [1749504927.965424353] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 1272.700000 but the earliest data is at time 1273.140000, when looking up transform from frame [base_link] to frame [map]
+Navigation stdout: [behavior_server-4] [INFO] [1749509174.812967872] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [lifecycle_manager-8] [INFO] [1749509174.914444543] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
 
-Navigation stdout: [planner_server-3] [INFO] [1749504928.465405138] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 1273.040000 but the earliest data is at time 1273.140000, when looking up transform from frame [base_link] to frame [map]
+Navigation stdout: [lifecycle_manager-8] [INFO] [1749509174.914479874] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [bt_navigator-5] [INFO] [1749509174.914631240] [bt_navigator]: Activating
 
-Navigation stdout: [planner_server-3] [INFO] [1749504928.965428298] [global_costmap.global_costmap]: start
+Navigation stdout: [bt_navigator-5] [INFO] [1749509174.927869817] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [lifecycle_manager-8] [INFO] [1749509175.029423076] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [lifecycle_manager-8] [INFO] [1749509175.029463666] [lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [waypoint_follower-6] [INFO] [1749509175.029619542] [waypoint_follower]: Activating
+[waypoint_follower-6] [INFO] [1749509175.029658299] [waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
 
-Navigation stdout: [planner_server-3] [INFO] [1749504930.115810169] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+Navigation stdout: [lifecycle_manager-8] [INFO] [1749509175.131212876] [lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
 
-Navigation stdout: [planner_server-3] [INFO] [1749504930.116321249] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+Navigation stdout: [lifecycle_manager-8] [INFO] [1749509175.131252161] [lifecycle_manager_navigation]: [34m[1mActivating velocity_smoother[0m[0m
 
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749504930.218249591] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+Navigation stdout: [velocity_smoother-7] [INFO] [1749509175.131432772] [velocity_smoother]: Activating
 
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749504930.218290302] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+Navigation stdout: [velocity_smoother-7] [INFO] [1749509175.131493184] [velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.
 
-Navigation stdout: [behavior_server-4] [INFO] [1749504930.218511471] [behavior_server]: Activating
-[behavior_server-4] [INFO] [1749504930.218562646] [behavior_server]: Activating spin
-[behavior_server-4] [INFO] [1749504930.218590052] [behavior_server]: Activating backup
+Navigation stdout: [lifecycle_manager-8] [INFO] [1749509175.233181725] [lifecycle_manager_navigation]: Server velocity_smoother connected with bond.
 
-Navigation stdout: [behavior_server-4] [INFO] [1749504930.218612644] [behavior_server]: Activating drive_on_heading
+Navigation stdout: [lifecycle_manager-8] [INFO] [1749509175.233226001] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-8] [INFO] [1749509175.233238280] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
 
-Navigation stdout: [behavior_server-4] [INFO] [1749504930.218634015] [behavior_server]: Activating assisted_teleop
-[behavior_server-4] [INFO] [1749504930.218656302] [behavior_server]: Activating wait
-[behavior_server-4] [INFO] [1749504930.218681564] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+Sent SIGINT to navigation process with PID 142979 at 2025-06-09T22:46:36.906Z
+Navigation stdout: [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
 
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749504930.320399163] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
-[lifecycle_manager-8] [INFO] [1749504930.320451313] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+Navigation stdout: [INFO] [lifecycle_manager-8]: sending signal 'SIGINT' to process[lifecycle_manager-8]
 
-Navigation stdout: [bt_navigator-5] [INFO] [1749504930.320727527] [bt_navigator]: Activating
+Navigation stdout: [INFO] [velocity_smoother-7]: sending signal 'SIGINT' to process[velocity_smoother-7]
 
-Navigation stdout: [bt_navigator-5] [INFO] [1749504930.336550812] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+Navigation stdout: [INFO] [waypoint_follower-6]: sending signal 'SIGINT' to process[waypoint_follower-6]
 
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749504930.438395133] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+Navigation stdout: [INFO] [bt_navigator-5]: sending signal 'SIGINT' to process[bt_navigator-5]
 
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749504930.438440131] [lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
-[waypoint_follower-6] [INFO] [1749504930.438669775] [waypoint_follower]: Activating
+Navigation stdout: [INFO] [behavior_server-4]: sending signal 'SIGINT' to process[behavior_server-4]
 
-Navigation stdout: [waypoint_follower-6] [INFO] [1749504930.438706107] [waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+Navigation stdout: [INFO] [planner_server-3]: sending signal 'SIGINT' to process[planner_server-3]
 
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749504930.540186365] [lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+Navigation stdout: [INFO] [smoother_server-2]: sending signal 'SIGINT' to process[smoother_server-2]
 
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749504930.540269772] [lifecycle_manager_navigation]: [34m[1mActivating velocity_smoother[0m[0m
+Navigation stdout: [INFO] [controller_server-1]: sending signal 'SIGINT' to process[controller_server-1]
 
-Navigation stdout: [velocity_smoother-7] [INFO] [1749504930.540490304] [velocity_smoother]: Activating
-[velocity_smoother-7] [INFO] [1749504930.540551325] [velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.
+Navigation stdout: [lifecycle_manager-8] [INFO] [1749509196.909811040] [rclcpp]: signal_handler(signum=2)
 
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749504930.642339307] [lifecycle_manager_navigation]: Server velocity_smoother connected with bond.
+Navigation stdout: [lifecycle_manager-8] [INFO] [1749509196.909887868] [lifecycle_manager_navigation]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_navigation)
+[lifecycle_manager-8] [INFO] [1749509196.909959015] [lifecycle_manager_navigation]: [34m[1mTerminating bond timer...[0m[0m
 
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749504930.642428946] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
-[lifecycle_manager-8] [INFO] [1749504930.642450176] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+Navigation stdout: [velocity_smoother-7] [INFO] [1749509196.910517176] [rclcpp]: signal_handler(signum=2)
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [velocity_smoother-7] [INFO] [1749509196.910576151] [velocity_smoother]: Running Nav2 LifecycleNode rcl preshutdown (velocity_smoother)
+[velocity_smoother-7] [INFO] [1749509196.910644777] [velocity_smoother]: Deactivating
+[velocity_smoother-7] [INFO] [1749509196.910678739] [velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [waypoint_follower-6] [INFO] [1749509196.911123121] [rclcpp]: signal_handler(signum=2)
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [waypoint_follower-6] [INFO] [1749509196.911185293] [waypoint_follower]: Running Nav2 LifecycleNode rcl preshutdown (waypoint_follower)
+[waypoint_follower-6] [INFO] [1749509196.911244835] [waypoint_follower]: Deactivating
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [waypoint_follower-6] [INFO] [1749509196.911263094] [waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [bt_navigator-5] [INFO] [1749509196.911762291] [rclcpp]: signal_handler(signum=2)
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [bt_navigator-5] [INFO] [1749509196.911844844] [bt_navigator]: Running Nav2 LifecycleNode rcl preshutdown (bt_navigator)
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [bt_navigator-5] [INFO] [1749509196.911935076] [bt_navigator]: Deactivating
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [bt_navigator-5] [INFO] [1749509196.911973411] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [behavior_server-4] [INFO] [1749509196.912357968] [rclcpp]: signal_handler(signum=2)
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [behavior_server-4] [INFO] [1749509196.912427823] [behavior_server]: Running Nav2 LifecycleNode rcl preshutdown (behavior_server)
+[behavior_server-4] [INFO] [1749509196.912477162] [behavior_server]: Deactivating
+[behavior_server-4] [INFO] [1749509196.912500496] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [planner_server-3] [INFO] [1749509196.912921211] [rclcpp]: signal_handler(signum=2)
+[planner_server-3] [INFO] [1749509196.912987222] [planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [planner_server-3] [INFO] [1749509196.913066835] [planner_server]: Deactivating
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [planner_server-3] [INFO] [1749509196.913116395] [global_costmap.global_costmap]: Deactivating
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [smoother_server-2] [INFO] [1749509196.913390946] [rclcpp]: signal_handler(signum=2)
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [smoother_server-2] [INFO] [1749509196.913479611] [smoother_server]: Running Nav2 LifecycleNode rcl preshutdown (smoother_server)
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [smoother_server-2] [INFO] [1749509196.913566627] [smoother_server]: Deactivating
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [smoother_server-2] [INFO] [1749509196.913600769] [smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [controller_server-1] [INFO] [1749509196.913905757] [rclcpp]: signal_handler(signum=2)
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [controller_server-1] [INFO] [1749509196.913969880] [controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [controller_server-1] [INFO] [1749509196.914022959] [controller_server]: Deactivating
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [controller_server-1] [INFO] [1749509196.914047890] [local_costmap.local_costmap]: Deactivating
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [velocity_smoother-7] [INFO] [1749509196.920905288] [velocity_smoother]: Cleaning up
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [velocity_smoother-7] [INFO] [1749509196.920948877] [velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [waypoint_follower-6] [INFO] [1749509196.921428318] [waypoint_follower]: Cleaning up
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [bt_navigator-5] [INFO] [1749509196.922221358] [bt_navigator]: Cleaning up
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [behavior_server-4] [INFO] [1749509196.922677097] [behavior_server]: Cleaning up
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [smoother_server-2] [INFO] [1749509196.923897800] [smoother_server]: Cleaning up
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [behavior_server-4] [INFO] [1749509196.929056796] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [waypoint_follower-6] [INFO] [1749509196.929461204] [waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [smoother_server-2] [INFO] [1749509196.941071608] [smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [controller_server-1] [INFO] [1749509197.005639733] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [controller_server-1] [INFO] [1749509197.045893161] [controller_server]: Cleaning up
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [controller_server-1] [INFO] [1749509197.045990103] [local_costmap.local_costmap]: Cleaning up
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [bt_navigator-5] [INFO] [1749509197.047502541] [bt_navigator]: Completed Cleaning up
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [bt_navigator-5] [INFO] [1749509197.047551919] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [controller_server-1] [INFO] [1749509197.075268648] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [velocity_smoother-7] [INFO] [1749509197.110894248] [velocity_smoother]: Destroying
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Navigation stdout: [waypoint_follower-6] [INFO] [1749509197.111537464] [waypoint_follower]: Destroying
 
-Sent SIGINT to robot launch process with PID 107148 at 2025-06-09T21:35:49.621Z
+Navigation stdout: [smoother_server-2] [INFO] [1749509197.113857435] [smoother_server]: Destroying
+
+Navigation stdout: [behavior_server-4] [INFO] [1749509197.113870180] [behavior_server]: Destroying
+
+Navigation stdout: [bt_navigator-5] [INFO] [1749509197.213286986] [bt_navigator]: Destroying
+
+Navigation stdout: [lifecycle_manager-8] [INFO] [1749509197.242556300] [lifecycle_manager_navigation]: Destroying lifecycle_manager_navigation
+
+Navigation stdout: [controller_server-1] [INFO] [1749509197.246436971] [local_costmap.local_costmap]: Destroying
+
+Navigation stdout: [controller_server-1] [INFO] [1749509197.271001057] [controller_server]: Destroying
+
+Navigation stdout: [INFO] [waypoint_follower-6]: process has finished cleanly [pid 143007]
+
+Navigation stdout: [INFO] [behavior_server-4]: process has finished cleanly [pid 143003]
+
+Navigation stdout: [INFO] [velocity_smoother-7]: process has finished cleanly [pid 143009]
+
+Navigation stdout: [INFO] [smoother_server-2]: process has finished cleanly [pid 142999]
+
+Navigation stdout: [INFO] [lifecycle_manager-8]: process has finished cleanly [pid 143011]
+
+Navigation stdout: [INFO] [bt_navigator-5]: process has finished cleanly [pid 143005]
+
+Navigation stdout: [INFO] [controller_server-1]: process has finished cleanly [pid 142997]
+
+Navigation stdout: [planner_server-3] [INFO] [1749509197.559779643] [planner_server]: Deactivating plugin GridBased of type NavfnPlanner
+
+Navigation stdout: [planner_server-3] [INFO] [1749509197.559875578] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+
+Navigation stdout: [planner_server-3] [INFO] [1749509197.570054030] [planner_server]: Cleaning up
+
+Navigation stdout: [planner_server-3] [INFO] [1749509197.582944048] [global_costmap.global_costmap]: Cleaning up
+
+Navigation stdout: [planner_server-3] [INFO] [1749509197.586574164] [planner_server]: Cleaning up plugin GridBased of type NavfnPlanner
+
+Navigation stdout: [planner_server-3] [INFO] [1749509197.586700219] [planner_server]: Destroying plugin GridBased of type NavfnPlanner
+
+Navigation stdout: [planner_server-3] [INFO] [1749509197.598396789] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+
+Navigation stdout: [planner_server-3] [INFO] [1749509197.760702602] [global_costmap.global_costmap]: Destroying
+
+Navigation stdout: [planner_server-3] [INFO] [1749509197.779401761] [planner_server]: Destroying
+
+Navigation stdout: [INFO] [planner_server-3]: process has finished cleanly [pid 143001]
+
+Navigation process exited with code 0 at 2025-06-09T22:46:38.002Z
+Sent SIGINT to robot launch process with PID 141780 at 2025-06-09T22:46:41.511Z
 Robot launch stdout: [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
 
 Robot launch stdout: [INFO] [robot_state_publisher-3]: sending signal 'SIGINT' to process[robot_state_publisher-3]
@@ -879,32 +912,12 @@ Robot launch stdout: [INFO] [gzclient-2]: sending signal 'SIGINT' to process[gzc
 
 Robot launch stdout: [INFO] [gzserver-1]: sending signal 'SIGINT' to process[gzserver-1]
 
-Robot launch stdout: [robot_state_publisher-3] [INFO] [1749504949.623135833] [rclcpp]: signal_handler(signum=2)
+Robot launch stdout: [robot_state_publisher-3] [INFO] [1749509201.513323825] [rclcpp]: signal_handler(signum=2)
 
-Robot launch stdout: [INFO] [robot_state_publisher-3]: process has finished cleanly [pid 107170]
+Robot launch stdout: [INFO] [robot_state_publisher-3]: process has finished cleanly [pid 141858]
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Robot launch stdout: [INFO] [gzserver-1]: process has finished cleanly [pid 141854]
 
-Stdout: Waiting for at least 1 matching subscription(s)...
+Robot launch stdout: [INFO] [gzclient-2]: process has finished cleanly [pid 141856]
 
-Robot launch stdout: [INFO] [gzclient-2]: process has finished cleanly [pid 107168]
-
-Robot launch stdout: [INFO] [gzserver-1]: process has finished cleanly [pid 107166]
-
-Robot launch process exited with code 0 at 2025-06-09T21:35:50.169Z
-Stdout: Waiting for at least 1 matching subscription(s)...
-
-Stdout: Waiting for at least 1 matching subscription(s)...
-
-Stdout: Waiting for at least 1 matching subscription(s)...
-
-Stdout: Waiting for at least 1 matching subscription(s)...
-
-Stdout: Waiting for at least 1 matching subscription(s)...
-
-Stdout: Waiting for at least 1 matching subscription(s)...
-
-Stdout: Waiting for at least 1 matching subscription(s)...
-
-Stdout: Waiting for at least 1 matching subscription(s)...
-
+Robot launch process exited with code 0 at 2025-06-09T22:46:42.109Z
