@@ -6,10 +6,11 @@ const cors = require('cors');
 const app = express();
 const port = 3000;
 
-// Global process variables for robot bringup, mapping, and localization
+// Global process variables for robot bringup, mapping, localization, and navigation
 let launchProcess = null; // For robot bringup
 let mappingProcess = null; // For mapping
-let localizationProcess = null; // For localization
+let localizationOnlyProcess = null; // For localization only (load-map)
+let navigationProcess = null; // For navigation (start-navigation)
 
 // Middleware to parse JSON requests and enable CORS
 app.use(express.json());
@@ -62,6 +63,38 @@ function isProcessRunning(process) {
     return process && !process.killed && process.exitCode === null;
 }
 
+// Function to stop localization process
+function stopLocalizationProcess() {
+    return new Promise((resolve, reject) => {
+        if (!localizationOnlyProcess || !isProcessRunning(localizationOnlyProcess)) {
+            localizationOnlyProcess = null;
+            resolve();
+            return;
+        }
+
+        try {
+            localizationOnlyProcess.kill('SIGINT');
+            console.log(`Sent SIGINT to localization process with PID ${localizationOnlyProcess.pid} at ${new Date().toISOString()}`);
+
+            localizationOnlyProcess.on('close', (code) => {
+                console.log(`Localization process exited with code ${code} at ${new Date().toISOString()}`);
+                localizationOnlyProcess = null;
+                resolve();
+            });
+
+            localizationOnlyProcess.on('error', (error) => {
+                console.error(`Error stopping localization process: ${error.message}`);
+                localizationOnlyProcess = null;
+                reject(error);
+            });
+        } catch (error) {
+            console.error(`Error stopping localization process: ${error.message}`);
+            localizationOnlyProcess = null;
+            reject(error);
+        }
+    });
+}
+
 // Save map: Run save_map service call and organize files
 app.post('/save-map', async (req, res) => {
     const { mapName } = req.body;
@@ -103,10 +136,10 @@ app.post('/save-map', async (req, res) => {
             'slam_toolbox/srv/SaveMap',
             `{name: {data: "${path.join(tempMapDir, safeMapName)}"}}`
         ];
-        console.log(`Executing default command: ${defaultCommand} ${defaultArgs.join(' ')}`);
+        console.log(`Executing save_map command: ${defaultCommand} ${defaultArgs.join(' ')}`);
         await runRos2Command(defaultCommand, defaultArgs);
 
-        // Move files from temporary directory to source directory
+        // Move files from temporary to source directory
         const tempPgm = path.join(tempMapDir, `${safeMapName}.pgm`);
         const tempYaml = path.join(tempMapDir, `${safeMapName}.yaml`);
         const srcPgm = path.join(srcMapDir, `${safeMapName}.pgm`);
@@ -290,7 +323,7 @@ app.post('/full-lower', async (req, res) => {
 
 // Start navigation: Launch navigation process
 app.post('/start-navigation', async (req, res) => {
-    if (localizationProcess && isProcessRunning(localizationProcess)) {
+    if (navigationProcess && isProcessRunning(navigationProcess)) {
         return res.status(400).json({ success: false, error: 'Navigation process already running' });
     }
 
@@ -298,31 +331,31 @@ app.post('/start-navigation', async (req, res) => {
     const args = ['-c', 'source /opt/ros/humble/setup.bash && source ~/autofork_ws/install/setup.bash && ros2 launch nav2_bringup navigation_launch.py'];
 
     try {
-        localizationProcess = spawn(command, args, { stdio: ['ignore', 'pipe', 'pipe'] });
-        console.log(`Started navigation process with PID ${localizationProcess.pid} at ${new Date().toISOString()}`);
+        navigationProcess = spawn(command, args, { stdio: ['ignore', 'pipe', 'pipe'] });
+        console.log(`Started navigation process with PID ${navigationProcess.pid} at ${new Date().toISOString()}`);
 
         let stdoutData = '';
         let stderrData = '';
-        localizationProcess.stdout.on('data', (data) => {
+        navigationProcess.stdout.on('data', (data) => {
             stdoutData += data.toString();
             console.log(`Navigation stdout: ${data}`);
         });
-        localizationProcess.stderr.on('data', (data) => {
+        navigationProcess.stderr.on('data', (data) => {
             stderrData += data.toString();
             console.error(`Navigation stderr: ${data}`);
         });
 
-        localizationProcess.on('close', (code) => {
+        navigationProcess.on('close', (code) => {
             console.log(`Navigation process exited with code ${code} at ${new Date().toISOString()}`);
-            localizationProcess = null;
+            navigationProcess = null;
             if (code !== 0) {
                 console.error(`Navigation process failed: ${stderrData}`);
             }
         });
 
-        localizationProcess.on('error', (error) => {
+        navigationProcess.on('error', (error) => {
             console.error(`Navigation process error: ${error.message}`);
-            localizationProcess = null;
+            navigationProcess = null;
         });
 
         res.json({ success: true, message: 'Navigation process started' });
@@ -334,14 +367,14 @@ app.post('/start-navigation', async (req, res) => {
 
 // Stop navigation: Stop navigation process
 app.post('/stop-navigation', (req, res) => {
-    if (!localizationProcess || !isProcessRunning(localizationProcess)) {
-        localizationProcess = null;
+    if (!navigationProcess || !isProcessRunning(navigationProcess)) {
+        navigationProcess = null;
         return res.status(400).json({ success: false, error: 'No navigation process running' });
     }
 
     try {
-        localizationProcess.kill('SIGINT');
-        console.log(`Sent SIGINT to navigation process with PID ${localizationProcess.pid} at ${new Date().toISOString()}`);
+        navigationProcess.kill('SIGINT');
+        console.log(`Sent SIGINT to navigation process with PID ${navigationProcess.pid} at ${new Date().toISOString()}`);
         res.json({ success: true, message: 'Navigation process stopped' });
     } catch (error) {
         console.error(`Error stopping navigation process: ${error.message}`);
@@ -368,39 +401,44 @@ app.post('/load-map', async (req, res) => {
         return res.status(400).json({ success: false, error: `Map file ${safeMapName}.yaml does not exist in ${mapDir}` });
     }
 
-    if (localizationProcess && isProcessRunning(localizationProcess)) {
-        return res.status(400).json({ success: false, error: 'Localization process already running' });
+    // Stop existing localization process if running
+    try {
+        await stopLocalizationProcess();
+        console.log(`Previous localization process stopped (if any) at ${new Date().toISOString()}`);
+    } catch (error) {
+        console.error(`Failed to stop previous localization process: ${error.message}`);
+        return res.status(500).json({ success: false, error: `Failed to stop previous localization process: ${error.message}` });
     }
 
     const command = 'bash';
     const args = ['-c', `source /opt/ros/humble/setup.bash && source ~/autofork_ws/install/setup.bash && ros2 launch autofork_launch localization_launch.py map:=${mapFile} use_sim_time:=true`];
 
     try {
-        localizationProcess = spawn(command, args, { stdio: ['ignore', 'pipe', 'pipe'] });
-        console.log(`Started localization process with PID ${localizationProcess.pid} for map '${safeMapName}' at ${new Date().toISOString()}`);
+        localizationOnlyProcess = spawn(command, args, { stdio: ['ignore', 'pipe', 'pipe'] });
+        console.log(`Started localization process with PID ${localizationOnlyProcess.pid} for map '${safeMapName}' at ${new Date().toISOString()}`);
 
         let stdoutData = '';
         let stderrData = '';
-        localizationProcess.stdout.on('data', (data) => {
+        localizationOnlyProcess.stdout.on('data', (data) => {
             stdoutData += data.toString();
             console.log(`Localization stdout: ${data}`);
         });
-        localizationProcess.stderr.on('data', (data) => {
+        localizationOnlyProcess.stderr.on('data', (data) => {
             stderrData += data.toString();
             console.error(`Localization stderr: ${data}`);
         });
 
-        localizationProcess.on('close', (code) => {
+        localizationOnlyProcess.on('close', (code) => {
             console.log(`Localization process exited with code ${code} at ${new Date().toISOString()}`);
-            localizationProcess = null;
+            localizationOnlyProcess = null;
             if (code !== 0) {
                 console.error(`Localization process failed: ${stderrData}`);
             }
         });
 
-        localizationProcess.on('error', (error) => {
+        localizationOnlyProcess.on('error', (error) => {
             console.error(`Localization process error: ${error.message}`);
-            localizationProcess = null;
+            localizationOnlyProcess = null;
         });
 
         res.json({ success: true, message: `Localization process started with map '${safeMapName}'` });
