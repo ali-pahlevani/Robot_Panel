@@ -9,6 +9,8 @@ cleanup() {
     echo "Closed the Autofork interface"
     # Kill all background processes started by this script
     kill $(jobs -p)
+    # Forcefully terminate rosbridge_websocket to free port 9090
+    pkill -9 -f "rosbridge_websocket --port 9090"
     exit 0
 }
 
