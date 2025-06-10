@@ -76,7 +76,7 @@ div {touch-action: pan-x pan-y;}
 h1, h2, h3, h4, h5, h6, b, strong { font-weight:700; }
 
 h4 {
-  font-size: 14px;
+  font-size: 1.2rem; /* Increased from 14px */
   margin: 0 0 10px 0;
   color: #f0f0f0;
 }
@@ -414,7 +414,7 @@ input, textarea, *[contenteditable=true] {
   margin: 5px;
   cursor: pointer;
   font-family: 'Titillium Web', sans-serif;
-  font-size: 12px;
+  font-size: 0.9rem; /* Increased from 12px */
   width: 90%;
   text-align: center;
 }
