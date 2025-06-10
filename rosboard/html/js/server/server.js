@@ -331,8 +331,9 @@ app.post('/start-navigation', async (req, res) => {
     }
 });
 
-// Stop navigation: Stop navigation process
-app.post('/stop-navigation', (req, res) => {
+// Stop navigation: Stop navigation process and localization process if running
+app.post('/stop-navigation', async (req, res) => {
+    await stopLocalizationProcess();
     if (!navigationProcess || !isProcessRunning(navigationProcess)) {
         navigationProcess = null;
         return res.status(400).json({ success: false, error: 'No navigation process running' });
