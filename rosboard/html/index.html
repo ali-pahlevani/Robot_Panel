@@ -58,38 +58,47 @@
 
   <div class="control-panel">
     <div class="control-section">
-      <h4>Robot Initialization</h4>
-      <button class="control-button" id="turn-on-button">Turn On</button>
-      <button class="control-button" id="turn-off-button">Turn Off</button>
+      <h4 class="control-section-title">Robot Initialization</h4>
+      <div class="control-button-group">
+        <button class="control-button" id="turn-on-button">Turn On</button>
+        <button class="control-button" id="turn-off-button">Turn Off</button>
+      </div>
     </div>
     <hr class="section-divider">
     <div class="control-section">
-      <h4>Manual Control</h4>
-      <div id="joystick-container"></div>
-      <button class="control-button" id="full-lift-button">Full Lift</button>
-      <button class="control-button" id="full-lower-button">Full Lower</button>
+      <h4 class="control-section-title">Manual Control</h4>
+      <div class="joystick-wrapper">
+        <div id="joystick-container"></div>
+      </div>
+      <div class="control-button-group">
+        <button class="control-button" id="full-lift-button">Full Lift</button>
+        <button class="control-button" id="full-lower-button">Full Lower</button>
+      </div>
     </div>
     <hr class="section-divider">
     <div class="control-section">
-      <h4>Mapping</h4>
-      <button class="control-button" id="start-mapping-button">Start Mapping</button>
-      <button class="control-button" id="stop-mapping-button">Stop Mapping</button>
+      <h4 class="control-section-title">Mapping</h4>
+      <div class="control-button-group">
+        <button class="control-button" id="start-mapping-button">Start Mapping</button>
+        <button class="control-button" id="stop-mapping-button">Stop Mapping</button>
+      </div>
       <div class="input-group">
-        <button class="control-button" id="save-map-button">Save Map</button>
+        <button class="control-button input-button" id="save-map-button">Save Map</button>
         <input type="text" id="save-map-input" placeholder="Map name" class="text-input">
       </div>
     </div>
     <hr class="section-divider">
     <div class="control-section">
-      <h4>Navigation</h4>
-      <button class="control-button" id="start-navigation-button">Start Navigation</button>
+      <h4 class="control-section-title">Navigation</h4>
+      <div class="control-button-group">
+        <button class="control-button" id="start-navigation-button">Start Navigation</button>
       <button class="control-button" id="stop-navigation-button">Stop Navigation</button>
+      </div>
       <div class="input-group">
-        <button class="control-button" id="load-map-button">Load Map</button>
+        <button class="control-button input-button" id="load-map-button">Load Map</button>
         <input type="text" id="load-map-input" placeholder="Map name" class="text-input">
       </div>
     </div>
   </div>
-
 </body>
 </html>

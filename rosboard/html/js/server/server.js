@@ -122,7 +122,7 @@ app.post('/save-map', async (req, res) => {
         const installArgs = [
             'service', 'call', '/slam_toolbox/save_map',
             'slam_toolbox/srv/SaveMap',
-            `{name: "${installFilename}"}`
+            `{name: {data: "${installFilename}"}}`
         ];
         console.log(`Executing install command: ${installCommand} ${installArgs.join(' ')}`);
         await runRos2Command(installCommand, installArgs);
@@ -134,7 +134,7 @@ app.post('/save-map', async (req, res) => {
         const defaultArgs = [
             'service', 'call', '/slam_toolbox/save_map',
             'slam_toolbox/srv/SaveMap',
-            `{name: "${path.join(tempMapDir, safeMapName)}"}`
+            `{name: {data: "${path.join(tempMapDir, safeMapName)}"}}`
         ];
         console.log(`Executing save_map command: ${defaultCommand} ${defaultArgs.join(' ')}`);
         await runRos2Command(defaultCommand, defaultArgs);
