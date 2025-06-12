@@ -53,12 +53,12 @@ $(() => {
 
   // Initialize Robot Info panel with placeholder values
   updateRobotInfo({
-    mode: "Placeholder",
-    currentLocation: "Placeholder",
-    targetLocation: "Placeholder",
-    forksStatus: "Placeholder",
-    taskName: "Placeholder",
-    taskStatus: "Placeholder"
+    mode: "---",
+    currentLocation: "---",
+    targetLocation: "---",
+    forksStatus: "---",
+    taskName: "---",
+    taskStatus: "---"
   });
 });
 
