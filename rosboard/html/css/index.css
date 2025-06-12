@@ -119,20 +119,53 @@ input, textarea, *[contenteditable=true] {
 }
 
 .grid {
+  width: 100%; /* Fill the content area, controlled by mdl-layout__content padding */
+  padding: 10px; /* Add padding to give space from edges */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Add styles for unsupported message */
+.unsupported-message {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  padding-right: 20vw; /* Space for control panel */
+  height: 100%;
+  background: #202020;
+  color: #f0f0f0;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  text-align: center;
+  z-index: 10002;
+  padding: 1rem;
 }
 
 .card {
   border-radius: 5pt;
   overflow: hidden;
-  margin: 20pt;
   background: #303030;
   color: #c0c0c0;
   box-shadow: 3pt 3pt 3pt rgba(0,0,0,0.2);
-  width: calc(100% - 40pt);
+  padding: 5px; /* Internal padding for spacing */
+  display: inline-block; /* Ensure inline layout for Masonry */
+  vertical-align: top; /* Align cards to the top */
 }
 
+/* Default width for small screens (<768px) */
+.card {
+  width: 100%;
+}
+
+/* Tablet and Laptop (≥768px): 3 cards per row */
+@media screen and (min-width: 768px) {
+  .card {
+    width: calc(33.33% - 6.67px); /* 3 cards per row, adjusted for gutter */
+  }
+}
+
+/* Card title and buttons styling */
 .card-title {
   font-family: 'Titillium Web';
   font-size: 12pt;
@@ -187,27 +220,6 @@ input, textarea, *[contenteditable=true] {
   -o-transition: opacity 0.3s ease;
   -ms-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
-}
-
-@media screen and (min-width: 900px) {
-  .card {
-    display: inline-block;
-    width: calc(50% - 40pt);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .card {
-    display: inline-block;
-    width: calc(33.33% - 40pt);
-  }
-}
-
-@media screen and (min-width: 1800px) {
-  .card {
-    display: inline-block;
-    width: calc(25% - 40pt);
-  }
 }
 
 .packery-drop-placeholder {
@@ -371,9 +383,7 @@ input, textarea, *[contenteditable=true] {
   position: fixed;
   top: 0;
   right: 0;
-  width: 25vw;
-  min-width: 250px;
-  max-width: 400px;
+  width: 20vw; /* Always 20% of viewport width */
   height: 100vh;
   background-color: #303030;
   border-left: 1px solid #606060;
@@ -468,13 +478,14 @@ input, textarea, *[contenteditable=true] {
 #joystick-container {
   position: relative;
   width: 100%;
-  max-width: 200px;
+  max-width: min(200px, 18vw); /* Fit within 20vw control panel, cap at 200px */
   aspect-ratio: 1 / 1;
   background: #404040;
   border: 1px solid #c0c0c0;
   border-radius: 8px;
   user-select: auto;
   touch-action: manipulation;
+  transition: max-width 0.1s ease; /* Smooth resizing */
 }
 
 .joystick-disabled {
@@ -482,69 +493,14 @@ input, textarea, *[contenteditable=true] {
   pointer-events: none;
 }
 
-@media screen and (max-width: 768px) {
+/* Media query for unsupported screens (less than 768px) */
+@media screen and (max-width: 767px) {
+  .unsupported-message {
+    display: flex; /* Show the message */
+  }
+  .mdl-layout__content,
   .control-panel {
-    width: 100%;
-    max-width: none;
-    min-width: none;
-    height: auto;
-    top: auto;
-    bottom: 0;
-    right: 0;
-    border-left: none;
-    border-top: 1px solid #606060;
-    padding: 0.5rem;
-  }
-
-  .grid {
-    padding-right: 0;
-    padding-bottom: 30vh; /* Space for control panel */
-  }
-
-  .control-button, .input-button {
-    font-size: 0.8rem;
-    padding: 0.4rem;
-  }
-
-  .text-input {
-    font-size: 0.8rem;
-    padding: 0.4rem;
-  }
-
-  h4.control-section-title {
-    font-size: 0.9rem;
-  }
-
-  #joystick-container {
-    max-width: 150px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .control-button, .input-button {
-    font-size: 0.7rem;
-    min-width: 80px;
-  }
-
-  .text-input {
-    font-size: 0.7rem;
-  }
-
-  h4.control-section-title {
-    font-size: 0.8rem;
-  }
-
-  #joystick-container {
-    max-width: 120px;
-  }
-
-  .input-group {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .input-button {
-    width: 100%;
+    display: none; /* Hide the main content and control panel */
   }
 }
 

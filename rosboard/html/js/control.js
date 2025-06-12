@@ -1,70 +1,138 @@
 console.log('control.js loaded');
 
 let fullLift, fullLower; // Exportable functions
+let joystick = null; // Store joystick instance
+let joystickTimer = null; // Timer for periodic Twist publishing
+let joystickVector = null; // Store latest joystick vector
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
   console.log('DOM loaded');
   console.log('roslib:', typeof ROSLIB);
   console.log('nipplejs:', typeof nipplejs);
   console.log('Joystick container:', document.getElementById('joystick-container'));
 
   // Dynamically determine WebSocket URL
-  var wsHost = window.location.hostname || 'localhost';
-  var wsPort = 9090; // Match rosbridge_websocket port
-  var wsUrl = 'ws://' + wsHost + ':' + wsPort;
+  const wsHost = window.location.hostname || 'localhost';
+  const wsPort = 9090; // Match rosbridge_websocket port
+  const wsUrl = 'ws://' + wsHost + ':' + wsPort;
 
   // Initialize ROS connection
-  var ros = new ROSLIB.Ros({
+  const ros = new ROSLIB.Ros({
     url: wsUrl
   });
 
-  try {
-    var joystick = nipplejs.create({
-      zone: document.getElementById('joystick-container'),
-      mode: 'static',
-      position: { left: '50%', top: '50%' },
-      color: '#44b0e0',
-      size: 200
-    });
-    console.log('Joystick created:', joystick);
-  } catch (e) {
-    console.error('Joystick error:', e);
+  // Function to initialize or update joystick
+  function initializeJoystick() {
+    const container = document.getElementById('joystick-container');
+    if (!container) {
+      console.error('Joystick container not found');
+      return;
+    }
+    // Get precise container width
+    const containerWidth = container.getBoundingClientRect().width;
+    const joystickSize = Math.min(containerWidth, 200); // Match container or cap at 200px
+
+    // Destroy existing joystick
+    if (joystick) {
+      try {
+        joystick.destroy();
+        console.log('Destroyed existing joystick');
+      } catch (e) {
+        console.error('Error destroying joystick:', e);
+      }
+    }
+
+    try {
+      joystick = nipplejs.create({
+        zone: container,
+        mode: 'static',
+        position: { left: '50%', top: '50%' },
+        color: '#44b0e0',
+        size: joystickSize // Dynamic size based on container
+      });
+      console.log('Joystick created with size:', joystickSize);
+
+      // Ensure container is interactive
+      container.style.pointerEvents = 'auto';
+      container.style.touchAction = 'manipulation'; // Match CSS
+
+      // Attach event listeners
+      joystick.on('move', (event, data) => {
+        console.log('Joystick move:', data.vector);
+        joystickVector = data.vector; // Store latest vector
+        // Start periodic publishing if not already running
+        if (!joystickTimer) {
+          joystickTimer = setInterval(() => {
+            if (joystickVector && ros.isConnected) {
+              const linear = joystickVector.y * maxLinearSpeed;
+              const angular = -joystickVector.x * maxAngularSpeed;
+              const twist = new ROSLIB.Message({
+                linear: { x: linear, y: 0, z: 0 },
+                angular: { x: 0, y: 0, z: angular }
+              });
+              cmdVelTopic.publish(twist);
+              console.log('Periodic Twist published:', twist);
+            } else if (!ros.isConnected) {
+              console.warn('ROS not connected, cannot publish periodic Twist');
+            }
+          }, 100); // 10 Hz
+        }
+      });
+
+      joystick.on('end', () => {
+        console.log('Joystick end, resetting state');
+        joystickVector = null; // Clear vector
+        if (joystickTimer) {
+          clearInterval(joystickTimer);
+          joystickTimer = null;
+          console.log('Cleared joystick timer');
+        }
+        if (ros.isConnected) {
+          const twist = new ROSLIB.Message({
+            linear: { x: 0, y: 0, z: 0 },
+            angular: { x: 0, y: 0, z: 0 }
+          });
+          cmdVelTopic.publish(twist);
+          console.log('Published zero Twist:', twist);
+        } else {
+          console.warn('ROS not connected, cannot publish zero Twist');
+        }
+        // Ensure container remains interactive
+        container.style.pointerEvents = 'auto';
+        // Log joystick state to debug
+        console.log('Joystick after end:', joystick);
+      });
+    } catch (e) {
+      console.error('Joystick creation error:', e);
+    }
   }
 
-  var cmdVelTopic = new ROSLIB.Topic({
+  // Initialize joystick
+  initializeJoystick();
+
+  // Update joystick size on window resize with debounce
+  let resizeTimeout;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(initializeJoystick, 50); // 50ms debounce
+  });
+
+  const cmdVelTopic = new ROSLIB.Topic({
     ros: ros,
     name: '/tri_cycle_controller/cmd_vel',
     messageType: 'geometry_msgs/Twist'
   });
 
-  var forksTopic = new ROSLIB.Topic({
+  const forksTopic = new ROSLIB.Topic({
     ros: ros,
     name: '/forks_position_controller/commands',
     messageType: 'std_msgs/Float64MultiArray'
   });
 
-  var maxLinearSpeed = 0.5; // m/s
-  var maxAngularSpeed = 1.0; // rad/s
-  var currentForkPosition = 0.0; // Track commanded fork position (0.0 or 0.03)
-  var isForkMoving = false; // Prevent concurrent movements
-
-  joystick.on('move', function(event, data) {
-    var linear = data.vector.y * maxLinearSpeed;
-    var angular = -data.vector.x * maxAngularSpeed;
-    var twist = new ROSLIB.Message({
-      linear: { x: linear, y: 0, z: 0 },
-      angular: { x: 0, y: 0, z: angular }
-    });
-    cmdVelTopic.publish(twist);
-  });
-
-  joystick.on('end', function() {
-    var twist = new ROSLIB.Message({
-      linear: { x: 0, y: 0, z: 0 },
-      angular: { x: 0, y: 0, z: 0 }
-    });
-    cmdVelTopic.publish(twist);
-  });
+  const maxLinearSpeed = 0.5; // m/s
+  const maxAngularSpeed = 1.0; // rad/s
+  let currentForkPosition = 0.0; // Track commanded fork position (0.0 or 0.03)
+  let isForkMoving = false; // Prevent concurrent movements
 
   // Smooth transition for fork movement
   function moveForks(targetPosition) {
@@ -123,8 +191,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
   fullLower = async () => {
     if (currentForkPosition === 0.0) {
-      console.log('Forks already at full lower position');
-      return { success: true, message: 'Forks already lowered' };
+      console.log('Forks already at full lift position');
+      return { success: true, message: 'Forks already lifted' };
     }
     try {
       await moveForks(0.0);
@@ -141,18 +209,20 @@ document.addEventListener('DOMContentLoaded', function() {
   window.control.fullLift = fullLift;
   window.control.fullLower = fullLower;
 
-  ros.on('connection', function() {
+  ros.on('connection', () => {
     console.log('ROS connected');
     document.getElementById('joystick-container').classList.remove('joystick-disabled');
+    // Re-initialize joystick on connection to ensure interactivity
+    initializeJoystick();
   });
 
-  ros.on('close', function() {
+  ros.on('close', () => {
     console.log('ROS disconnected');
     document.getElementById('joystick-container').classList.add('joystick-disabled');
     isForkMoving = false; // Reset on disconnect
   });
 
-  ros.on('error', function(error) {
+  ros.on('error', (error) => {
     console.log('ROS connection error:', error);
     isForkMoving = false; // Reset on error
   });
