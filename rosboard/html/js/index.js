@@ -194,25 +194,30 @@ function addTopicTreeToNav(topicTree, el, level = 0, path = "") {
 }
 
 function initSubscribe({topicName, topicType}) {
-  if(!subscriptions[topicName]) {
-    subscriptions[topicName] = {
-      topicType: topicType,
+    if(!subscriptions[topicName]) {
+        subscriptions[topicName] = {
+            topicType: topicType,
+        }
+    }  
+    currentTransport.subscribe({topicName: topicName});
+    if(!subscriptions[topicName].viewer) {
+        let card = newCard();
+        let viewer = Viewer.getDefaultViewerForType(topicType);
+        try {
+            subscriptions[topicName].viewer = new viewer(card, topicName, topicType);
+            if (viewer === ImageViewer) {
+                card.addClass('image-viewer-card');
+            } else if (viewer === MapViewer) {
+                card.addClass('map-viewer-card');
+            }
+        } catch(e) {
+            console.error(e);
+            card.remove();
+        }
+        $grid.masonry("appended", card);
+        $grid.masonry("layout");
     }
-  }  
-  currentTransport.subscribe({topicName: topicName});
-  if(!subscriptions[topicName].viewer) {
-    let card = newCard();
-    let viewer = Viewer.getDefaultViewerForType(topicType);
-    try {
-      subscriptions[topicName].viewer = new viewer(card, topicName, topicType);
-    } catch(e) {
-      console.error(e);
-      card.remove();
-    }
-    $grid.masonry("appended", card);
-    $grid.masonry("layout");
-  }
-  updateStoredSubscriptions();
+    updateStoredSubscriptions();
 }
 
 let currentTransport = null;

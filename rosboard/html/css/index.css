@@ -142,20 +142,65 @@ input, textarea, *[contenteditable=true] {
   padding: 1rem;
 }
 
+/* Modify the existing .card rule */
 .card {
-  border-radius: 5pt;
-  overflow: hidden;
-  background: #303030;
-  color: #c0c0c0;
-  box-shadow: 3pt 3pt 3pt rgba(0,0,0,0.2);
-  padding: 5px; /* Internal padding for spacing */
-  display: inline-block; /* Ensure inline layout for Masonry */
-  vertical-align: top; /* Align cards to the top */
+    border-radius: 5pt;
+    overflow: hidden;
+    background: #303030;
+    color: #c0c0c0;
+    box-shadow: 3pt 3pt 3pt rgba(0,0,0,0.2);
+    padding: 5px;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Enforce square shape */
+    position: relative; /* Allow absolute positioning of content */
+}
+
+/* Add rule for Leaflet map container */
+.card .leaflet-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Optional: Add rule for general card content */
+.card-content {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 /* Default width for small screens (<768px) */
 .card {
   width: 100%;
+}
+
+/* Camera card (ImageViewer) */
+.image-viewer-card {
+    aspect-ratio: auto; /* Remove square constraint */
+    height: auto; /* Let content determine height */
+}
+.image-viewer-card .card-content {
+    height: auto;
+}
+.image-viewer-card .card-content img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Map card (MapViewer) */
+.map-viewer-card {
+    aspect-ratio: auto; /* Remove square constraint */
+    height: auto; /* Let content determine height */
+}
+.map-viewer-card .leaflet-container {
+    width: 100%;
+    height: 400px; /* Adjust as needed for original height */
+    position: relative;
 }
 
 /* Tablet and Laptop (≥768px): 3 cards per row */
@@ -567,5 +612,26 @@ input, textarea, *[contenteditable=true] {
   .control-panel,
   .robot-info-panel {
     display: none; /* Hide the main content, control panel, and robot info panel */
+  }
+}
+/* Add this media query for tablet-sized screens */
+@media screen and (max-width: 1200px) {
+  .input-group {
+      flex-direction: column;
+      align-items: stretch;
+  }
+  .input-group .input-button {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0.5rem;
+      margin: 0;
+  }
+  .input-group .text-input {
+      width: 100%;
+      min-width: 0;
+      box-sizing: border-box;
+      padding: 0.5rem;
+      margin: 0;
+      border: 1px solid #606060;
   }
 }
