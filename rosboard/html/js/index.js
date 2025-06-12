@@ -50,6 +50,16 @@ $(() => {
 
   // Initialize control panel button handlers
   initControlPanel();
+
+  // Initialize Robot Info panel with placeholder values
+  updateRobotInfo({
+    mode: "Placeholder",
+    currentLocation: "Placeholder",
+    targetLocation: "Placeholder",
+    forksStatus: "Placeholder",
+    taskName: "Placeholder",
+    taskStatus: "Placeholder"
+  });
 });
 
 setInterval(() => {
@@ -366,4 +376,15 @@ function initControlPanel() {
       button.prop('disabled', false);
     }
   });
+}
+
+// Function to update Robot Info panel
+function updateRobotInfo(info) {
+  const panel = $('.robot-info-panel');
+  panel.find('p').eq(0).html(`<strong>Mode:</strong> ${info.mode}`);
+  panel.find('p').eq(1).html(`<strong>Current Location:</strong> ${info.currentLocation}`);
+  panel.find('p').eq(2).html(`<strong>Target Location:</strong> ${info.targetLocation}`);
+  panel.find('p').eq(3).html(`<strong>Forks Status:</strong> ${info.forksStatus}`);
+  panel.find('p').eq(4).html(`<strong>Task Name:</strong> ${info.taskName}`);
+  panel.find('p').eq(5).html(`<strong>Task Status:</strong> ${info.taskStatus}`);
 }
