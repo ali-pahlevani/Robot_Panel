@@ -8,9 +8,10 @@ cleanup() {
     echo ""
     echo "Closed the Autofork interface"
     # Kill all background processes started by this script
-    kill $(jobs -p)
-    # Forcefully terminate rosbridge_websocket to free port 9090
-    pkill -9 -f "rosbridge_websocket --port 9090"
+    kill $(jobs -p) 2>/dev/null
+    # Forcefully terminate any lingering rosbridge_websocket or rosapi processes
+    pkill -9 -f "rosbridge_websocket" 2>/dev/null
+    pkill -9 -f "rosapi_node" 2>/dev/null
     exit 0
 }
 
@@ -22,7 +23,7 @@ cd ~/autofork_ws
 source install/setup.bash
 
 # Run ROS 2 processes in the background with output redirection
-ros2 run rosbridge_server rosbridge_websocket --port 9090 > rosbridge.log 2>&1 &
+ros2 launch rosbridge_server rosbridge_websocket_launch.xml port:=9090 > rosbridge.log 2>&1 &
 ros2 run rosboard rosboard_node > rosboard.log 2>&1 &
 
 # Change to the node server directory and run the server in the background
