@@ -307,7 +307,7 @@ function initControlPanel() {
     });
   };
 
-  const handleButtonClick = async (endpoint, data = null, buttonId) => {
+  const handleButtonClick = async (endpoint, data = null, buttonId, onSuccess = null) => {
     const button = $(`#${buttonId}`);
     button.prop('disabled', true);
     try {
@@ -319,6 +319,7 @@ function initControlPanel() {
       const result = await response.json();
       if (result.success) {
         showSnackbar(result.message || 'Action completed');
+        if (onSuccess) onSuccess();
       } else {
         showSnackbar(`Error: ${result.error}`, true);
       }
@@ -342,8 +343,16 @@ function initControlPanel() {
     }
     handleButtonClick('/save-map', { mapName }, 'save-map-button');
   });
-  $('#start-navigation-button').click(() => handleButtonClick('/start-navigation', null, 'start-navigation-button'));
-  $('#stop-navigation-button').click(() => handleButtonClick('/stop-navigation', null, 'stop-navigation-button'));
+  $('#start-navigation-button').click(() => handleButtonClick('/start-navigation', null, 'start-navigation-button', () => {
+    if (window.control && window.control.startNavigation) {
+      window.control.startNavigation();
+    }
+  }));
+  $('#stop-navigation-button').click(() => handleButtonClick('/stop-navigation', null, 'stop-navigation-button', () => {
+    if (window.control && window.control.stopNavigation) {
+      window.control.stopNavigation();
+    }
+  }));
   $('#load-map-button').click(() => {
     const mapName = $('#load-map-input').val().trim();
     if (!mapName) {

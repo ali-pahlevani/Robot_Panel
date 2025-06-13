@@ -4,6 +4,8 @@ let fullLift, fullLower; // Exportable functions
 let joystick = null; // Store joystick instance
 let joystickTimer = null; // Timer for periodic Twist publishing
 let joystickVector = null; // Store latest joystick vector
+let simTime = null; // Store latest simulation time from /clock
+let useSimulationTime = false;
 
 document.addEventListener('DOMContentLoaded', () => {
   console.log('DOM loaded');
@@ -21,6 +23,13 @@ document.addEventListener('DOMContentLoaded', () => {
     url: wsUrl
   });
 
+  // Subscribe to /clock for simulation time
+  const clockTopic = new ROSLIB.Topic({
+    ros: ros,
+    name: '/clock',
+    messageType: 'rosgraph_msgs/Clock'
+  });
+
   // Function to initialize or update joystick
   function initializeJoystick() {
     const container = document.getElementById('joystick-container');
@@ -28,11 +37,9 @@ document.addEventListener('DOMContentLoaded', () => {
       console.error('Joystick container not found');
       return;
     }
-    // Get precise container width
     const containerWidth = container.getBoundingClientRect().width;
-    const joystickSize = Math.min(containerWidth, 200); // Match container or cap at 200px
+    const joystickSize = Math.min(containerWidth, 200);
 
-    // Destroy existing joystick
     if (joystick) {
       try {
         joystick.destroy();
@@ -48,19 +55,16 @@ document.addEventListener('DOMContentLoaded', () => {
         mode: 'static',
         position: { left: '50%', top: '50%' },
         color: '#44b0e0',
-        size: joystickSize // Dynamic size based on container
+        size: joystickSize
       });
       console.log('Joystick created with size:', joystickSize);
 
-      // Ensure container is interactive
       container.style.pointerEvents = 'auto';
-      container.style.touchAction = 'manipulation'; // Match CSS
+      container.style.touchAction = 'manipulation';
 
-      // Attach event listeners
       joystick.on('move', (event, data) => {
         console.log('Joystick move:', data.vector);
-        joystickVector = data.vector; // Store latest vector
-        // Start periodic publishing if not already running
+        joystickVector = data.vector;
         if (!joystickTimer) {
           joystickTimer = setInterval(() => {
             if (joystickVector && ros.isConnected) {
@@ -75,13 +79,13 @@ document.addEventListener('DOMContentLoaded', () => {
             } else if (!ros.isConnected) {
               console.warn('ROS not connected, cannot publish periodic Twist');
             }
-          }, 100); // 10 Hz
+          }, 100);
         }
       });
 
       joystick.on('end', () => {
         console.log('Joystick end, resetting state');
-        joystickVector = null; // Clear vector
+        joystickVector = null;
         if (joystickTimer) {
           clearInterval(joystickTimer);
           joystickTimer = null;
@@ -97,24 +101,19 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
           console.warn('ROS not connected, cannot publish zero Twist');
         }
-        // Ensure container remains interactive
         container.style.pointerEvents = 'auto';
-        // Log joystick state to debug
-        console.log('Joystick after end:', joystick);
       });
     } catch (e) {
       console.error('Joystick creation error:', e);
     }
   }
 
-  // Initialize joystick
   initializeJoystick();
 
-  // Update joystick size on window resize with debounce
   let resizeTimeout;
   window.addEventListener('resize', () => {
     clearTimeout(resizeTimeout);
-    resizeTimeout = setTimeout(initializeJoystick, 50); // 50ms debounce
+    resizeTimeout = setTimeout(initializeJoystick, 50);
   });
 
   const cmdVelTopic = new ROSLIB.Topic({
@@ -131,10 +130,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const maxLinearSpeed = 0.5; // m/s
   const maxAngularSpeed = 1.0; // rad/s
-  let currentForkPosition = 0.0; // Track commanded fork position (0.0 or 0.03)
-  let isForkMoving = false; // Prevent concurrent movements
+  let currentForkPosition = 0.0;
+  let isForkMoving = false;
 
-  // Smooth transition for fork movement
   function moveForks(targetPosition) {
     if (isForkMoving) {
       console.log('Fork movement already in progress');
@@ -142,9 +140,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     isForkMoving = true;
     return new Promise((resolve, reject) => {
-      const duration = 1000; // 1 second
-      const rate = 10; // 10 Hz
-      const steps = duration / (1000 / rate); // 10 steps
+      const duration = 1000;
+      const rate = 10;
+      const steps = duration / (1000 / rate);
       const stepSize = (targetPosition - currentForkPosition) / steps;
       let currentStep = 0;
 
@@ -153,7 +151,6 @@ document.addEventListener('DOMContentLoaded', () => {
           clearInterval(interval);
           currentForkPosition = targetPosition;
           isForkMoving = false;
-          // Publish final position
           const message = new ROSLIB.Message({
             data: [targetPosition, targetPosition]
           });
@@ -191,8 +188,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   fullLower = async () => {
     if (currentForkPosition === 0.0) {
-      console.log('Forks already at full lift position');
-      return { success: true, message: 'Forks already lifted' };
+      console.log('Forks already at full lower position');
+      return { success: true, message: 'Forks already lowered' };
     }
     try {
       await moveForks(0.0);
@@ -204,26 +201,203 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  // Export functions for index.js
   window.control = window.control || {};
   window.control.fullLift = fullLift;
   window.control.fullLower = fullLower;
+  window.control.startNavigation = startNavigation;
+  window.control.stopNavigation = stopNavigation;
 
   ros.on('connection', () => {
     console.log('ROS connected');
     document.getElementById('joystick-container').classList.remove('joystick-disabled');
-    // Re-initialize joystick on connection to ensure interactivity
     initializeJoystick();
   });
 
   ros.on('close', () => {
     console.log('ROS disconnected');
     document.getElementById('joystick-container').classList.add('joystick-disabled');
-    isForkMoving = false; // Reset on disconnect
+    isForkMoving = false;
+    simTime = null;
   });
 
   ros.on('error', (error) => {
     console.log('ROS connection error:', error);
-    isForkMoving = false; // Reset on error
+    isForkMoving = false;
+    simTime = null;
+  });
+
+  const initialPoseTopic = new ROSLIB.Topic({
+    ros: ros,
+    name: '/initialpose',
+    messageType: 'geometry_msgs/PoseWithCovarianceStamped'
+  });
+
+  const goalPoseTopic = new ROSLIB.Topic({
+    ros: ros,
+    name: '/goal_pose',
+    messageType: 'geometry_msgs/PoseStamped'
+  });
+
+  const navigateToPoseClient = new ROSLIB.ActionClient({
+    ros: ros,
+    serverName: '/navigate_to_pose',
+    actionName: 'nav2_msgs/action/NavigateToPose'
+  });
+
+  function getTopics() {
+    return new Promise((resolve, reject) => {
+      ros.getTopics((topics) => resolve(topics.topics), (error) => reject(error));
+    });
+  }
+
+  async function startNavigation() {
+    const simCheckbox = document.getElementById('simulation-checkbox');
+    if (simCheckbox && simCheckbox.checked) {
+      try {
+        const topics = await getTopics();
+        if (topics.includes('/clock')) {
+          useSimulationTime = true;
+          clockTopic.subscribe((message) => {
+            simTime = message.clock;
+            console.log('Received simulation time:', simTime);
+          });
+        } else {
+          useSimulationTime = false;
+        }
+      } catch (error) {
+        console.error('Error getting topics:', error);
+        useSimulationTime = false;
+      }
+    } else {
+      useSimulationTime = false;
+    }
+  }
+
+  function stopNavigation() {
+    clockTopic.unsubscribe();
+    useSimulationTime = false;
+    simTime = null; // Optional: reset simTime
+  }
+
+  function getTimestamp() {
+    if (useSimulationTime && simTime) {
+      console.log('Using simulation time:', simTime);
+      return { sec: simTime.secs, nanosec: simTime.nsecs };
+    } else {
+      console.log('Using system time');
+      const now = new Date();
+      return {
+        sec: Math.floor(now.getTime() / 1000),
+        nanosec: (now.getTime() % 1000) * 1000000
+      };
+    }
+  }
+
+  function degreesToQuaternion(degrees) {
+    const radians = degrees * (Math.PI / 180);
+    return {
+      x: 0.0,
+      y: 0.0,
+      z: Math.sin(radians / 2),
+      w: Math.cos(radians / 2)
+    };
+  }
+
+  function parsePoseInput(input) {
+    const values = input.trim().split(/\s+/).map(parseFloat);
+    if (values.length !== 3 || values.some(isNaN)) {
+      return null;
+    }
+    return { x: values[0], y: values[1], headingDeg: values[2] };
+  }
+
+  document.getElementById('set-initial-pose-button').addEventListener('click', () => {
+    const input = document.getElementById('initial-pose-input').value;
+    const pose = parsePoseInput(input);
+    if (!pose) {
+      console.log('Invalid input for initial pose');
+      return;
+    }
+    const { x, y, headingDeg } = pose;
+    const orientation = degreesToQuaternion(headingDeg);
+    const timestamp = getTimestamp();
+    const msg = new ROSLIB.Message({
+      header: {
+        frame_id: 'map',
+        stamp: { sec: timestamp.secs, nanosec: timestamp.nsecs }
+      },
+      pose: {
+        pose: {
+          position: { x, y, z: 0.0 },
+          orientation
+        },
+        covariance: [0.25, 0.0, 0.0, 0.0, 0.0, 0.0,
+                     0.0, 0.25, 0.0, 0.0, 0.0, 0.0,
+                     0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+                     0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+                     0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+                     0.0, 0.0, 0.0, 0.0, 0.0, 0.0685]
+      }
+    });
+    if (ros.isConnected) {
+      initialPoseTopic.publish(msg);
+      console.log('Published initial pose:', msg);
+    } else {
+      console.log('ROS not connected');
+    }
+  });
+
+  document.getElementById('set-target-button').addEventListener('click', () => {
+    const input = document.getElementById('target-input').value;
+    const pose = parsePoseInput(input);
+    if (!pose) {
+      console.log('Invalid input for target pose');
+      return;
+    }
+    const { x, y, headingDeg } = pose;
+    const orientation = degreesToQuaternion(headingDeg);
+    const timestamp = getTimestamp();
+
+    const goalPoseMsg = new ROSLIB.Message({
+      header: {
+        frame_id: 'map',
+        stamp: { sec: timestamp.secs, nanosec: timestamp.nsecs }
+      },
+      pose: {
+        position: { x, y, z: 0.0 },
+        orientation
+      }
+    });
+    if (ros.isConnected) {
+      goalPoseTopic.publish(goalPoseMsg);
+      console.log('Published goal pose:', goalPoseMsg);
+    } else {
+      console.log('ROS not connected for goal pose');
+    }
+
+    if (ros.isConnected) {
+      const goal = new ROSLIB.Goal({
+        actionClient: navigateToPoseClient,
+        goalMessage: {
+          pose: {
+            header: {
+              frame_id: 'map',
+              stamp: { sec: timestamp.secs, nanosec: timestamp.nsecs }
+            },
+            pose: {
+              position: { x, y, z: 0.0 },
+              orientation
+            }
+          }
+        }
+      });
+      goal.send();
+      console.log('Sent navigate_to_pose goal:', { x, y, headingDeg });
+      goal.on('result', (result) => {
+        console.log('Navigate to pose result:', result);
+      });
+    } else {
+      console.log('ROS not connected for navigate_to_pose');
+    }
   });
 });
