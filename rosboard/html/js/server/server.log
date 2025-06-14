@@ -1,2204 +1,287 @@
 Server running at http://localhost:3000
-Started robot launch process with PID 87372 at 2025-06-13T16:01:38.674Z
-Robot launch stdout: [INFO] [launch]: All log files can be found below /home/alip/.ros/log/2025-06-13-19-31-39-193496-alip-87372
+Started robot launch process with PID 27408 at 2025-06-14T16:17:33.149Z
+Robot launch stdout: [INFO] [launch]: All log files can be found below /home/alip/.ros/log/2025-06-14-19-47-33-608111-alip-27408
+[INFO] [launch]: Default logging verbosity is set to INFO
 
-Robot launch stdout: [INFO] [launch]: Default logging verbosity is set to INFO
+Robot launch stdout: [INFO] [gzserver-1]: process started with pid [27432]
 
-Robot launch stdout: [INFO] [gzserver-1]: process started with pid [87428]
+Robot launch stdout: [INFO] [gzclient-2]: process started with pid [27434]
+[INFO] [robot_state_publisher-3]: process started with pid [27436]
+[INFO] [spawn_entity.py-4]: process started with pid [27438]
+[INFO] [spawner-5]: process started with pid [27440]
 
-Robot launch stdout: [INFO] [gzclient-2]: process started with pid [87430]
-[INFO] [robot_state_publisher-3]: process started with pid [87432]
-[INFO] [spawn_entity.py-4]: process started with pid [87434]
+Robot launch stdout: [INFO] [spawner-6]: process started with pid [27442]
 
-Robot launch stdout: [INFO] [spawner-5]: process started with pid [87436]
-[INFO] [spawner-6]: process started with pid [87438]
+Robot launch stdout: [robot_state_publisher-3] [INFO] [1749917854.272352477] [robot_state_publisher]: got segment RGBD_camera
 
-Robot launch stdout: [robot_state_publisher-3] [INFO] [1749830499.804999174] [robot_state_publisher]: got segment RGBD_camera
+Robot launch stdout: [robot_state_publisher-3] [INFO] [1749917854.272468349] [robot_state_publisher]: got segment RGBD_camera_optical
 
-Robot launch stdout: [robot_state_publisher-3] [INFO] [1749830499.805113329] [robot_state_publisher]: got segment RGBD_camera_optical
-[robot_state_publisher-3] [INFO] [1749830499.805123244] [robot_state_publisher]: got segment back_wheel_assembly_L
+Robot launch stdout: [robot_state_publisher-3] [INFO] [1749917854.272479463] [robot_state_publisher]: got segment back_wheel_assembly_L
+[robot_state_publisher-3] [INFO] [1749917854.272487566] [robot_state_publisher]: got segment back_wheel_assembly_R
+[robot_state_publisher-3] [INFO] [1749917854.272494274] [robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-3] [INFO] [1749917854.272501134] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-3] [INFO] [1749917854.272508662] [robot_state_publisher]: got segment chassis
+[robot_state_publisher-3] [INFO] [1749917854.272515406] [robot_state_publisher]: got segment clamp_L
 
-Robot launch stdout: [robot_state_publisher-3] [INFO] [1749830499.805129792] [robot_state_publisher]: got segment back_wheel_assembly_R
-[robot_state_publisher-3] [INFO] [1749830499.805135145] [robot_state_publisher]: got segment base_footprint
-[robot_state_publisher-3] [INFO] [1749830499.805141173] [robot_state_publisher]: got segment base_link
-[robot_state_publisher-3] [INFO] [1749830499.805149616] [robot_state_publisher]: got segment chassis
-[robot_state_publisher-3] [INFO] [1749830499.805157699] [robot_state_publisher]: got segment clamp_L
+Robot launch stdout: [robot_state_publisher-3] [INFO] [1749917854.272522908] [robot_state_publisher]: got segment clamp_R
+[robot_state_publisher-3] [INFO] [1749917854.272530455] [robot_state_publisher]: got segment fork_L
+[robot_state_publisher-3] [INFO] [1749917854.272538293] [robot_state_publisher]: got segment fork_R
 
-Robot launch stdout: [robot_state_publisher-3] [INFO] [1749830499.805165636] [robot_state_publisher]: got segment clamp_R
-[robot_state_publisher-3] [INFO] [1749830499.805172930] [robot_state_publisher]: got segment fork_L
-[robot_state_publisher-3] [INFO] [1749830499.805182832] [robot_state_publisher]: got segment fork_R
-[robot_state_publisher-3] [INFO] [1749830499.805188772] [robot_state_publisher]: got segment fork_wheel_LL
-[robot_state_publisher-3] [INFO] [1749830499.805194143] [robot_state_publisher]: got segment fork_wheel_LR
-[robot_state_publisher-3] [INFO] [1749830499.805200514] [robot_state_publisher]: got segment fork_wheel_RL
-[robot_state_publisher-3] [INFO] [1749830499.805206381] [robot_state_publisher]: got segment fork_wheel_RR
-[robot_state_publisher-3] [INFO] [1749830499.805211790] [robot_state_publisher]: got segment lidar_nav
-[robot_state_publisher-3] [INFO] [1749830499.805217323] [robot_state_publisher]: got segment lidar_safe
-[robot_state_publisher-3] [INFO] [1749830499.805222777] [robot_state_publisher]: got segment main_wheel
-[robot_state_publisher-3] [INFO] [1749830499.805228226] [robot_state_publisher]: got segment wheel_assembly_tilt
+Robot launch stdout: [robot_state_publisher-3] [INFO] [1749917854.272545759] [robot_state_publisher]: got segment fork_wheel_LL
+[robot_state_publisher-3] [INFO] [1749917854.272554009] [robot_state_publisher]: got segment fork_wheel_LR
+[robot_state_publisher-3] [INFO] [1749917854.272561472] [robot_state_publisher]: got segment fork_wheel_RL
+[robot_state_publisher-3] [INFO] [1749917854.272569363] [robot_state_publisher]: got segment fork_wheel_RR
+[robot_state_publisher-3] [INFO] [1749917854.272576481] [robot_state_publisher]: got segment lidar_nav
+[robot_state_publisher-3] [INFO] [1749917854.272584173] [robot_state_publisher]: got segment lidar_safe
 
-Robot launch stdout: [robot_state_publisher-3] [INFO] [1749830499.805233720] [robot_state_publisher]: got segment wheel_bL_rot
-[robot_state_publisher-3] [INFO] [1749830499.805239620] [robot_state_publisher]: got segment wheel_bL_tilt
-[robot_state_publisher-3] [INFO] [1749830499.805245108] [robot_state_publisher]: got segment wheel_bR_rot
-[robot_state_publisher-3] [INFO] [1749830499.805250672] [robot_state_publisher]: got segment wheel_bR_tilt
+Robot launch stdout: [robot_state_publisher-3] [INFO] [1749917854.272591778] [robot_state_publisher]: got segment main_wheel
+[robot_state_publisher-3] [INFO] [1749917854.272599318] [robot_state_publisher]: got segment wheel_assembly_tilt
+[robot_state_publisher-3] [INFO] [1749917854.272607503] [robot_state_publisher]: got segment wheel_bL_rot
+[robot_state_publisher-3] [INFO] [1749917854.272615708] [robot_state_publisher]: got segment wheel_bL_tilt
 
-Robot launch stdout: [spawner-6] [INFO] [1749830500.047073145] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
+Robot launch stdout: [robot_state_publisher-3] [INFO] [1749917854.272622945] [robot_state_publisher]: got segment wheel_bR_rot
+[robot_state_publisher-3] [INFO] [1749917854.272629418] [robot_state_publisher]: got segment wheel_bR_tilt
 
-Robot launch stdout: [spawner-5] [INFO] [1749830500.081944708] [spawner_tri_cycle_controller]: waiting for service /controller_manager/list_controllers to become available...
+Robot launch stdout: [spawner-5] [INFO] [1749917854.534800745] [spawner_tri_cycle_controller]: waiting for service /controller_manager/list_controllers to become available...
 
-Robot launch stdout: [spawn_entity.py-4] [INFO] [1749830500.123692439] [spawn_entity]: Spawn Entity started
+Robot launch stdout: [spawner-6] [INFO] [1749917854.535613549] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
 
-Robot launch stdout: [spawn_entity.py-4] [INFO] [1749830500.123935464] [spawn_entity]: Loading entity published on topic robot_description
+Robot launch stdout: [spawn_entity.py-4] [INFO] [1749917854.606937754] [spawn_entity]: Spawn Entity started
 
-Robot launch stdout: [spawn_entity.py-4] [INFO] [1749830500.124982474] [spawn_entity]: Waiting for entity xml on robot_description
+Robot launch stdout: [spawn_entity.py-4] [INFO] [1749917854.607168897] [spawn_entity]: Loading entity published on topic robot_description
 
-Robot launch stdout: [spawn_entity.py-4] [INFO] [1749830500.126935386] [spawn_entity]: Waiting for service /spawn_entity, timeout = 30
+Robot launch stdout: [spawn_entity.py-4] [INFO] [1749917854.608095379] [spawn_entity]: Waiting for entity xml on robot_description
 
-Robot launch stdout: [spawn_entity.py-4] [INFO] [1749830500.127118902] [spawn_entity]: Waiting for service /spawn_entity
+Robot launch stdout: [spawn_entity.py-4] [INFO] [1749917854.610344162] [spawn_entity]: Waiting for service /spawn_entity, timeout = 30
 
-Robot launch stdout: [spawn_entity.py-4] [INFO] [1749830500.880517541] [spawn_entity]: Calling service /spawn_entity
+Robot launch stdout: [spawn_entity.py-4] [INFO] [1749917854.610523402] [spawn_entity]: Waiting for service /spawn_entity
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830501.788950657] [camera_controller]: Publishing camera info to [/camera/camera_info]
+Robot launch stdout: [spawn_entity.py-4] [INFO] [1749917855.619023428] [spawn_entity]: Calling service /spawn_entity
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830501.790019578] [camera_controller]: Publishing depth camera info to [/camera/depth/camera_info]
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.468157706] [camera_controller]: Publishing camera info to [/camera/camera_info]
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830501.790382448] [camera_controller]: Publishing pointcloud to [/camera/points]
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.469241485] [camera_controller]: Publishing depth camera info to [/camera/depth/camera_info]
 
-Robot launch stdout: [gzserver-1] [WARN] [1749830501.799521807] [rcl]: Found remap rule '~/out:=scan/navigation'. This syntax is deprecated. Use '--ros-args --remap ~/out:=scan/navigation' instead.
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.469408998] [camera_controller]: Publishing pointcloud to [/camera/points]
 
-Robot launch stdout: [gzserver-1] [WARN] [1749830501.801911324] [rcl]: Found remap rule '~/out:=scan/navigation'. This syntax is deprecated. Use '--ros-args --remap ~/out:=scan/navigation' instead.
+Robot launch stdout: [gzserver-1] [WARN] [1749917856.477007945] [rcl]: Found remap rule '~/out:=scan/navigation'. This syntax is deprecated. Use '--ros-args --remap ~/out:=scan/navigation' instead.
 
-Robot launch stdout: [spawn_entity.py-4] [INFO] [1749830501.844606604] [spawn_entity]: Spawn status: SpawnEntity: Successfully spawned entity [Autofork]
+Robot launch stdout: [gzserver-1] [WARN] [1749917856.478884964] [rcl]: Found remap rule '~/out:=scan/navigation'. This syntax is deprecated. Use '--ros-args --remap ~/out:=scan/navigation' instead.
 
-Robot launch stdout: [gzserver-1] [WARN] [1749830501.906676060] [rcl]: Found remap rule '~/out:=scan/safety'. This syntax is deprecated. Use '--ros-args --remap ~/out:=scan/safety' instead.
+Robot launch stdout: [gzserver-1] [WARN] [1749917856.578517178] [rcl]: Found remap rule '~/out:=scan/safety'. This syntax is deprecated. Use '--ros-args --remap ~/out:=scan/safety' instead.
 
-Robot launch stdout: [gzserver-1] [WARN] [1749830501.908255734] [rcl]: Found remap rule '~/out:=scan/safety'. This syntax is deprecated. Use '--ros-args --remap ~/out:=scan/safety' instead.
+Robot launch stdout: [gzserver-1] [WARN] [1749917856.580369750] [rcl]: Found remap rule '~/out:=scan/safety'. This syntax is deprecated. Use '--ros-args --remap ~/out:=scan/safety' instead.
 
-Robot launch stdout: [INFO] [spawn_entity.py-4]: process has finished cleanly [pid 87434]
+Robot launch stdout: [spawn_entity.py-4] [INFO] [1749917856.592217610] [spawn_entity]: Spawn status: SpawnEntity: Successfully spawned entity [Autofork]
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.154386657] [gazebo_ros2_control]: Loading gazebo_ros2_control plugin
+Robot launch stdout: [INFO] [spawn_entity.py-4]: process has finished cleanly [pid 27438]
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.156468882] [gazebo_ros2_control]: Starting gazebo_ros2_control plugin in namespace: /
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.895416750] [gazebo_ros2_control]: Loading gazebo_ros2_control plugin
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.156510892] [gazebo_ros2_control]: Starting gazebo_ros2_control plugin in ros 2 node: gazebo_ros2_control
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.897276392] [gazebo_ros2_control]: Starting gazebo_ros2_control plugin in namespace: /
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.158159573] [gazebo_ros2_control]: connected to service!! robot_state_publisher
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.897308167] [gazebo_ros2_control]: Starting gazebo_ros2_control plugin in ros 2 node: gazebo_ros2_control
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.158539961] [gazebo_ros2_control]: Received urdf from param server, parsing...
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.898888847] [gazebo_ros2_control]: connected to service!! robot_state_publisher
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.158573398] [gazebo_ros2_control]: Loading parameter files /home/alip/autofork_ws/install/autofork_control/share/autofork_control/config/gazebo_controller.yaml
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.899264693] [gazebo_ros2_control]: Received urdf from param server, parsing...
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.165019229] [gazebo_ros2_control]: Loading joint: wheel_assembly_tilt_joint
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.899296101] [gazebo_ros2_control]: Loading parameter files /home/alip/autofork_ws/install/autofork_control/share/autofork_control/config/gazebo_controller.yaml
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.165057211] [gazebo_ros2_control]: 	State:
-[gzserver-1] [INFO] [1749830502.165065786] [gazebo_ros2_control]: 		 velocity
-[gzserver-1] [INFO] [1749830502.165073615] [gazebo_ros2_control]: 		 position
-[gzserver-1] [INFO] [1749830502.165080418] [gazebo_ros2_control]: 	Command:
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.907776760] [gazebo_ros2_control]: Loading joint: wheel_assembly_tilt_joint
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.165086090] [gazebo_ros2_control]: 		 position
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.907811860] [gazebo_ros2_control]: 	State:
+[gzserver-1] [INFO] [1749917856.907822501] [gazebo_ros2_control]: 		 velocity
+[gzserver-1] [INFO] [1749917856.907830147] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1749917856.907837645] [gazebo_ros2_control]: 	Command:
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.165209604] [gazebo_ros2_control]: Loading joint: main_wheel_joint
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.907847133] [gazebo_ros2_control]: 		 position
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.165221916] [gazebo_ros2_control]: 	State:
-[gzserver-1] [INFO] [1749830502.165228542] [gazebo_ros2_control]: 		 velocity
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908106169] [gazebo_ros2_control]: Loading joint: main_wheel_joint
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.165235057] [gazebo_ros2_control]: 		 position
-[gzserver-1] [INFO] [1749830502.165240972] [gazebo_ros2_control]: 	Command:
-[gzserver-1] [INFO] [1749830502.165249340] [gazebo_ros2_control]: 		 velocity
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908119236] [gazebo_ros2_control]: 	State:
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.165292504] [gazebo_ros2_control]: Loading joint: fork_L_joint
-[gzserver-1] [INFO] [1749830502.165303082] [gazebo_ros2_control]: 	State:
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908125784] [gazebo_ros2_control]: 		 velocity
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.165310903] [gazebo_ros2_control]: 		 position
-[gzserver-1] [INFO] [1749830502.165319118] [gazebo_ros2_control]: 	Command:
-[gzserver-1] [INFO] [1749830502.165327562] [gazebo_ros2_control]: 		 position
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908131765] [gazebo_ros2_control]: 		 position
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.165403924] [gazebo_ros2_control]: Loading joint: fork_R_joint
-[gzserver-1] [INFO] [1749830502.165413573] [gazebo_ros2_control]: 	State:
-[gzserver-1] [INFO] [1749830502.165419487] [gazebo_ros2_control]: 		 position
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908137297] [gazebo_ros2_control]: 	Command:
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.165425342] [gazebo_ros2_control]: 	Command:
-[gzserver-1] [INFO] [1749830502.165431125] [gazebo_ros2_control]: 		 position
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908143997] [gazebo_ros2_control]: 		 velocity
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.165478491] [gazebo_ros2_control]: Loading joint: clamp_L_joint
-[gzserver-1] [INFO] [1749830502.165485083] [gazebo_ros2_control]: 	State:
-[gzserver-1] [INFO] [1749830502.165490215] [gazebo_ros2_control]: 		 position
-[gzserver-1] [INFO] [1749830502.165495607] [gazebo_ros2_control]: 	Command:
-[gzserver-1] [INFO] [1749830502.165501356] [gazebo_ros2_control]: 		 position
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908184869] [gazebo_ros2_control]: Loading joint: fork_L_joint
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.165542486] [gazebo_ros2_control]: Loading joint: clamp_R_joint
-[gzserver-1] [INFO] [1749830502.165549664] [gazebo_ros2_control]: 	State:
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908194203] [gazebo_ros2_control]: 	State:
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.165554967] [gazebo_ros2_control]: 		 position
-[gzserver-1] [INFO] [1749830502.165560335] [gazebo_ros2_control]: 	Command:
-[gzserver-1] [INFO] [1749830502.165566695] [gazebo_ros2_control]: 		 position
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908199848] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1749917856.908205140] [gazebo_ros2_control]: 	Command:
+[gzserver-1] [INFO] [1749917856.908215688] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1749917856.908271779] [gazebo_ros2_control]: Loading joint: fork_R_joint
+[gzserver-1] [INFO] [1749917856.908278711] [gazebo_ros2_control]: 	State:
+[gzserver-1] [INFO] [1749917856.908284159] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1749917856.908289700] [gazebo_ros2_control]: 	Command:
+[gzserver-1] [INFO] [1749917856.908295247] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1749917856.908340877] [gazebo_ros2_control]: Loading joint: clamp_L_joint
+[gzserver-1] [INFO] [1749917856.908348206] [gazebo_ros2_control]: 	State:
+[gzserver-1] [INFO] [1749917856.908353444] [gazebo_ros2_control]: 		 position
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.165606593] [gazebo_ros2_control]: Loading joint: fork_wheel_LL_joint
-[gzserver-1] [INFO] [1749830502.165613076] [gazebo_ros2_control]: 	State:
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908358441] [gazebo_ros2_control]: 	Command:
+[gzserver-1] [INFO] [1749917856.908363629] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1749917856.908403420] [gazebo_ros2_control]: Loading joint: clamp_R_joint
+[gzserver-1] [INFO] [1749917856.908410200] [gazebo_ros2_control]: 	State:
+[gzserver-1] [INFO] [1749917856.908415451] [gazebo_ros2_control]: 		 position
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.165618868] [gazebo_ros2_control]: 		 position
-[gzserver-1] [INFO] [1749830502.165626030] [gazebo_ros2_control]: 		 velocity
-[gzserver-1] [INFO] [1749830502.165631847] [gazebo_ros2_control]: 	Command:
-[gzserver-1] [INFO] [1749830502.165657055] [gazebo_ros2_control]: 		 velocity
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908420547] [gazebo_ros2_control]: 	Command:
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.165697384] [gazebo_ros2_control]: Loading joint: fork_wheel_LR_joint
-[gzserver-1] [INFO] [1749830502.165704413] [gazebo_ros2_control]: 	State:
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908425640] [gazebo_ros2_control]: 		 position
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.165710349] [gazebo_ros2_control]: 		 position
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908465585] [gazebo_ros2_control]: Loading joint: fork_wheel_LL_joint
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.165715904] [gazebo_ros2_control]: 		 velocity
-[gzserver-1] [INFO] [1749830502.165721605] [gazebo_ros2_control]: 	Command:
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908472529] [gazebo_ros2_control]: 	State:
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.165728618] [gazebo_ros2_control]: 		 velocity
-[gzserver-1] [INFO] [1749830502.165767280] [gazebo_ros2_control]: Loading joint: fork_wheel_RL_joint
-[gzserver-1] [INFO] [1749830502.165774318] [gazebo_ros2_control]: 	State:
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908477981] [gazebo_ros2_control]: 		 position
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.165780009] [gazebo_ros2_control]: 		 position
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908483874] [gazebo_ros2_control]: 		 velocity
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.165785445] [gazebo_ros2_control]: 		 velocity
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908490939] [gazebo_ros2_control]: 	Command:
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.165790855] [gazebo_ros2_control]: 	Command:
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908509717] [gazebo_ros2_control]: 		 velocity
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.165797367] [gazebo_ros2_control]: 		 velocity
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908550407] [gazebo_ros2_control]: Loading joint: fork_wheel_LR_joint
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.165835349] [gazebo_ros2_control]: Loading joint: fork_wheel_RR_joint
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908557655] [gazebo_ros2_control]: 	State:
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.165842249] [gazebo_ros2_control]: 	State:
-[gzserver-1] [INFO] [1749830502.165848797] [gazebo_ros2_control]: 		 position
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908562905] [gazebo_ros2_control]: 		 position
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.165854241] [gazebo_ros2_control]: 		 velocity
-[gzserver-1] [INFO] [1749830502.165859497] [gazebo_ros2_control]: 	Command:
-[gzserver-1] [INFO] [1749830502.165866085] [gazebo_ros2_control]: 		 velocity
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908568175] [gazebo_ros2_control]: 		 velocity
+[gzserver-1] [INFO] [1749917856.908573417] [gazebo_ros2_control]: 	Command:
+[gzserver-1] [INFO] [1749917856.908580444] [gazebo_ros2_control]: 		 velocity
+[gzserver-1] [INFO] [1749917856.908618107] [gazebo_ros2_control]: Loading joint: fork_wheel_RL_joint
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.165902559] [gazebo_ros2_control]: Loading joint: wheel_bL_tilt_joint
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908625164] [gazebo_ros2_control]: 	State:
+[gzserver-1] [INFO] [1749917856.908630531] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1749917856.908635780] [gazebo_ros2_control]: 		 velocity
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.165909963] [gazebo_ros2_control]: 	State:
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908641263] [gazebo_ros2_control]: 	Command:
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.165916141] [gazebo_ros2_control]: 		 position
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908647999] [gazebo_ros2_control]: 		 velocity
+[gzserver-1] [INFO] [1749917856.908686526] [gazebo_ros2_control]: Loading joint: fork_wheel_RR_joint
+[gzserver-1] [INFO] [1749917856.908693641] [gazebo_ros2_control]: 	State:
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.165921891] [gazebo_ros2_control]: 		 velocity
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908698953] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1749917856.908704081] [gazebo_ros2_control]: 		 velocity
+[gzserver-1] [INFO] [1749917856.908709144] [gazebo_ros2_control]: 	Command:
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.165928078] [gazebo_ros2_control]: 	Command:
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908716152] [gazebo_ros2_control]: 		 velocity
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.165936883] [gazebo_ros2_control]: 		 velocity
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908752793] [gazebo_ros2_control]: Loading joint: wheel_bL_tilt_joint
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.165974212] [gazebo_ros2_control]: Loading joint: wheel_bR_tilt_joint
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908760046] [gazebo_ros2_control]: 	State:
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.165981370] [gazebo_ros2_control]: 	State:
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908765358] [gazebo_ros2_control]: 		 position
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.165987057] [gazebo_ros2_control]: 		 position
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908770917] [gazebo_ros2_control]: 		 velocity
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.165992221] [gazebo_ros2_control]: 		 velocity
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908777236] [gazebo_ros2_control]: 	Command:
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.165997977] [gazebo_ros2_control]: 	Command:
-[gzserver-1] [INFO] [1749830502.166007595] [gazebo_ros2_control]: 		 velocity
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908785768] [gazebo_ros2_control]: 		 velocity
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.166044468] [gazebo_ros2_control]: Loading joint: wheel_bL_rot_joint
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908823224] [gazebo_ros2_control]: Loading joint: wheel_bR_tilt_joint
+[gzserver-1] [INFO] [1749917856.908830548] [gazebo_ros2_control]: 	State:
+[gzserver-1] [INFO] [1749917856.908835773] [gazebo_ros2_control]: 		 position
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.166051546] [gazebo_ros2_control]: 	State:
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908841032] [gazebo_ros2_control]: 		 velocity
+[gzserver-1] [INFO] [1749917856.908846257] [gazebo_ros2_control]: 	Command:
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.166056823] [gazebo_ros2_control]: 		 position
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908854242] [gazebo_ros2_control]: 		 velocity
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.166062269] [gazebo_ros2_control]: 		 velocity
-[gzserver-1] [INFO] [1749830502.166068832] [gazebo_ros2_control]: 	Command:
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908891291] [gazebo_ros2_control]: Loading joint: wheel_bL_rot_joint
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.166075073] [gazebo_ros2_control]: 		 velocity
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908898680] [gazebo_ros2_control]: 	State:
+[gzserver-1] [INFO] [1749917856.908903955] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1749917856.908909224] [gazebo_ros2_control]: 		 velocity
+[gzserver-1] [INFO] [1749917856.908914507] [gazebo_ros2_control]: 	Command:
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.166112657] [gazebo_ros2_control]: Loading joint: wheel_bR_rot_joint
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908920549] [gazebo_ros2_control]: 		 velocity
+[gzserver-1] [INFO] [1749917856.908958240] [gazebo_ros2_control]: Loading joint: wheel_bR_rot_joint
+[gzserver-1] [INFO] [1749917856.908965794] [gazebo_ros2_control]: 	State:
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.166119990] [gazebo_ros2_control]: 	State:
-[gzserver-1] [INFO] [1749830502.166125639] [gazebo_ros2_control]: 		 position
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.908972976] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1749917856.908981870] [gazebo_ros2_control]: 		 velocity
+[gzserver-1] [INFO] [1749917856.908990281] [gazebo_ros2_control]: 	Command:
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.166130811] [gazebo_ros2_control]: 		 velocity
-[gzserver-1] [INFO] [1749830502.166136249] [gazebo_ros2_control]: 	Command:
-[gzserver-1] [INFO] [1749830502.166142306] [gazebo_ros2_control]: 		 velocity
-[gzserver-1] [INFO] [1749830502.166207855] [resource_manager]: Initialize hardware 'GazeboSystem' 
-[gzserver-1] [INFO] [1749830502.166295215] [resource_manager]: Successful initialization of hardware 'GazeboSystem'
-[gzserver-1] [INFO] [1749830502.166356085] [resource_manager]: 'configure' hardware 'GazeboSystem' 
-[gzserver-1] [INFO] [1749830502.166365021] [resource_manager]: Successful 'configure' of hardware 'GazeboSystem'
-[gzserver-1] [INFO] [1749830502.166378488] [resource_manager]: 'activate' hardware 'GazeboSystem' 
-[gzserver-1] [INFO] [1749830502.166384104] [resource_manager]: Successful 'activate' of hardware 'GazeboSystem'
-[gzserver-1] [INFO] [1749830502.166479093] [gazebo_ros2_control]: Loading controller_manager
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.909002034] [gazebo_ros2_control]: 		 velocity
+[gzserver-1] [INFO] [1749917856.909083055] [resource_manager]: Initialize hardware 'GazeboSystem' 
 
-Robot launch stdout: [gzserver-1] [WARN] [1749830502.180089345] [gazebo_ros2_control]:  Desired controller update period (0.02 s) is slower than the gazebo simulation period (0.001 s).
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.909194090] [resource_manager]: Successful initialization of hardware 'GazeboSystem'
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.180273695] [gazebo_ros2_control]: Loaded gazebo_ros2_control.
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.909265522] [resource_manager]: 'configure' hardware 'GazeboSystem' 
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.302776252] [controller_manager]: Loading controller 'joint_state_broadcaster'
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.909272029] [resource_manager]: Successful 'configure' of hardware 'GazeboSystem'
 
-Robot launch stdout: [spawner-6] [INFO] [1749830502.329770208] [spawner_joint_state_broadcaster]: [94mLoaded [1mjoint_state_broadcaster[0m
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.909278806] [resource_manager]: 'activate' hardware 'GazeboSystem' 
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.330986582] [controller_manager]: Configuring controller 'joint_state_broadcaster'
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.909282534] [resource_manager]: Successful 'activate' of hardware 'GazeboSystem'
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.331302355] [joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.909333748] [gazebo_ros2_control]: Loading controller_manager
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.362658777] [controller_manager]: Loading controller 'tri_cycle_controller'
+Robot launch stdout: [gzserver-1] [WARN] [1749917856.924333563] [gazebo_ros2_control]:  Desired controller update period (0.02 s) is slower than the gazebo simulation period (0.001 s).
 
-Robot launch stdout: [spawner-5] [INFO] [1749830502.396400606] [spawner_tri_cycle_controller]: [94mLoaded [1mtri_cycle_controller[0m
+Robot launch stdout: [gzserver-1] [INFO] [1749917856.924466789] [gazebo_ros2_control]: Loaded gazebo_ros2_control.
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.466850854] [controller_manager]: Configuring controller 'tri_cycle_controller'
+Robot launch stdout: [gzserver-1] [INFO] [1749917857.039758540] [controller_manager]: Loading controller 'tri_cycle_controller'
 
-Robot launch stdout: [spawner-6] [INFO] [1749830502.467220290] [spawner_joint_state_broadcaster]: [92mConfigured and activated [1mjoint_state_broadcaster[0m
+Robot launch stdout: [gzserver-1] [INFO] [1749917857.068891898] [controller_manager]: Loading controller 'joint_state_broadcaster'
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.536877193] [tri_cycle_controller]: On activate: Initialize Joints
+Robot launch stdout: [spawner-5] [INFO] [1749917857.069462367] [spawner_tri_cycle_controller]: [94mLoaded [1mtri_cycle_controller[0m
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.536974725] [tri_cycle_controller]: Get Wheel Joint Instance
+Robot launch stdout: [gzserver-1] [INFO] [1749917857.101146638] [controller_manager]: Configuring controller 'tri_cycle_controller'
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.537019890] [tri_cycle_controller]: Get Steering Joint Instance
+Robot launch stdout: [spawner-6] [INFO] [1749917857.102101335] [spawner_joint_state_broadcaster]: [94mLoaded [1mjoint_state_broadcaster[0m
 
-Robot launch stdout: [spawner-5] [INFO] [1749830502.570818034] [spawner_tri_cycle_controller]: [92mConfigured and activated [1mtri_cycle_controller[0m
+Robot launch stdout: [gzserver-1] [INFO] [1749917857.132738045] [controller_manager]: Configuring controller 'joint_state_broadcaster'
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.572135729] [controller_manager]: Loading controller 'forks_position_controller'
+Robot launch stdout: [gzserver-1] [INFO] [1749917857.132842120] [joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
 
-Robot launch stdout: [spawner-5] [INFO] [1749830502.602560549] [spawner_tri_cycle_controller]: [94mLoaded [1mforks_position_controller[0m
+Robot launch stdout: [gzserver-1] [INFO] [1749917857.193654677] [tri_cycle_controller]: On activate: Initialize Joints
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.602947369] [controller_manager]: Configuring controller 'forks_position_controller'
+Robot launch stdout: [gzserver-1] [INFO] [1749917857.193737552] [tri_cycle_controller]: Get Wheel Joint Instance
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.603942841] [forks_position_controller]: configure successful
+Robot launch stdout: [gzserver-1] [INFO] [1749917857.193763850] [tri_cycle_controller]: Get Steering Joint Instance
 
-Robot launch stdout: [INFO] [spawner-6]: process has finished cleanly [pid 87438]
+Robot launch stdout: [spawner-5] [INFO] [1749917857.224848891] [spawner_tri_cycle_controller]: [92mConfigured and activated [1mtri_cycle_controller[0m
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.665829647] [forks_position_controller]: activate successful
+Robot launch stdout: [gzserver-1] [INFO] [1749917857.288276348] [controller_manager]: Loading controller 'forks_position_controller'
 
-Robot launch stdout: [spawner-5] [INFO] [1749830502.702250764] [spawner_tri_cycle_controller]: [92mConfigured and activated [1mforks_position_controller[0m
+Robot launch stdout: [spawner-6] [INFO] [1749917857.288389564] [spawner_joint_state_broadcaster]: [92mConfigured and activated [1mjoint_state_broadcaster[0m
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.703057301] [controller_manager]: Loading controller 'clamps_position_controller'
+Robot launch stdout: [spawner-5] [INFO] [1749917857.320635409] [spawner_tri_cycle_controller]: [94mLoaded [1mforks_position_controller[0m
 
-Robot launch stdout: [spawner-5] [INFO] [1749830502.733831623] [spawner_tri_cycle_controller]: [94mLoaded [1mclamps_position_controller[0m
+Robot launch stdout: [gzserver-1] [INFO] [1749917857.320849503] [controller_manager]: Configuring controller 'forks_position_controller'
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.734219362] [controller_manager]: Configuring controller 'clamps_position_controller'
+Robot launch stdout: [gzserver-1] [INFO] [1749917857.321532004] [forks_position_controller]: configure successful
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.734632334] [clamps_position_controller]: configure successful
+Robot launch stdout: [gzserver-1] [INFO] [1749917857.392248079] [forks_position_controller]: activate successful
 
-Robot launch stdout: [gzserver-1] [INFO] [1749830502.794409734] [clamps_position_controller]: activate successful
+Robot launch stdout: [spawner-5] [INFO] [1749917857.424824120] [spawner_tri_cycle_controller]: [92mConfigured and activated [1mforks_position_controller[0m
 
-Robot launch stdout: [spawner-5] [INFO] [1749830502.824491891] [spawner_tri_cycle_controller]: [92mConfigured and activated [1mclamps_position_controller[0m
+Robot launch stdout: [gzserver-1] [INFO] [1749917857.425516479] [controller_manager]: Loading controller 'clamps_position_controller'
 
-Robot launch stdout: [INFO] [spawner-5]: process has finished cleanly [pid 87436]
+Robot launch stdout: [spawner-5] [INFO] [1749917857.457709397] [spawner_tri_cycle_controller]: [94mLoaded [1mclamps_position_controller[0m
 
-Started mapping process with PID 89013 at 2025-06-13T16:04:37.447Z
-Mapping stdout: [INFO] [launch]: All log files can be found below /home/alip/.ros/log/2025-06-13-19-34-38-128460-alip-89013
+Robot launch stdout: [gzserver-1] [INFO] [1749917857.458031045] [controller_manager]: Configuring controller 'clamps_position_controller'
 
-Mapping stdout: [INFO] [launch]: Default logging verbosity is set to INFO
+Robot launch stdout: [gzserver-1] [INFO] [1749917857.458326774] [clamps_position_controller]: configure successful
 
-Mapping stdout: [INFO] [async_slam_toolbox_node-1]: process started with pid [89030]
+Robot launch stdout: [INFO] [spawner-6]: process has finished cleanly [pid 27442]
 
-Mapping stdout: [async_slam_toolbox_node-1] [INFO] [1749830678.177446083] [slam_toolbox]: Node using stack size 40000000
+Robot launch stdout: [gzserver-1] [INFO] [1749917857.517815439] [clamps_position_controller]: activate successful
 
-Mapping stdout: [async_slam_toolbox_node-1] [INFO] [1749830678.394314113] [slam_toolbox]: Using solver plugin solver_plugins::CeresSolver
+Robot launch stdout: [spawner-5] [INFO] [1749917857.547607076] [spawner_tri_cycle_controller]: [92mConfigured and activated [1mclamps_position_controller[0m
 
-Mapping stdout: [async_slam_toolbox_node-1] [INFO] [1749830678.394519280] [slam_toolbox]: CeresSolver: Using SCHUR_JACOBI preconditioner.
+Robot launch stdout: [INFO] [spawner-5]: process has finished cleanly [pid 27440]
 
-Mapping stdout: [async_slam_toolbox_node-1] [WARN] [1749830678.437823204] [slam_toolbox]: minimum laser range setting (0.3 m) exceeds the capabilities of the used Lidar (0.3 m)
-
-Mapping stdout: [async_slam_toolbox_node-1] Registering sensor: [Custom Described Lidar]
-
-Sent SIGINT to mapping process with PID 89013 at 2025-06-13T16:04:50.382Z
-Mapping stdout: [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
-
-Mapping stdout: [INFO] [async_slam_toolbox_node-1]: sending signal 'SIGINT' to process[async_slam_toolbox_node-1]
-
-Mapping stdout: [async_slam_toolbox_node-1] [INFO] [1749830690.383987562] [rclcpp]: signal_handler(signum=2)
-
-Mapping stdout: [INFO] [async_slam_toolbox_node-1]: process has finished cleanly [pid 89030]
-
-Mapping process exited with code 0 at 2025-06-13T16:04:50.416Z
-Previous localization process stopped (if any) at 2025-06-13T16:04:53.057Z
-Started localization process with PID 89160 for map 'map_v2' at 2025-06-13T16:04:53.059Z
-Localization stdout: [INFO] [launch]: All log files can be found below /home/alip/.ros/log/2025-06-13-19-34-53-544867-alip-89160
-
-Localization stdout: [INFO] [launch]: Default logging verbosity is set to INFO
-
-Localization stdout: [INFO] [map_server-1]: process started with pid [89176]
-
-Localization stdout: [INFO] [amcl-2]: process started with pid [89178]
-[INFO] [lifecycle_manager-3]: process started with pid [89180]
-
-Localization stdout: [lifecycle_manager-3] [INFO] [1749830693.682043153] [lifecycle_manager_localization]: Creating
-
-Localization stdout: [amcl-2] [INFO] [1749830693.682293141] [amcl]: 
-
-Localization stdout: [amcl-2] 	amcl lifecycle node launched. 
-[amcl-2] 	Waiting on external lifecycle transitions to activate
-
-Localization stdout: [amcl-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
-
-Localization stdout: [amcl-2] [INFO] [1749830693.682706789] [amcl]: Creating
-
-Localization stdout: [lifecycle_manager-3] [INFO] [1749830693.683412108] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
-
-Localization stdout: [map_server-1] [INFO] [1749830693.685093471] [map_server]: 
-
-Localization stdout: [map_server-1] 	map_server lifecycle node launched. 
-[map_server-1] 	Waiting on external lifecycle transitions to activate
-[map_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
-[map_server-1] [INFO] [1749830693.685199821] [map_server]: Creating
-
-Localization stdout: [lifecycle_manager-3] [INFO] [1749830693.785438920] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
-
-Localization stdout: [lifecycle_manager-3] [INFO] [1749830693.785514216] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
-
-Localization stdout: [map_server-1] [INFO] [1749830693.785744201] [map_server]: Configuring
-
-Localization stdout: [map_server-1] [INFO] [1749830693.785844301] [map_io]: Loading yaml file: /home/alip/autofork_ws/src/autofork/autofork_navigation/maps/map_v2/map_v2.yaml
-
-Localization stdout: [map_server-1] [INFO] [1749830693.786134406] [map_io]: resolution: 0.01
-
-Localization stdout: [map_server-1] [INFO] [1749830693.786149448] [map_io]: origin[0]: -16.6
-[map_server-1] [INFO] [1749830693.786157880] [map_io]: origin[1]: -14.2
-
-Localization stdout: [map_server-1] [INFO] [1749830693.786164666] [map_io]: origin[2]: 0
-
-Localization stdout: [map_server-1] [INFO] [1749830693.786171425] [map_io]: free_thresh: 0.25
-[map_server-1] [INFO] [1749830693.786178625] [map_io]: occupied_thresh: 0.65
-
-Localization stdout: [map_server-1] [INFO] [1749830693.786186108] [map_io]: mode: trinary
-
-Localization stdout: [map_server-1] [INFO] [1749830693.786193259] [map_io]: negate: 0
-
-Localization stdout: [map_server-1] [INFO] [1749830693.786383879] [map_io]: Loading image_file: /home/alip/autofork_ws/src/autofork/autofork_navigation/maps/map_v2/map_v2.pgm
-
-Localization stdout: [map_server-1] [INFO] [1749830694.298724918] [map_io]: Read map /home/alip/autofork_ws/src/autofork/autofork_navigation/maps/map_v2/map_v2.pgm: 3576 X 2515 map @ 0.01 m/cell
-
-Localization stdout: [lifecycle_manager-3] [INFO] [1749830694.310528557] [lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m
-
-Localization stdout: [amcl-2] [INFO] [1749830694.310744752] [amcl]: Configuring
-
-Localization stdout: [amcl-2] [INFO] [1749830694.310863035] [amcl]: initTransforms
-
-Localization stdout: [amcl-2] [INFO] [1749830694.313648837] [amcl]: initPubSub
-
-Localization stdout: [amcl-2] [INFO] [1749830694.314748375] [amcl]: Subscribed to map topic.
-
-Localization stdout: [lifecycle_manager-3] [INFO] [1749830694.315967104] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
-
-Localization stdout: [map_server-1] [INFO] [1749830694.316146429] [map_server]: Activating
-
-Localization stdout: [map_server-1] [INFO] [1749830694.324338861] [map_server]: Creating bond (map_server) to lifecycle manager.
-
-Localization stdout: [amcl-2] [INFO] [1749830694.342473002] [amcl]: Received a 3576 X 2515 map @ 0.010 m/pix
-
-Localization stdout: [lifecycle_manager-3] [INFO] [1749830694.425755229] [lifecycle_manager_localization]: Server map_server connected with bond.
-
-Localization stdout: [lifecycle_manager-3] [INFO] [1749830694.425819116] [lifecycle_manager_localization]: [34m[1mActivating amcl[0m[0m
-
-Localization stdout: [amcl-2] [INFO] [1749830694.514121934] [amcl]: Activating
-[amcl-2] [INFO] [1749830694.514203847] [amcl]: Creating bond (amcl) to lifecycle manager.
-
-Localization stdout: [lifecycle_manager-3] [INFO] [1749830694.616700572] [lifecycle_manager_localization]: Server amcl connected with bond.
-
-Localization stdout: [lifecycle_manager-3] [INFO] [1749830694.616763737] [lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
-[lifecycle_manager-3] [INFO] [1749830694.616789635] [lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
-
-Localization stdout: [amcl-2] [INFO] [1749830694.633968938] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [WARN] [1749830697.556812495] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [WARN] [1749830700.785775935] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [WARN] [1749830704.014094630] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [WARN] [1749830707.337582874] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [WARN] [1749830710.548094033] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [WARN] [1749830713.840457850] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [WARN] [1749830717.081225149] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Robot launch stdout: [gzclient-2] 
-
-Robot launch stdout: [gzclient-2] libcurl: (28) Failed to connect to fuel.ignitionrobotics.org port 443 after 218147 ms: Connection timed out
-
-Localization stdout: [amcl-2] [WARN] [1749830720.356770052] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [WARN] [1749830723.617150640] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [WARN] [1749830726.330468150] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [WARN] [1749830728.617300947] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [WARN] [1749830730.966324910] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [WARN] [1749830734.216114031] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [WARN] [1749830737.467708982] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Started mapping process with PID 89545 at 2025-06-13T16:05:40.419Z
-Localization stdout: [amcl-2] [WARN] [1749830740.621599517] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Mapping stdout: [INFO] [launch]: All log files can be found below /home/alip/.ros/log/2025-06-13-19-35-41-070708-alip-89545
-
-Mapping stdout: [INFO] [launch]: Default logging verbosity is set to INFO
-
-Mapping stdout: [INFO] [async_slam_toolbox_node-1]: process started with pid [89570]
-
-Mapping stdout: [async_slam_toolbox_node-1] [INFO] [1749830741.120880123] [slam_toolbox]: Node using stack size 40000000
-
-Mapping stdout: [async_slam_toolbox_node-1] [INFO] [1749830741.341741174] [slam_toolbox]: Using solver plugin solver_plugins::CeresSolver
-
-Mapping stdout: [async_slam_toolbox_node-1] [INFO] [1749830741.342035504] [slam_toolbox]: CeresSolver: Using SCHUR_JACOBI preconditioner.
-
-Mapping stdout: [async_slam_toolbox_node-1] [WARN] [1749830741.408736308] [slam_toolbox]: minimum laser range setting (0.3 m) exceeds the capabilities of the used Lidar (0.3 m)
-
-Mapping stdout: [async_slam_toolbox_node-1] Registering sensor: [Custom Described Lidar]
-
-Localization stdout: [amcl-2] [INFO] [1749830742.364429087] [amcl]: Received a 1326 X 1751 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830742.468416218] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830743.364164456] [amcl]: Received a 1326 X 1751 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830743.388608325] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [WARN] [1749830743.839149306] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [INFO] [1749830744.358685697] [amcl]: Received a 1326 X 1751 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830744.441752412] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830745.355852310] [amcl]: Received a 1326 X 1751 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830745.483727088] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830746.356312524] [amcl]: Received a 1326 X 1751 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830746.397173208] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [WARN] [1749830746.999818654] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [INFO] [1749830747.356977338] [amcl]: Received a 1326 X 1751 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830747.478257213] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830748.355669550] [amcl]: Received a 1326 X 1751 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830748.542163942] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830749.355922669] [amcl]: Received a 1326 X 1751 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830749.497665356] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [WARN] [1749830750.288204996] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [INFO] [1749830750.357009456] [amcl]: Received a 1326 X 1751 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830750.442709751] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830751.360869923] [amcl]: Received a 1326 X 1751 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830751.382505564] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830752.357606752] [amcl]: Received a 1326 X 1751 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830752.456825471] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830753.359630058] [amcl]: Received a 1326 X 1751 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830753.389987804] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [WARN] [1749830753.420140779] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [INFO] [1749830754.356290692] [amcl]: Received a 1326 X 1751 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830754.461559818] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830755.357966565] [amcl]: Received a 1326 X 1751 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830755.382974294] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830756.356278523] [amcl]: Received a 1326 X 1751 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830756.513157705] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [WARN] [1749830756.829589345] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [INFO] [1749830757.355686235] [amcl]: Received a 1326 X 1751 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830757.460207764] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830758.355843999] [amcl]: Received a 1326 X 1751 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830758.399067057] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830759.355561086] [amcl]: Received a 1326 X 1751 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830759.462528481] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [WARN] [1749830760.056903517] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [INFO] [1749830760.362562992] [amcl]: Received a 1369 X 1896 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830760.502211173] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830761.361237255] [amcl]: Received a 1369 X 1896 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830761.417505775] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830762.361669679] [amcl]: Received a 1369 X 1896 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830762.395626602] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [WARN] [1749830763.219348616] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [INFO] [1749830763.361253767] [amcl]: Received a 1369 X 1896 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830763.454284635] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830764.359908421] [amcl]: Received a 1369 X 1896 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830764.396365585] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830765.371271491] [amcl]: Received a 1629 X 2092 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830765.498735676] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [WARN] [1749830765.815888217] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [INFO] [1749830766.369396138] [amcl]: Received a 1629 X 2092 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830766.446368882] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830767.370455693] [amcl]: Received a 1629 X 2092 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830767.414085768] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [WARN] [1749830768.258380755] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [INFO] [1749830768.371241682] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830768.472896183] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830769.372436502] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830769.491235367] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830770.376452715] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830770.426522796] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [WARN] [1749830771.348195488] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [INFO] [1749830771.365495084] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830771.502020221] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830772.366268356] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830772.445629399] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830773.367353035] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830773.495165301] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830774.365985229] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830774.412571080] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [WARN] [1749830774.725107400] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [INFO] [1749830775.367626299] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830775.472507229] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830776.371546868] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830776.522681185] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830777.364903162] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830777.432557387] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [WARN] [1749830777.761968321] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [INFO] [1749830778.369554152] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830778.479161372] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830779.368461268] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830779.411602573] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830780.367221540] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830780.464418481] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [WARN] [1749830781.088818816] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [INFO] [1749830781.368580236] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830781.411598781] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830782.368477038] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830782.498187170] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830783.367350264] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830783.420991467] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [WARN] [1749830784.341962650] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [INFO] [1749830784.366501463] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830784.496964382] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830785.367385759] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830785.407208738] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830786.367401305] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830786.446659905] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830787.370460384] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830787.411049525] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [WARN] [1749830787.723260888] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [INFO] [1749830788.367433626] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830788.420380522] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830789.376808205] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830789.491554465] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830790.377207716] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830790.419422943] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [WARN] [1749830791.023498308] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [INFO] [1749830791.365321012] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830791.462882031] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830792.365434629] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830792.493932315] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830793.367427000] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830793.411154826] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [WARN] [1749830794.155465093] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [INFO] [1749830794.372911328] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830794.454239317] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830795.365028034] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830795.506983350] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830796.366328517] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830796.423779767] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [WARN] [1749830797.358705014] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [INFO] [1749830797.368556541] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830797.510643097] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830798.367873732] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830798.413150418] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830799.365542362] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830799.449990836] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830800.374983481] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830800.484384796] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [WARN] [1749830800.801105350] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [INFO] [1749830801.374571295] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830801.425092874] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830802.367028717] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830802.474575801] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830803.367607245] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830803.410655059] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [WARN] [1749830804.007913588] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [INFO] [1749830804.367293117] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830804.453804735] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830805.365751039] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830805.416071797] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830806.367042298] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830806.441611903] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [WARN] [1749830807.208861462] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [INFO] [1749830807.365046450] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830807.507277950] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830808.368985857] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830808.411333906] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830809.371532980] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830809.485668500] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [WARN] [1749830810.419921405] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [INFO] [1749830810.470812263] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830810.567073824] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830811.369837457] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830811.476013045] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830812.376517204] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830812.421565103] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830813.369149220] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830813.485865493] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [WARN] [1749830813.821583513] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [INFO] [1749830814.371282414] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830814.412358374] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830815.369652488] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830815.478220135] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830816.372835011] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830816.412623674] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [WARN] [1749830817.163765900] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [INFO] [1749830817.369093951] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830817.437070257] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830818.369354368] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830818.515567889] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830819.366381082] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830819.425283034] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [WARN] [1749830820.325191309] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [INFO] [1749830820.368268888] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830820.479920870] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830821.378536823] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830821.420982792] [amcl]: createLaserObject
-
-Stdout: /home/alip/autofork_ws/install/autofork_navigation/share/autofork_navigation
-
-Created temporary directory: /tmp/rosboard_maps
-Created directory: /home/alip/autofork_ws/install/autofork_navigation/share/autofork_navigation/maps/sdfsdf
-Executing install command: ros2 service call /slam_toolbox/save_map slam_toolbox/srv/SaveMap {name: {data: "/home/alip/autofork_ws/install/autofork_navigation/share/autofork_navigation/maps/sdfsdf/sdfsdf"}}
-Stdout: requester: making request: slam_toolbox.srv.SaveMap_Request(name=std_msgs.msg.String(data='/home/alip/autofork_ws/install/autofork_navigation/share/autofork_navigation/maps/sdfsdf/sdfsdf'))
-
-
-Mapping stdout: [async_slam_toolbox_node-1] [INFO] [1749830822.201502908] [slam_toolbox]: SlamToolbox: Saving map as /home/alip/autofork_ws/install/autofork_navigation/share/autofork_navigation/maps/sdfsdf/sdfsdf.
-
-Mapping stdout: [async_slam_toolbox_node-1] [INFO] [1749830822.343534637] [map_saver]: 
-
-Mapping stdout: [async_slam_toolbox_node-1] 	map_saver lifecycle node launched. 
-[async_slam_toolbox_node-1] 	Waiting on external lifecycle transitions to activate
-[async_slam_toolbox_node-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
-
-Mapping stdout: [async_slam_toolbox_node-1] [INFO] [1749830822.343763244] [map_saver]: Creating
-
-Mapping stdout: [async_slam_toolbox_node-1] [INFO] [1749830822.343994697] [map_saver]: Configuring
-
-Mapping stdout: [async_slam_toolbox_node-1] [INFO] [1749830822.346119711] [map_saver]: Saving map from 'map' topic to '/home/alip/autofork_ws/install/autofork_navigation/share/autofork_navigation/maps/sdfsdf/sdfsdf' file
-
-Mapping stdout: [async_slam_toolbox_node-1] [WARN] [1749830822.346188076] [map_saver]: Free threshold unspecified. Setting it to default value: 0.250000
-[async_slam_toolbox_node-1] [WARN] [1749830822.346217790] [map_saver]: Occupied threshold unspecified. Setting it to default value: 0.650000
-
-Localization stdout: [amcl-2] [INFO] [1749830822.371113401] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Mapping stdout: [async_slam_toolbox_node-1] [WARN] [1749830822.375954510] [map_io]: Image format unspecified. Setting it to: pgm
-[async_slam_toolbox_node-1] [INFO] [1749830822.375999660] [map_io]: Received a 1862 X 2097 map @ 0.01 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830822.513259633] [amcl]: createLaserObject
-
-Mapping stdout: [async_slam_toolbox_node-1] [INFO] [1749830822.965200969] [map_io]: Writing map occupancy data to /home/alip/autofork_ws/install/autofork_navigation/share/autofork_navigation/maps/sdfsdf/sdfsdf.pgm
-
-Mapping stdout: [async_slam_toolbox_node-1] [INFO] [1749830822.977022536] [map_io]: Writing map metadata to /home/alip/autofork_ws/install/autofork_navigation/share/autofork_navigation/maps/sdfsdf/sdfsdf.yaml
-
-Mapping stdout: [async_slam_toolbox_node-1] [INFO] [1749830822.977111744] [map_io]: Map saved
-[async_slam_toolbox_node-1] [INFO] [1749830822.977117393] [map_saver]: Map saved successfully
-
-Mapping stdout: [async_slam_toolbox_node-1] [INFO] [1749830822.978807726] [map_saver]: Destroying
-
-Localization stdout: [amcl-2] [INFO] [1749830823.365219764] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830823.432807690] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [WARN] [1749830823.767903368] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Stdout: response:
-slam_toolbox.srv.SaveMap_Response(result=0)
-
-
-Localization stdout: [amcl-2] [INFO] [1749830824.373884095] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830824.416080043] [amcl]: createLaserObject
-
-Created directory to source: /home/alip/autofork_ws/src/autofork/autofork_navigation/maps/sdfsdf
-Executing save_map command: ros2 service call /slam_toolbox/save_map slam_toolbox/srv/SaveMap {name: {data: "/tmp/rosboard_maps/sdfsdf"}}
-Stdout: requester: making request: slam_toolbox.srv.SaveMap_Request(name=std_msgs.msg.String(data='/tmp/rosboard_maps/sdfsdf'))
-
-
-Mapping stdout: [async_slam_toolbox_node-1] [INFO] [1749830825.102530409] [slam_toolbox]: SlamToolbox: Saving map as /tmp/rosboard_maps/sdfsdf.
-
-Mapping stdout: [async_slam_toolbox_node-1] [INFO] [1749830825.250538907] [map_saver]: 
-[async_slam_toolbox_node-1] 	map_saver lifecycle node launched. 
-[async_slam_toolbox_node-1] 	Waiting on external lifecycle transitions to activate
-[async_slam_toolbox_node-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
-[async_slam_toolbox_node-1] [INFO] [1749830825.250627259] [map_saver]: Creating
-[async_slam_toolbox_node-1] [INFO] [1749830825.250745257] [map_saver]: Configuring
-
-Mapping stdout: [async_slam_toolbox_node-1] [INFO] [1749830825.252003119] [map_saver]: Saving map from 'map' topic to '/tmp/rosboard_maps/sdfsdf' file
-
-Mapping stdout: [async_slam_toolbox_node-1] [WARN] [1749830825.252031184] [map_saver]: Free threshold unspecified. Setting it to default value: 0.250000
-[async_slam_toolbox_node-1] [WARN] [1749830825.252040307] [map_saver]: Occupied threshold unspecified. Setting it to default value: 0.650000
-
-Mapping stdout: [async_slam_toolbox_node-1] [WARN] [1749830825.288523316] [map_io]: Image format unspecified. Setting it to: pgm
-[async_slam_toolbox_node-1] [INFO] [1749830825.288574032] [map_io]: Received a 3576 X 2515 map @ 0.01 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830825.380214454] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830825.528663967] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830826.368356627] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830826.459861245] [amcl]: createLaserObject
-
-Mapping stdout: [async_slam_toolbox_node-1] [INFO] [1749830826.725047562] [map_io]: Writing map occupancy data to /tmp/rosboard_maps/sdfsdf.pgm
-
-Mapping stdout: [async_slam_toolbox_node-1] [INFO] [1749830826.743424639] [map_io]: Writing map metadata to /tmp/rosboard_maps/sdfsdf.yaml
-
-Mapping stdout: [async_slam_toolbox_node-1] [INFO] [1749830826.743506677] [map_io]: Map saved
-[async_slam_toolbox_node-1] [INFO] [1749830826.743511898] [map_saver]: Map saved successfully
-
-Mapping stdout: [async_slam_toolbox_node-1] [INFO] [1749830826.745196498] [map_saver]: Destroying
-
-Localization stdout: [amcl-2] [WARN] [1749830827.240147465] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [INFO] [1749830827.370126559] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830827.412488018] [amcl]: createLaserObject
-
-Stdout: response:
-slam_toolbox.srv.SaveMap_Response(result=0)
-
-
-Moved sdfsdf.pgm and sdfsdf.yaml to /home/alip/autofork_ws/src/autofork/autofork_navigation/maps/sdfsdf
-Localization stdout: [amcl-2] [INFO] [1749830828.367703755] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830828.479034457] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830829.372546971] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830829.424629979] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830830.366167846] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830830.495643351] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [WARN] [1749830830.810878788] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [INFO] [1749830831.369516977] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830831.412462191] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830832.369849228] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830832.427599828] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830833.367986029] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830833.484963591] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [WARN] [1749830834.076880921] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [INFO] [1749830834.370866468] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830834.416908881] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830835.371724414] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830835.426653291] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830836.367044162] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830836.412639239] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [WARN] [1749830837.304485272] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [INFO] [1749830837.368466009] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830837.457333748] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830838.370709097] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830838.522490443] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830839.379773647] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830839.448790824] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830840.366641087] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830840.499377217] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [WARN] [1749830840.821171095] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Localization stdout: [amcl-2] [INFO] [1749830841.367698369] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830841.411554219] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830842.366328425] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830842.463610293] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [INFO] [1749830843.368166024] [amcl]: Received a 1862 X 2097 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830843.409857834] [amcl]: createLaserObject
-
-Localization stdout: [amcl-2] [WARN] [1749830843.999814787] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Sent SIGINT to mapping process with PID 89545 at 2025-06-13T16:07:24.340Z
-Mapping stdout: [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
-
-Mapping stdout: [INFO] [async_slam_toolbox_node-1]: sending signal 'SIGINT' to process[async_slam_toolbox_node-1]
-
-Mapping stdout: [async_slam_toolbox_node-1] [INFO] [1749830844.342045426] [rclcpp]: signal_handler(signum=2)
-
-Mapping stdout: [INFO] [async_slam_toolbox_node-1]: process has finished cleanly [pid 89570]
-
-Mapping process exited with code 0 at 2025-06-13T16:07:24.378Z
-Localization stdout: [amcl-2] [WARN] [1749830847.256692457] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Sent SIGINT to localization process with PID 89160 at 2025-06-13T16:07:29.259Z
-Localization stdout: [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
-
-Localization stdout: [INFO] [lifecycle_manager-3]: sending signal 'SIGINT' to process[lifecycle_manager-3]
-
-Localization stdout: [INFO] [amcl-2]: sending signal 'SIGINT' to process[amcl-2]
-
-Localization stdout: [INFO] [map_server-1]: sending signal 'SIGINT' to process[map_server-1]
-
-Localization stdout: [lifecycle_manager-3] [INFO] [1749830849.260669223] [rclcpp]: signal_handler(signum=2)
-
-Localization stdout: [lifecycle_manager-3] [INFO] [1749830849.260785220] [lifecycle_manager_localization]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_localization)
-
-Localization stdout: [lifecycle_manager-3] [INFO] [1749830849.260886761] [lifecycle_manager_localization]: [34m[1mTerminating bond timer...[0m[0m
-
-Localization stdout: [amcl-2] [INFO] [1749830849.260988391] [rclcpp]: signal_handler(signum=2)
-
-Localization stdout: [amcl-2] [INFO] [1749830849.261092680] [amcl]: Running Nav2 LifecycleNode rcl preshutdown (amcl)
-
-Localization stdout: [amcl-2] [INFO] [1749830849.261265067] [amcl]: Deactivating
-
-Localization stdout: [amcl-2] [INFO] [1749830849.261313419] [amcl]: Destroying bond (amcl) to lifecycle manager.
-
-Localization stdout: [map_server-1] [INFO] [1749830849.261362957] [rclcpp]: signal_handler(signum=2)
-
-Localization stdout: [map_server-1] [INFO] [1749830849.261445616] [map_server]: Running Nav2 LifecycleNode rcl preshutdown (map_server)
-
-Localization stdout: [map_server-1] [INFO] [1749830849.261544304] [map_server]: Deactivating
-
-Localization stdout: [map_server-1] [INFO] [1749830849.261621619] [map_server]: Destroying bond (map_server) to lifecycle manager.
-
-Localization stdout: [amcl-2] [INFO] [1749830849.271547383] [amcl]: Cleaning up
-
-Localization stdout: [map_server-1] [INFO] [1749830849.271868340] [map_server]: Cleaning up
-
-Localization stdout: [map_server-1] [INFO] [1749830849.272384148] [map_server]: Destroying bond (map_server) to lifecycle manager.
-
-Localization stdout: [amcl-2] [INFO] [1749830849.278985075] [amcl]: Destroying bond (amcl) to lifecycle manager.
-
-Localization stdout: [lifecycle_manager-3] [INFO] [1749830849.420662993] [lifecycle_manager_localization]: Destroying lifecycle_manager_localization
-
-Localization stdout: [map_server-1] [INFO] [1749830849.461960152] [map_server]: Destroying
-[amcl-2] [INFO] [1749830849.462043688] [amcl]: Destroying
-
-Localization stdout: [INFO] [lifecycle_manager-3]: process has finished cleanly [pid 89180]
-
-Localization stdout: [INFO] [amcl-2]: process has finished cleanly [pid 89178]
-
-Localization stdout: [INFO] [map_server-1]: process has finished cleanly [pid 89176]
-
-Localization process exited with code 0 at 2025-06-13T16:07:30.531Z
-Localization process exited with code 0 at 2025-06-13T16:07:30.532Z
-Previous localization process stopped (if any) at 2025-06-13T16:07:30.532Z
-Started localization process with PID 90651 for map 'map_v2' at 2025-06-13T16:07:30.533Z
-Localization stdout: [INFO] [launch]: All log files can be found below /home/alip/.ros/log/2025-06-13-19-37-31-037361-alip-90651
-
-Localization stdout: [INFO] [launch]: Default logging verbosity is set to INFO
-
-Localization stdout: [INFO] [map_server-1]: process started with pid [90667]
-
-Localization stdout: [INFO] [amcl-2]: process started with pid [90669]
-[INFO] [lifecycle_manager-3]: process started with pid [90671]
-
-Localization stdout: [lifecycle_manager-3] [INFO] [1749830851.179839782] [lifecycle_manager_localization]: Creating
-
-Localization stdout: [lifecycle_manager-3] [INFO] [1749830851.181905550] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
-
-Localization stdout: [amcl-2] [INFO] [1749830851.184416534] [amcl]: 
-
-Localization stdout: [amcl-2] 	amcl lifecycle node launched. 
-[amcl-2] 	Waiting on external lifecycle transitions to activate
-[amcl-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
-
-Localization stdout: [amcl-2] [INFO] [1749830851.184959676] [amcl]: Creating
-
-Localization stdout: [map_server-1] [INFO] [1749830851.188467823] [map_server]: 
-
-Localization stdout: [map_server-1] 	map_server lifecycle node launched. 
-[map_server-1] 	Waiting on external lifecycle transitions to activate
-[map_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
-
-Localization stdout: [map_server-1] [INFO] [1749830851.188549703] [map_server]: Creating
-
-Localization stdout: [lifecycle_manager-3] [INFO] [1749830851.288777549] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
-
-Localization stdout: [lifecycle_manager-3] [INFO] [1749830851.288863564] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
-[map_server-1] [INFO] [1749830851.289101249] [map_server]: Configuring
-
-Localization stdout: [map_server-1] [INFO] [1749830851.289164305] [map_io]: Loading yaml file: /home/alip/autofork_ws/src/autofork/autofork_navigation/maps/map_v2/map_v2.yaml
-
-Localization stdout: [map_server-1] [INFO] [1749830851.289341836] [map_io]: resolution: 0.01
-
-Localization stdout: [map_server-1] [INFO] [1749830851.289347074] [map_io]: origin[0]: -16.6
-
-Localization stdout: [map_server-1] [INFO] [1749830851.289351052] [map_io]: origin[1]: -14.2
-
-Localization stdout: [map_server-1] [INFO] [1749830851.289354479] [map_io]: origin[2]: 0
-
-Localization stdout: [map_server-1] [INFO] [1749830851.289357859] [map_io]: free_thresh: 0.25
-
-Localization stdout: [map_server-1] [INFO] [1749830851.289361216] [map_io]: occupied_thresh: 0.65
-[map_server-1] [INFO] [1749830851.289364383] [map_io]: mode: trinary
-
-Localization stdout: [map_server-1] [INFO] [1749830851.289368665] [map_io]: negate: 0
-[map_server-1] [INFO] [1749830851.289500876] [map_io]: Loading image_file: /home/alip/autofork_ws/src/autofork/autofork_navigation/maps/map_v2/map_v2.pgm
-
-Localization stdout: [map_server-1] [INFO] [1749830851.810808458] [map_io]: Read map /home/alip/autofork_ws/src/autofork/autofork_navigation/maps/map_v2/map_v2.pgm: 3576 X 2515 map @ 0.01 m/cell
-
-Localization stdout: [lifecycle_manager-3] [INFO] [1749830851.823810561] [lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m
-
-Localization stdout: [amcl-2] [INFO] [1749830851.823981128] [amcl]: Configuring
-
-Localization stdout: [amcl-2] [INFO] [1749830851.824076373] [amcl]: initTransforms
-
-Localization stdout: [amcl-2] [INFO] [1749830851.827763038] [amcl]: initPubSub
-
-Localization stdout: [amcl-2] [INFO] [1749830851.829276896] [amcl]: Subscribed to map topic.
-
-Localization stdout: [lifecycle_manager-3] [INFO] [1749830851.831750292] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
-
-Localization stdout: [map_server-1] [INFO] [1749830851.831951729] [map_server]: Activating
-
-Localization stdout: [map_server-1] [INFO] [1749830851.845662958] [map_server]: Creating bond (map_server) to lifecycle manager.
-
-Localization stdout: [lifecycle_manager-3] [INFO] [1749830851.947488648] [lifecycle_manager_localization]: Server map_server connected with bond.
-
-Localization stdout: [lifecycle_manager-3] [INFO] [1749830851.947553663] [lifecycle_manager_localization]: [34m[1mActivating amcl[0m[0m
-
-Localization stdout: [amcl-2] [INFO] [1749830851.956405150] [amcl]: Received a 3576 X 2515 map @ 0.010 m/pix
-
-Localization stdout: [amcl-2] [INFO] [1749830852.130537938] [amcl]: Activating
-
-Localization stdout: [amcl-2] [INFO] [1749830852.130588567] [amcl]: Creating bond (amcl) to lifecycle manager.
-
-Localization stdout: [amcl-2] [INFO] [1749830852.153748012] [amcl]: createLaserObject
-
-Localization stdout: [lifecycle_manager-3] [INFO] [1749830852.231780647] [lifecycle_manager_localization]: Server amcl connected with bond.
-
-Localization stdout: [lifecycle_manager-3] [INFO] [1749830852.231905639] [lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
-[lifecycle_manager-3] [INFO] [1749830852.231926109] [lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
-
-Localization stdout: [amcl-2] [WARN] [1749830855.040802232] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Started navigation process with PID 90728 at 2025-06-13T16:07:35.739Z
-Navigation stdout: [INFO] [launch]: All log files can be found below /home/alip/.ros/log/2025-06-13-19-37-36-255167-alip-90728
-
-Navigation stdout: [INFO] [launch]: Default logging verbosity is set to INFO
-
-Navigation stdout: [INFO] [controller_server-1]: process started with pid [90753]
-
-Navigation stdout: [INFO] [smoother_server-2]: process started with pid [90755]
-
-Navigation stdout: [INFO] [planner_server-3]: process started with pid [90757]
-[INFO] [behavior_server-4]: process started with pid [90759]
-[INFO] [bt_navigator-5]: process started with pid [90761]
-[INFO] [waypoint_follower-6]: process started with pid [90763]
-[INFO] [velocity_smoother-7]: process started with pid [90765]
-[INFO] [lifecycle_manager-8]: process started with pid [90767]
-
-Navigation stdout: [waypoint_follower-6] [INFO] [1749830856.415713615] [waypoint_follower]: 
-
-Navigation stdout: [waypoint_follower-6] 	waypoint_follower lifecycle node launched. 
-
-Navigation stdout: [waypoint_follower-6] 	Waiting on external lifecycle transitions to activate
-
-Navigation stdout: [waypoint_follower-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
-
-Navigation stdout: [waypoint_follower-6] [INFO] [1749830856.416226259] [waypoint_follower]: Creating
-[lifecycle_manager-8] [INFO] [1749830856.417819504] [lifecycle_manager_navigation]: Creating
-[lifecycle_manager-8] [INFO] [1749830856.419246540] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
-[behavior_server-4] [INFO] [1749830856.418844046] [behavior_server]: 
-[behavior_server-4] 	behavior_server lifecycle node launched. 
-[behavior_server-4] 	Waiting on external lifecycle transitions to activate
-[behavior_server-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
-
-Navigation stdout: [bt_navigator-5] [INFO] [1749830856.420805462] [bt_navigator]: 
-
-Navigation stdout: [bt_navigator-5] 	bt_navigator lifecycle node launched. 
-
-Navigation stdout: [bt_navigator-5] 	Waiting on external lifecycle transitions to activate
-
-Navigation stdout: [bt_navigator-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
-[bt_navigator-5] [INFO] [1749830856.420893145] [bt_navigator]: Creating
-
-Navigation stdout: [controller_server-1] [INFO] [1749830856.420882480] [controller_server]: 
-[controller_server-1] 	controller_server lifecycle node launched. 
-[controller_server-1] 	Waiting on external lifecycle transitions to activate
-[controller_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
-[planner_server-3] [INFO] [1749830856.421577669] [planner_server]: 
-[planner_server-3] 	planner_server lifecycle node launched. 
-[planner_server-3] 	Waiting on external lifecycle transitions to activate
-[planner_server-3] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
-[planner_server-3] [INFO] [1749830856.423675733] [planner_server]: Creating
-[controller_server-1] [INFO] [1749830856.424329187] [controller_server]: Creating controller server
-
-Navigation stdout: [velocity_smoother-7] [INFO] [1749830856.425129441] [velocity_smoother]: 
-[velocity_smoother-7] 	velocity_smoother lifecycle node launched. 
-[velocity_smoother-7] 	Waiting on external lifecycle transitions to activate
-[velocity_smoother-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
-[smoother_server-2] [INFO] [1749830856.425832873] [smoother_server]: 
-[smoother_server-2] 	smoother_server lifecycle node launched. 
-[smoother_server-2] 	Waiting on external lifecycle transitions to activate
-[smoother_server-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
-
-Navigation stdout: [smoother_server-2] [INFO] [1749830856.427161579] [smoother_server]: Creating smoother server
-
-Navigation stdout: [planner_server-3] [INFO] [1749830856.436183488] [global_costmap.global_costmap]: 
-
-Navigation stdout: [planner_server-3] 	global_costmap lifecycle node launched. 
-[planner_server-3] 	Waiting on external lifecycle transitions to activate
-[planner_server-3] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
-
-Navigation stdout: [planner_server-3] [INFO] [1749830856.436785030] [global_costmap.global_costmap]: Creating Costmap
-
-Navigation stdout: [controller_server-1] [INFO] [1749830856.441251065] [local_costmap.local_costmap]: 
-[controller_server-1] 	local_costmap lifecycle node launched. 
-[controller_server-1] 	Waiting on external lifecycle transitions to activate
-[controller_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
-[controller_server-1] [INFO] [1749830856.442498006] [local_costmap.local_costmap]: Creating Costmap
-
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749830856.451451097] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
-
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749830856.451511565] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
-
-Navigation stdout: [controller_server-1] [INFO] [1749830856.451678961] [controller_server]: Configuring controller interface
-
-Navigation stdout: [controller_server-1] [INFO] [1749830856.451787437] [controller_server]: getting goal checker plugins..
-[controller_server-1] [INFO] [1749830856.451863929] [controller_server]: Controller frequency set to 20.0000Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749830856.451898776] [local_costmap.local_costmap]: Configuring
-
-Navigation stdout: [controller_server-1] [INFO] [1749830856.454421624] [local_costmap.local_costmap]: Using plugin "voxel_layer"
-
-Navigation stdout: [controller_server-1] [INFO] [1749830856.456558538] [local_costmap.local_costmap]: Subscribed to Topics: scan
-
-Navigation stdout: [controller_server-1] [INFO] [1749830856.460460012] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
-
-Navigation stdout: [controller_server-1] [INFO] [1749830856.460485355] [local_costmap.local_costmap]: Using plugin "inflation_layer"
-
-Navigation stdout: [controller_server-1] [INFO] [1749830856.461090717] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
-
-Navigation stdout: [controller_server-1] [INFO] [1749830856.463868561] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
-
-Navigation stdout: [controller_server-1] [INFO] [1749830856.464642749] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
-
-Navigation stdout: [controller_server-1] [INFO] [1749830856.465003871] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
-
-Navigation stdout: [controller_server-1] [INFO] [1749830856.466678926] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
-
-Navigation stdout: [controller_server-1] [INFO] [1749830856.467539069] [controller_server]: Setting transform_tolerance to 0.200000
-
-Navigation stdout: [controller_server-1] [INFO] [1749830856.472319493] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
-
-Navigation stdout: [controller_server-1] [INFO] [1749830856.472728260] [controller_server]: Critic plugin initialized
-
-Navigation stdout: [controller_server-1] [INFO] [1749830856.472841394] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
-
-Navigation stdout: [controller_server-1] [INFO] [1749830856.473178191] [controller_server]: Critic plugin initialized
-[controller_server-1] [INFO] [1749830856.473283913] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
-[controller_server-1] [INFO] [1749830856.473413743] [controller_server]: Critic plugin initialized
-[controller_server-1] [INFO] [1749830856.473483204] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
-
-Navigation stdout: [controller_server-1] [INFO] [1749830856.473674111] [controller_server]: Critic plugin initialized
-
-Navigation stdout: [controller_server-1] [INFO] [1749830856.473740476] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
-
-Navigation stdout: [controller_server-1] [INFO] [1749830856.473926929] [controller_server]: Critic plugin initialized
-
-Navigation stdout: [controller_server-1] [INFO] [1749830856.473989147] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
-[controller_server-1] [INFO] [1749830856.474116253] [controller_server]: Critic plugin initialized
-
-Navigation stdout: [controller_server-1] [INFO] [1749830856.474188057] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
-[controller_server-1] [INFO] [1749830856.474311698] [controller_server]: Critic plugin initialized
-[controller_server-1] [INFO] [1749830856.474326670] [controller_server]: Controller Server has FollowPath  controllers available.
-
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749830856.477088997] [lifecycle_manager_navigation]: [34m[1mConfiguring smoother_server[0m[0m
-
-Navigation stdout: [smoother_server-2] [INFO] [1749830856.477240098] [smoother_server]: Configuring smoother server
-
-Navigation stdout: [smoother_server-2] [INFO] [1749830856.481192983] [smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
-
-Navigation stdout: [smoother_server-2] [INFO] [1749830856.481559026] [smoother_server]: Smoother Server has simple_smoother  smoothers available.
-
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749830856.484050728] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
-
-Navigation stdout: [planner_server-3] [INFO] [1749830856.484192133] [planner_server]: Configuring
-
-Navigation stdout: [planner_server-3] [INFO] [1749830856.484245966] [global_costmap.global_costmap]: Configuring
-
-Navigation stdout: [planner_server-3] [INFO] [1749830856.486457329] [global_costmap.global_costmap]: Using plugin "static_layer"
-
-Navigation stdout: [planner_server-3] [INFO] [1749830856.488666936] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
-
-Navigation stdout: [planner_server-3] [INFO] [1749830856.489133191] [global_costmap.global_costmap]: Initialized plugin "static_layer"
-
-Navigation stdout: [planner_server-3] [INFO] [1749830856.489157460] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
-
-Navigation stdout: [planner_server-3] [INFO] [1749830856.489535108] [global_costmap.global_costmap]: Subscribed to Topics: scan
-
-Navigation stdout: [planner_server-3] [INFO] [1749830856.492104915] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
-
-Navigation stdout: [planner_server-3] [INFO] [1749830856.492145638] [global_costmap.global_costmap]: Using plugin "inflation_layer"
-
-Navigation stdout: [planner_server-3] [INFO] [1749830856.492609162] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
-
-Navigation stdout: [planner_server-3] [INFO] [1749830856.495423349] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
-
-Navigation stdout: [planner_server-3] [INFO] [1749830856.495463481] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
-
-Navigation stdout: [planner_server-3] [INFO] [1749830856.495814812] [planner_server]: Planner Server has GridBased  planners available.
-
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749830856.499536301] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
-
-Navigation stdout: [behavior_server-4] [INFO] [1749830856.499676802] [behavior_server]: Configuring
-
-Navigation stdout: [behavior_server-4] [INFO] [1749830856.502616939] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
-
-Navigation stdout: [behavior_server-4] [INFO] [1749830856.503225560] [behavior_server]: Configuring spin
-
-Navigation stdout: [behavior_server-4] [INFO] [1749830856.504887836] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
-
-Navigation stdout: [behavior_server-4] [INFO] [1749830856.505532376] [behavior_server]: Configuring backup
-
-Navigation stdout: [behavior_server-4] [INFO] [1749830856.507082902] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
-
-Navigation stdout: [behavior_server-4] [INFO] [1749830856.507618907] [behavior_server]: Configuring drive_on_heading
-
-Navigation stdout: [behavior_server-4] [INFO] [1749830856.509252690] [behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors/AssistedTeleop
-
-Navigation stdout: [behavior_server-4] [INFO] [1749830856.510665864] [behavior_server]: Configuring assisted_teleop
-
-Navigation stdout: [behavior_server-4] [INFO] [1749830856.512973791] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
-
-Navigation stdout: [behavior_server-4] [INFO] [1749830856.513710782] [behavior_server]: Configuring wait
-
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749830856.516609734] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
-
-Navigation stdout: [bt_navigator-5] [INFO] [1749830856.516907826] [bt_navigator]: Configuring
-
-Navigation stdout: [planner_server-3] [INFO] [1749830856.530954756] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 3576 X 2515 at 0.010000 m/pix
-
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749830856.552098036] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
-
-Navigation stdout: [waypoint_follower-6] [INFO] [1749830856.552352073] [waypoint_follower]: Configuring
-
-Navigation stdout: [waypoint_follower-6] [INFO] [1749830856.556650459] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
-
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749830856.557624228] [lifecycle_manager_navigation]: [34m[1mConfiguring velocity_smoother[0m[0m
-
-Navigation stdout: [velocity_smoother-7] [INFO] [1749830856.557861224] [velocity_smoother]: Configuring velocity smoother
-
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749830856.559952227] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
-
-Navigation stdout: [controller_server-1] [INFO] [1749830856.560190196] [controller_server]: Activating
-[controller_server-1] [INFO] [1749830856.560267585] [local_costmap.local_costmap]: Activating
-[controller_server-1] [INFO] [1749830856.560300314] [local_costmap.local_costmap]: Checking transform
-[controller_server-1] [INFO] [1749830856.560498693] [local_costmap.local_costmap]: start
-
-Navigation stdout: [controller_server-1] [INFO] [1749830856.761150976] [controller_server]: Creating bond (controller_server) to lifecycle manager.
-
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749830856.863122344] [lifecycle_manager_navigation]: Server controller_server connected with bond.
-
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749830856.863206604] [lifecycle_manager_navigation]: [34m[1mActivating smoother_server[0m[0m
-
-Navigation stdout: [smoother_server-2] [INFO] [1749830856.863487093] [smoother_server]: Activating
-[smoother_server-2] [INFO] [1749830856.863550502] [smoother_server]: Creating bond (smoother_server) to lifecycle manager.
-
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749830856.965939039] [lifecycle_manager_navigation]: Server smoother_server connected with bond.
-
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749830856.966016450] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
-
-Navigation stdout: [planner_server-3] [INFO] [1749830856.966232116] [planner_server]: Activating
-[planner_server-3] [INFO] [1749830856.966281938] [global_costmap.global_costmap]: Activating
-
-Navigation stdout: [planner_server-3] [INFO] [1749830856.966295669] [global_costmap.global_costmap]: Checking transform
-[planner_server-3] [INFO] [1749830856.966317772] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830857.466375638] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830857.966374733] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Localization stdout: [amcl-2] [WARN] [1749830858.264420586] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Navigation stdout: [planner_server-3] [INFO] [1749830858.466385177] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830858.966405540] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830859.466386311] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830859.966373332] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830860.466381462] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830860.966395397] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830861.466375285] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Localization stdout: [amcl-2] [WARN] [1749830861.617721950] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Navigation stdout: [planner_server-3] [INFO] [1749830861.966375255] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830862.466378861] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830862.966375523] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830863.466388360] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830863.966375836] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830864.466376066] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Localization stdout: [amcl-2] [WARN] [1749830864.947033450] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Navigation stdout: [planner_server-3] [INFO] [1749830864.966382989] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830865.466384384] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830865.966399832] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830866.466380379] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830866.966368091] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830867.466387391] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830867.966386667] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Localization stdout: [amcl-2] [WARN] [1749830868.199776506] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Navigation stdout: [planner_server-3] [INFO] [1749830868.466381485] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830868.966377877] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830869.466367162] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830869.966375256] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830870.466376731] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830870.966376314] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Localization stdout: [amcl-2] [WARN] [1749830871.416908160] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Navigation stdout: [planner_server-3] [INFO] [1749830871.466379298] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830871.966368892] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830872.466382826] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830872.966395451] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830873.466373587] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830873.966387221] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830874.466377541] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Localization stdout: [amcl-2] [WARN] [1749830874.642134594] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Navigation stdout: [planner_server-3] [INFO] [1749830874.966379756] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830875.466384606] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830875.966381727] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830876.466378268] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830876.966377935] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830877.466376253] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Localization stdout: [amcl-2] [WARN] [1749830877.901185036] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Navigation stdout: [planner_server-3] [INFO] [1749830877.966366999] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830878.466375561] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830878.966375850] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830879.466376395] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830879.966379377] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830880.466384090] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830880.966391537] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Localization stdout: [amcl-2] [WARN] [1749830881.196124643] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Navigation stdout: [planner_server-3] [INFO] [1749830881.466403868] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830881.966380085] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830882.466391858] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830882.966422978] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830883.466456903] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830883.966376565] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830884.466384908] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Localization stdout: [amcl-2] [WARN] [1749830884.511717080] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-
-Navigation stdout: [planner_server-3] [INFO] [1749830884.966375323] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830885.466398377] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830885.966382255] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Navigation stdout: [planner_server-3] [INFO] [1749830886.466383521] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-
-Localization stdout: [amcl-2] [INFO] [1749830886.884539341] [amcl]: initialPoseReceived
-
-Localization stdout: [amcl-2] [WARN] [1749830886.884837692] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1749830886.884134 but the latest data is at time 1504.902000, when looking up transform from frame [odom] to frame [base_footprint])
-
-Localization stdout: [amcl-2] [INFO] [1749830886.884912765] [amcl]: Setting pose (1504.840000): 2.000 3.000 0.785
-
-Navigation stdout: [planner_server-3] [INFO] [1749830886.966447474] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation at time 1504.942000, but only time 1505.903000 is in the buffer, when looking up transform from frame [base_link] to frame [map]
-
-Navigation stdout: [planner_server-3] [INFO] [1749830887.466437334] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 1505.242000 but the earliest data is at time 1505.903000, when looking up transform from frame [base_link] to frame [map]
-
-Navigation stdout: [planner_server-3] [INFO] [1749830887.966414500] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 1505.562000 but the earliest data is at time 1505.903000, when looking up transform from frame [base_link] to frame [map]
-
-Navigation stdout: [planner_server-3] [INFO] [1749830888.466398156] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 1505.882000 but the earliest data is at time 1505.903000, when looking up transform from frame [base_link] to frame [map]
-
-Localization stdout: [amcl-2] [INFO] [1749830888.527077093] [amcl]: initialPoseReceived
-
-Localization stdout: [amcl-2] [WARN] [1749830888.527190260] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1749830888.526785 but the latest data is at time 1505.922000, when looking up transform from frame [odom] to frame [base_footprint])
-
-Localization stdout: [amcl-2] [INFO] [1749830888.527226604] [amcl]: Setting pose (1505.840000): 2.000 3.000 0.785
-
-Navigation stdout: [planner_server-3] [INFO] [1749830888.966489630] [global_costmap.global_costmap]: start
-
-Navigation stdout: [planner_server-3] [INFO] [1749830890.117038233] [planner_server]: Activating plugin GridBased of type NavfnPlanner
-
-Navigation stdout: [planner_server-3] [INFO] [1749830890.117490791] [planner_server]: Creating bond (planner_server) to lifecycle manager.
-
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749830890.219241154] [lifecycle_manager_navigation]: Server planner_server connected with bond.
-
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749830890.219345394] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
-
-Navigation stdout: [behavior_server-4] [INFO] [1749830890.219830242] [behavior_server]: Activating
-
-Navigation stdout: [behavior_server-4] [INFO] [1749830890.219905864] [behavior_server]: Activating spin
-
-Navigation stdout: [behavior_server-4] [INFO] [1749830890.219930286] [behavior_server]: Activating backup
-
-Navigation stdout: [behavior_server-4] [INFO] [1749830890.219949585] [behavior_server]: Activating drive_on_heading
-
-Navigation stdout: [behavior_server-4] [INFO] [1749830890.219966655] [behavior_server]: Activating assisted_teleop
-
-Navigation stdout: [behavior_server-4] [INFO] [1749830890.219983429] [behavior_server]: Activating wait
-[behavior_server-4] [INFO] [1749830890.220004004] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
-
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749830890.323002235] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
-
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749830890.323051932] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
-
-Navigation stdout: [bt_navigator-5] [INFO] [1749830890.323320806] [bt_navigator]: Activating
-
-Navigation stdout: [bt_navigator-5] [INFO] [1749830890.338613892] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
-
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749830890.440129669] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
-
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749830890.440181128] [lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
-
-Navigation stdout: [waypoint_follower-6] [INFO] [1749830890.440416835] [waypoint_follower]: Activating
-
-Navigation stdout: [waypoint_follower-6] [INFO] [1749830890.440459466] [waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
-
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749830890.542349256] [lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
-
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749830890.542398965] [lifecycle_manager_navigation]: [34m[1mActivating velocity_smoother[0m[0m
-
-Navigation stdout: [velocity_smoother-7] [INFO] [1749830890.542623334] [velocity_smoother]: Activating
-
-Navigation stdout: [velocity_smoother-7] [INFO] [1749830890.542698506] [velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.
-
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749830890.644590289] [lifecycle_manager_navigation]: Server velocity_smoother connected with bond.
-
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749830890.644683870] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
-[lifecycle_manager-8] [INFO] [1749830890.644705011] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
-
-Localization stdout: [amcl-2] [INFO] [1749831054.187577545] [amcl]: initialPoseReceived
-
-Localization stdout: [amcl-2] [WARN] [1749831054.187709194] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1749831054.187304 but the latest data is at time 1609.842000, when looking up transform from frame [odom] to frame [base_footprint])
-
-Localization stdout: [amcl-2] [INFO] [1749831054.187750084] [amcl]: Setting pose (1609.840000): 2.000 3.000 0.785
-
-Localization stdout: [amcl-2] [INFO] [1749831062.150435060] [amcl]: initialPoseReceived
-
-Localization stdout: [amcl-2] [WARN] [1749831062.150584104] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1749831062.150178 but the latest data is at time 1614.862000, when looking up transform from frame [odom] to frame [base_footprint])
-[amcl-2] [INFO] [1749831062.150610066] [amcl]: Setting pose (1614.840000): 2.000 3.000 1.571
-
-Localization stdout: [amcl-2] [INFO] [1749831071.710787941] [amcl]: initialPoseReceived
-
-Localization stdout: [amcl-2] [WARN] [1749831071.710976657] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1749831071.710159 but the latest data is at time 1620.902000, when looking up transform from frame [odom] to frame [base_footprint])
-[amcl-2] [INFO] [1749831071.711006985] [amcl]: Setting pose (1620.840000): 2.000 5.000 1.571
-
-Navigation stdout: [bt_navigator-5] [INFO] [1749831093.452779398] [bt_navigator]: Begin navigating from current location (2.01, 5.03) to (10.00, 5.00)
-
-Navigation stdout: [planner_server-3] [WARN] [1749831093.562930781] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 9.1466 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831093.585867413] [controller_server]: Received a goal, begin computing control effort.
-
-Navigation stdout: [controller_server-1] [WARN] [1749831093.585985103] [controller_server]: No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded general_goal_checker . This warning will appear once.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831094.683211293] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.1529 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831094.736501046] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831095.798025781] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.8102 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831095.836500777] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831096.912747893] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.1677 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831096.936501705] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831098.040620939] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 10.2945 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831098.086560547] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831099.153407553] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.1251 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831099.186512088] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831100.299221911] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 8.6541 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831100.336501919] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831101.413641377] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.0674 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831101.436500438] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831102.533239169] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.1188 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831102.586512426] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [controller_server-1] [ERROR] [1749831103.586627526] [controller_server]: Failed to make progress
-
-Navigation stdout: [controller_server-1] [WARN] [1749831103.586744955] [controller_server]: [follow_path] [ActionServer] Aborting handle.
-
-Navigation stdout: [controller_server-1] [INFO] [1749831103.603293226] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
-
-Navigation stdout: [controller_server-1] [INFO] [1749831103.605593407] [controller_server]: Received a goal, begin computing control effort.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831103.666126138] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 9.7251 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831103.765918496] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [controller_server-1] [WARN] [1749831103.769819198] [controller_server]: Control loop missed its desired rate of 20.0000Hz
-
-Navigation stdout: [planner_server-3] [WARN] [1749831104.786559613] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 10.7507 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831104.820007641] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831105.906630037] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 10.7618 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831105.969880780] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831107.077760915] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 6.9296 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831107.119887945] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831108.206431194] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 9.7066 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831108.269882224] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831109.319893270] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.5472 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831109.369902583] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831110.428443726] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.7565 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831110.469916031] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831111.543240448] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.1231 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831111.569881375] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831112.669637554] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 10.3933 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831112.719922932] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [controller_server-1] [ERROR] [1749831113.769948184] [controller_server]: Failed to make progress
-
-Navigation stdout: [controller_server-1] [WARN] [1749831113.769996876] [controller_server]: [follow_path] [ActionServer] Aborting handle.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831113.783532181] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.0898 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831113.785535503] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
-
-Navigation stdout: [planner_server-3] [INFO] [1749831113.785817517] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
-
-Navigation stdout: [planner_server-3] [WARN] [1749831114.179100841] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 2.5615 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831114.195976260] [controller_server]: Received a goal, begin computing control effort.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831115.298644161] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 10.4797 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831115.346312508] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831116.409482642] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.6051 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831116.446321442] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831117.531971205] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 10.1439 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831117.596357651] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831118.655241041] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 10.8867 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831118.696447827] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831119.771249365] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.3982 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831119.796347615] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831120.883674986] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.0743 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831120.946419949] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831122.011603371] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 10.1987 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831122.046309931] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831123.146998206] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 9.6581 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831123.196344224] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [controller_server-1] [ERROR] [1749831124.196348110] [controller_server]: Failed to make progress
-
-Navigation stdout: [controller_server-1] [WARN] [1749831124.196408957] [controller_server]: [follow_path] [ActionServer] Aborting handle.
-
-Navigation stdout: [controller_server-1] [INFO] [1749831124.213507683] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
-
-Navigation stdout: [controller_server-1] [INFO] [1749831124.216561901] [controller_server]: Received a goal, begin computing control effort.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831124.262482304] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.2099 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831124.366888985] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [controller_server-1] [WARN] [1749831124.371170233] [controller_server]: Control loop missed its desired rate of 20.0000Hz
-
-Navigation stdout: [planner_server-3] [WARN] [1749831125.382695131] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.1887 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831125.421237340] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831126.505300893] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 10.9505 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831126.571238389] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831127.623742103] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.0599 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831127.671271958] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831128.740261742] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.5021 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831128.771237088] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831129.852329428] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.2558 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831129.921275802] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831130.975553060] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 10.8639 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831131.021239961] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831132.096330610] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 10.7427 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831132.121241862] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831133.213348581] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.1322 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831133.271268885] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831134.327795377] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.8275 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831134.371240617] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [controller_server-1] [ERROR] [1749831134.371849292] [controller_server]: Failed to make progress
-
-Navigation stdout: [controller_server-1] [WARN] [1749831134.371913720] [controller_server]: [follow_path] [ActionServer] Aborting handle.
-
-Navigation stdout: [behavior_server-4] [INFO] [1749831134.393529521] [behavior_server]: Running spin
-
-Navigation stdout: [behavior_server-4] [INFO] [1749831134.393747230] [behavior_server]: Turning 1.57 for spin behavior.
-
-Navigation stdout: [behavior_server-4] [WARN] [1749831144.393901156] [behavior_server]: Exceeded time allowance before reaching the Spin goal - Exiting Spin
-
-Navigation stdout: [behavior_server-4] [WARN] [1749831144.394048376] [behavior_server]: spin failed
-[behavior_server-4] [WARN] [1749831144.394098879] [behavior_server]: [spin] [ActionServer] Aborting handle.
-
-Navigation stdout: [behavior_server-4] [INFO] [1749831144.413382258] [behavior_server]: Running wait
-
-Navigation stdout: [behavior_server-4] [INFO] [1749831149.413571152] [behavior_server]: wait completed successfully
-
-Navigation stdout: [planner_server-3] [WARN] [1749831149.539003478] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 10.4553 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831149.555494879] [controller_server]: Received a goal, begin computing control effort.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831150.658445767] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 10.5200 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831150.705722644] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831151.775416159] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 10.8768 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831151.805693638] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831152.892134083] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.2541 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831152.955701631] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831154.016464968] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 10.7457 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831154.055696307] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831155.144382303] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 9.9052 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831155.205695269] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831156.262702996] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.1884 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831156.305749060] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831157.384620885] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 10.9595 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831157.455731441] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831158.502764643] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.1885 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831158.555695553] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [controller_server-1] [ERROR] [1749831159.555734379] [controller_server]: Failed to make progress
-
-Navigation stdout: [controller_server-1] [WARN] [1749831159.555796671] [controller_server]: [follow_path] [ActionServer] Aborting handle.
-
-Navigation stdout: [controller_server-1] [INFO] [1749831159.573332241] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
-
-Navigation stdout: [controller_server-1] [INFO] [1749831159.575511999] [controller_server]: Received a goal, begin computing control effort.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831159.622215870] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.2535 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831159.765864665] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [controller_server-1] [WARN] [1749831159.770601858] [controller_server]: Control loop missed its desired rate of 20.0000Hz
-
-Navigation stdout: [planner_server-3] [WARN] [1749831160.743425926] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.0989 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831160.770684352] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831161.873205910] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 10.0215 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831161.920669613] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831162.996641832] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 10.7380 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831163.020673622] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831164.119655308] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 10.4337 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831164.170664928] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831165.235773694] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 10.8341 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831165.270663634] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831166.346938353] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.9630 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831166.370661667] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831167.464770726] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 10.9459 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831167.520687548] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831168.583304073] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.1224 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831168.620668596] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831169.703698050] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.0755 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831169.770663525] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [controller_server-1] [ERROR] [1749831169.771089985] [controller_server]: Failed to make progress
-
-Navigation stdout: [controller_server-1] [WARN] [1749831169.771130828] [controller_server]: [follow_path] [ActionServer] Aborting handle.
-
-Navigation stdout: [behavior_server-4] [INFO] [1749831169.793517582] [behavior_server]: Running backup
-
-Navigation stdout: [behavior_server-4] [INFO] [1749831169.793652907] [behavior_server]: DriveOnHeading: no acceleration or deceleration limits set
-
-Navigation stdout: [behavior_server-4] [WARN] [1749831179.793701670] [behavior_server]: Exceeded time allowance before reaching the DriveOnHeading goal - Exiting DriveOnHeading
-
-Navigation stdout: [behavior_server-4] [WARN] [1749831179.793867470] [behavior_server]: backup failed
-
-Navigation stdout: [behavior_server-4] [WARN] [1749831179.793890419] [behavior_server]: [backup] [ActionServer] Aborting handle.
-
-Navigation stdout: [controller_server-1] [INFO] [1749831179.813368394] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
-
-Navigation stdout: [planner_server-3] [INFO] [1749831179.813718964] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
-
-Navigation stdout: [planner_server-3] [WARN] [1749831180.174830521] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 2.8059 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831180.195469633] [controller_server]: Received a goal, begin computing control effort.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831181.290489448] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.4927 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831181.345719391] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831182.421692853] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 9.2344 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831182.445722414] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831183.545433546] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 10.8694 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831183.595739242] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831184.666440574] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 10.7394 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831184.695727718] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831185.784659155] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 10.9660 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831185.845719286] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831186.903123818] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.1404 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831186.945729866] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831188.024756167] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 10.9372 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831188.045722496] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831189.148775406] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 10.4772 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831189.195764311] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [controller_server-1] [ERROR] [1749831190.195762415] [controller_server]: Failed to make progress
-
-Navigation stdout: [controller_server-1] [WARN] [1749831190.195842342] [controller_server]: [follow_path] [ActionServer] Aborting handle.
-
-Navigation stdout: [controller_server-1] [INFO] [1749831190.213472993] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
-
-Navigation stdout: [controller_server-1] [INFO] [1749831190.216192307] [controller_server]: Received a goal, begin computing control effort.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831190.260799682] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 10.2630 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831190.366830581] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [controller_server-1] [WARN] [1749831190.370555368] [controller_server]: Control loop missed its desired rate of 20.0000Hz
-
-Navigation stdout: [planner_server-3] [WARN] [1749831191.369396406] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.6617 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831191.420638754] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831192.482901531] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.1821 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831192.520664215] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831193.603942368] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.0379 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831193.670617537] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831194.718695240] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.7525 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831194.770620348] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831195.849488051] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 9.4213 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831195.870628894] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831196.963568573] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.0799 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831197.020622349] [controller_server]: Passing new path to controller.
-
-Navigation stdout: [planner_server-3] [WARN] [1749831198.089701624] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 10.3742 Hz
-
-Navigation stdout: [controller_server-1] [INFO] [1749831198.120623794] [controller_server]: Passing new path to controller.
-
-Sent SIGINT to localization process with PID 90651 at 2025-06-13T16:13:18.480Z
-Localization stdout: [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
-
-Localization stdout: [INFO] [lifecycle_manager-3]: sending signal 'SIGINT' to process[lifecycle_manager-3]
-
-Localization stdout: [INFO] [amcl-2]: sending signal 'SIGINT' to process[amcl-2]
-
-Localization stdout: [INFO] [map_server-1]: sending signal 'SIGINT' to process[map_server-1]
-[lifecycle_manager-3] [INFO] [1749831198.484592858] [rclcpp]: signal_handler(signum=2)
-[lifecycle_manager-3] [INFO] [1749831198.484777612] [lifecycle_manager_localization]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_localization)
-
-Localization stdout: [lifecycle_manager-3] [INFO] [1749831198.484959614] [lifecycle_manager_localization]: [34m[1mTerminating bond timer...[0m[0m
-
-Localization stdout: [amcl-2] [INFO] [1749831198.485629009] [rclcpp]: signal_handler(signum=2)
-
-Localization stdout: [amcl-2] [INFO] [1749831198.485949641] [amcl]: Running Nav2 LifecycleNode rcl preshutdown (amcl)
-[amcl-2] [INFO] [1749831198.486151898] [amcl]: Deactivating
-
-Localization stdout: [amcl-2] [INFO] [1749831198.486201105] [amcl]: Destroying bond (amcl) to lifecycle manager.
-
-Localization stdout: [map_server-1] [INFO] [1749831198.486673057] [rclcpp]: signal_handler(signum=2)
-
-Localization stdout: [map_server-1] [INFO] [1749831198.486874899] [map_server]: Running Nav2 LifecycleNode rcl preshutdown (map_server)
-
-Localization stdout: [map_server-1] [INFO] [1749831198.487055952] [map_server]: Deactivating
-[map_server-1] [INFO] [1749831198.487107831] [map_server]: Destroying bond (map_server) to lifecycle manager.
-
-Localization stdout: [amcl-2] [INFO] [1749831198.496674887] [amcl]: Cleaning up
-
-Localization stdout: [map_server-1] [INFO] [1749831198.497706720] [map_server]: Cleaning up
-
-Localization stdout: [map_server-1] [INFO] [1749831198.499281858] [map_server]: Destroying bond (map_server) to lifecycle manager.
-
-Localization stdout: [amcl-2] [INFO] [1749831198.529337232] [amcl]: Destroying bond (amcl) to lifecycle manager.
-
-Localization stdout: [lifecycle_manager-3] [INFO] [1749831198.657932995] [lifecycle_manager_localization]: Destroying lifecycle_manager_localization
-
-Localization stdout: [amcl-2] [INFO] [1749831198.686654486] [amcl]: Destroying
-
-Localization stdout: [map_server-1] [INFO] [1749831198.687333547] [map_server]: Destroying
-
-Localization stdout: [INFO] [lifecycle_manager-3]: process has finished cleanly [pid 90671]
-
-Localization stdout: [INFO] [map_server-1]: process has finished cleanly [pid 90667]
-
-Localization stdout: [INFO] [amcl-2]: process has finished cleanly [pid 90669]
-
-Localization process exited with code 0 at 2025-06-13T16:13:18.949Z
-Localization process exited with code 0 at 2025-06-13T16:13:18.949Z
-Sent SIGINT to navigation process with PID 90728 at 2025-06-13T16:13:18.949Z
-Navigation stdout: [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
-
-Navigation stdout: [INFO] [lifecycle_manager-8]: sending signal 'SIGINT' to process[lifecycle_manager-8]
-
-Navigation stdout: [INFO] [velocity_smoother-7]: sending signal 'SIGINT' to process[velocity_smoother-7]
-
-Navigation stdout: [INFO] [waypoint_follower-6]: sending signal 'SIGINT' to process[waypoint_follower-6]
-
-Navigation stdout: [INFO] [bt_navigator-5]: sending signal 'SIGINT' to process[bt_navigator-5]
-
-Navigation stdout: [INFO] [behavior_server-4]: sending signal 'SIGINT' to process[behavior_server-4]
-
-Navigation stdout: [INFO] [planner_server-3]: sending signal 'SIGINT' to process[planner_server-3]
-
-Navigation stdout: [INFO] [smoother_server-2]: sending signal 'SIGINT' to process[smoother_server-2]
-
-Navigation stdout: [INFO] [controller_server-1]: sending signal 'SIGINT' to process[controller_server-1]
-
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749831198.954207558] [rclcpp]: signal_handler(signum=2)
-
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749831198.954296574] [lifecycle_manager_navigation]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_navigation)
-[lifecycle_manager-8] [INFO] [1749831198.954377384] [lifecycle_manager_navigation]: [34m[1mTerminating bond timer...[0m[0m
-
-Navigation stdout: [velocity_smoother-7] [INFO] [1749831198.955056241] [rclcpp]: signal_handler(signum=2)
-
-Navigation stdout: [velocity_smoother-7] [INFO] [1749831198.955138824] [velocity_smoother]: Running Nav2 LifecycleNode rcl preshutdown (velocity_smoother)
-
-Navigation stdout: [velocity_smoother-7] [INFO] [1749831198.955230085] [velocity_smoother]: Deactivating
-
-Navigation stdout: [velocity_smoother-7] [INFO] [1749831198.955268759] [velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
-
-Navigation stdout: [waypoint_follower-6] [INFO] [1749831198.955676227] [rclcpp]: signal_handler(signum=2)
-[waypoint_follower-6] [INFO] [1749831198.955747338] [waypoint_follower]: Running Nav2 LifecycleNode rcl preshutdown (waypoint_follower)
-
-Navigation stdout: [waypoint_follower-6] [INFO] [1749831198.955805107] [waypoint_follower]: Deactivating
-[waypoint_follower-6] [INFO] [1749831198.955820888] [waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
-
-Navigation stdout: [bt_navigator-5] [INFO] [1749831198.956336633] [rclcpp]: signal_handler(signum=2)
-[bt_navigator-5] [INFO] [1749831198.956394085] [bt_navigator]: Running Nav2 LifecycleNode rcl preshutdown (bt_navigator)
-[bt_navigator-5] [INFO] [1749831198.956451386] [bt_navigator]: Deactivating
-[bt_navigator-5] [WARN] [1749831198.956465857] [bt_navigator]: [navigate_to_pose] [ActionServer] Requested to deactivate server but goal is still executing. Should check if action server is running before deactivating.
-
-Navigation stdout: [behavior_server-4] [INFO] [1749831198.956827473] [rclcpp]: signal_handler(signum=2)
-
-Navigation stdout: [behavior_server-4] [INFO] [1749831198.956860738] [behavior_server]: Running Nav2 LifecycleNode rcl preshutdown (behavior_server)
-[behavior_server-4] [INFO] [1749831198.956917602] [behavior_server]: Deactivating
-
-Navigation stdout: [behavior_server-4] [INFO] [1749831198.956942744] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
-
-Navigation stdout: [planner_server-3] [INFO] [1749831198.957306824] [rclcpp]: signal_handler(signum=2)
-
-Navigation stdout: [planner_server-3] [INFO] [1749831198.957358009] [planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
-[planner_server-3] [INFO] [1749831198.957417147] [planner_server]: Deactivating
-
-Navigation stdout: [planner_server-3] [INFO] [1749831198.957442898] [global_costmap.global_costmap]: Deactivating
-
-Navigation stdout: [smoother_server-2] [INFO] [1749831198.957795666] [rclcpp]: signal_handler(signum=2)
-
-Navigation stdout: [smoother_server-2] [INFO] [1749831198.957900712] [smoother_server]: Running Nav2 LifecycleNode rcl preshutdown (smoother_server)
-[smoother_server-2] [INFO] [1749831198.957995312] [smoother_server]: Deactivating
-
-Navigation stdout: [smoother_server-2] [INFO] [1749831198.958035371] [smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
-
-Navigation stdout: [controller_server-1] [INFO] [1749831198.958350955] [rclcpp]: signal_handler(signum=2)
-
-Navigation stdout: [controller_server-1] [INFO] [1749831198.958463499] [controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
-
-Navigation stdout: [controller_server-1] [INFO] [1749831198.958542142] [controller_server]: Deactivating
-[controller_server-1] [WARN] [1749831198.958557553] [controller_server]: [follow_path] [ActionServer] Requested to deactivate server but goal is still executing. Should check if action server is running before deactivating.
-
-Navigation stdout: [velocity_smoother-7] [INFO] [1749831198.965557444] [velocity_smoother]: Cleaning up
-
-Navigation stdout: [velocity_smoother-7] [INFO] [1749831198.965671868] [velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
-
-Navigation stdout: [waypoint_follower-6] [INFO] [1749831198.966026211] [waypoint_follower]: Cleaning up
-
-Navigation stdout: [planner_server-3] [INFO] [1749831198.966665128] [planner_server]: Deactivating plugin GridBased of type NavfnPlanner
-
-Navigation stdout: [planner_server-3] [INFO] [1749831198.966712995] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
-
-Navigation stdout: [behavior_server-4] [INFO] [1749831198.967112196] [behavior_server]: Cleaning up
-
-Navigation stdout: [smoother_server-2] [INFO] [1749831198.968315369] [smoother_server]: Cleaning up
-
-Navigation stdout: [controller_server-1] [WARN] [1749831198.970623850] [controller_server]: [follow_path] [ActionServer] Stopping the thread per request.
-
-Navigation stdout: [controller_server-1] [INFO] [1749831198.970683492] [controller_server]: [follow_path] [ActionServer] Client requested to cancel the goal. Cancelling.
-
-Navigation stdout: [bt_navigator-5] [WARN] [1749831198.970883942] [bt_navigator]: [navigate_to_pose] [ActionServer] Aborting handle.
-[bt_navigator-5] [INFO] [1749831198.970989067] [bt_navigator]: Goal canceled
-[bt_navigator-5] [WARN] [1749831198.971007818] [bt_navigator]: [navigate_to_pose] [ActionServer] Stopping the thread per request.
-
-Navigation stdout: [controller_server-1] [INFO] [1749831198.971085959] [local_costmap.local_costmap]: Deactivating
-
-Navigation stdout: [bt_navigator-5] [INFO] [1749831198.971258017] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
-
-Navigation stdout: [behavior_server-4] [INFO] [1749831198.974611857] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
-
-Navigation stdout: [waypoint_follower-6] [INFO] [1749831198.974723410] [waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
-
-Navigation stdout: [planner_server-3] [INFO] [1749831198.976927063] [planner_server]: Cleaning up
-
-Navigation stdout: [bt_navigator-5] [INFO] [1749831198.981589780] [bt_navigator]: Cleaning up
-
-Navigation stdout: [smoother_server-2] [INFO] [1749831198.982246700] [smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
-
-Navigation stdout: [planner_server-3] [INFO] [1749831198.993526306] [global_costmap.global_costmap]: Cleaning up
-
-Navigation stdout: [planner_server-3] [INFO] [1749831198.999302981] [planner_server]: Cleaning up plugin GridBased of type NavfnPlanner
-
-Navigation stdout: [planner_server-3] [INFO] [1749831199.004684122] [planner_server]: Destroying plugin GridBased of type NavfnPlanner
-
-Navigation stdout: [planner_server-3] [INFO] [1749831199.027415368] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
-
-Navigation stdout: [bt_navigator-5] [INFO] [1749831199.115695113] [bt_navigator]: Completed Cleaning up
-
-Navigation stdout: [bt_navigator-5] [INFO] [1749831199.115753808] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
-
-Navigation stdout: [velocity_smoother-7] [INFO] [1749831199.155575286] [velocity_smoother]: Destroying
-
-Navigation stdout: [waypoint_follower-6] [INFO] [1749831199.156121018] [waypoint_follower]: Destroying
-
-Navigation stdout: [behavior_server-4] [INFO] [1749831199.157487060] [behavior_server]: Destroying
-
-Navigation stdout: [smoother_server-2] [INFO] [1749831199.159238509] [smoother_server]: Destroying
-
-Navigation stdout: [controller_server-1] [INFO] [1749831199.160741928] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
-
-Navigation stdout: [planner_server-3] [INFO] [1749831199.162155007] [global_costmap.global_costmap]: Destroying
-
-Navigation stdout: [controller_server-1] [INFO] [1749831199.170923749] [controller_server]: Cleaning up
-
-Navigation stdout: [controller_server-1] [INFO] [1749831199.171102222] [local_costmap.local_costmap]: Cleaning up
-
-Navigation stdout: [planner_server-3] [INFO] [1749831199.189908060] [planner_server]: Destroying
-
-Navigation stdout: [lifecycle_manager-8] [INFO] [1749831199.196768525] [lifecycle_manager_navigation]: Destroying lifecycle_manager_navigation
-
-Navigation stdout: [controller_server-1] [INFO] [1749831199.200958932] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
-
-Navigation stdout: [bt_navigator-5] [INFO] [1749831199.257873379] [bt_navigator]: Destroying
-
-Navigation stdout: [controller_server-1] [INFO] [1749831199.359086807] [local_costmap.local_costmap]: Destroying
-
-Navigation stdout: [INFO] [lifecycle_manager-8]: process has finished cleanly [pid 90767]
-
-Navigation stdout: [INFO] [waypoint_follower-6]: process has finished cleanly [pid 90763]
-
-Navigation stdout: [INFO] [velocity_smoother-7]: process has finished cleanly [pid 90765]
-
-Navigation stdout: [INFO] [behavior_server-4]: process has finished cleanly [pid 90759]
-
-Navigation stdout: [INFO] [smoother_server-2]: process has finished cleanly [pid 90755]
-
-Navigation stdout: [controller_server-1] [INFO] [1749831199.382826933] [controller_server]: Destroying
-
-Navigation stdout: [INFO] [bt_navigator-5]: process has finished cleanly [pid 90761]
-
-Navigation stdout: [INFO] [planner_server-3]: process has finished cleanly [pid 90757]
-
-Navigation stdout: [INFO] [controller_server-1]: process has finished cleanly [pid 90753]
-
-Navigation process exited with code 0 at 2025-06-13T16:13:19.616Z
-Sent SIGINT to robot launch process with PID 87372 at 2025-06-13T16:13:19.846Z
+Sent SIGINT to robot launch process with PID 27408 at 2025-06-14T16:17:43.271Z
 Robot launch stdout: [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
 
 Robot launch stdout: [INFO] [robot_state_publisher-3]: sending signal 'SIGINT' to process[robot_state_publisher-3]
@@ -2207,12 +290,12 @@ Robot launch stdout: [INFO] [gzclient-2]: sending signal 'SIGINT' to process[gzc
 
 Robot launch stdout: [INFO] [gzserver-1]: sending signal 'SIGINT' to process[gzserver-1]
 
-Robot launch stdout: [robot_state_publisher-3] [INFO] [1749831199.848830550] [rclcpp]: signal_handler(signum=2)
+Robot launch stdout: [robot_state_publisher-3] [INFO] [1749917863.273268501] [rclcpp]: signal_handler(signum=2)
 
-Robot launch stdout: [INFO] [robot_state_publisher-3]: process has finished cleanly [pid 87432]
+Robot launch stdout: [INFO] [robot_state_publisher-3]: process has finished cleanly [pid 27436]
 
-Robot launch stdout: [INFO] [gzclient-2]: process has finished cleanly [pid 87430]
+Robot launch stdout: [INFO] [gzserver-1]: process has finished cleanly [pid 27432]
 
-Robot launch stdout: [INFO] [gzserver-1]: process has finished cleanly [pid 87428]
+Robot launch stdout: [INFO] [gzclient-2]: process has finished cleanly [pid 27434]
 
-Robot launch process exited with code 0 at 2025-06-13T16:13:20.389Z
+Robot launch process exited with code 0 at 2025-06-14T16:17:43.859Z
