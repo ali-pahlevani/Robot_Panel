@@ -39,6 +39,10 @@ if(window.localStorage && window.localStorage.subscriptions) {
   }
 }
 
+// State variables for Robot Info
+let robotMode = "Manual Control";
+let forksStatus = "Disengaged";
+
 let $grid = null;
 $(() => {
   $grid = $('.grid').masonry({
@@ -51,12 +55,12 @@ $(() => {
   // Initialize control panel button handlers
   initControlPanel();
 
-  // Initialize Robot Info panel with placeholder values
+  // Initialize Robot Info panel with default values
   updateRobotInfo({
-    mode: "---",
+    mode: robotMode,
     currentLocation: "---",
     targetLocation: "---",
-    forksStatus: "---",
+    forksStatus: forksStatus,
     taskName: "---",
     taskStatus: "---"
   });
@@ -297,6 +301,18 @@ Viewer.onSwitchViewer = (viewerInstance, newViewerType) => {
   subscriptions[topicName].viewer = new newViewerType(card, topicName, topicType);
 };
 
+// Helper function to update Robot Info with current states
+function updateRobotInfoPanel() {
+  updateRobotInfo({
+    mode: robotMode,
+    currentLocation: "---",
+    targetLocation: "---",
+    forksStatus: forksStatus,
+    taskName: "---",
+    taskStatus: "---"
+  });
+}
+
 // Control panel button handlers
 function initControlPanel() {
   const serverUrl = 'http://localhost:3000';
@@ -333,8 +349,14 @@ function initControlPanel() {
 
   $('#turn-on-button').click(() => handleButtonClick('/turn-on', null, 'turn-on-button'));
   $('#turn-off-button').click(() => handleButtonClick('/turn-off', null, 'turn-off-button'));
-  $('#start-mapping-button').click(() => handleButtonClick('/start-mapping', null, 'start-mapping-button'));
-  $('#stop-mapping-button').click(() => handleButtonClick('/stop-mapping', null, 'stop-mapping-button'));
+  $('#start-mapping-button').click(() => handleButtonClick('/start-mapping', null, 'start-mapping-button', () => {
+    robotMode = "Mapping";
+    updateRobotInfoPanel();
+  }));
+  $('#stop-mapping-button').click(() => handleButtonClick('/stop-mapping', null, 'stop-mapping-button', () => {
+    robotMode = "Manual Control";
+    updateRobotInfoPanel();
+  }));
   $('#save-map-button').click(() => {
     const mapName = $('#save-map-input').val().trim();
     if (!mapName) {
@@ -347,11 +369,15 @@ function initControlPanel() {
     if (window.control && window.control.startNavigation) {
       window.control.startNavigation();
     }
+    robotMode = "Navigation";
+    updateRobotInfoPanel();
   }));
   $('#stop-navigation-button').click(() => handleButtonClick('/stop-navigation', null, 'stop-navigation-button', () => {
     if (window.control && window.control.stopNavigation) {
       window.control.stopNavigation();
     }
+    robotMode = "Manual Control";
+    updateRobotInfoPanel();
   }));
   $('#load-map-button').click(() => {
     const mapName = $('#load-map-input').val().trim();
@@ -369,6 +395,10 @@ function initControlPanel() {
     try {
       const result = await window.control.fullLift();
       showSnackbar(result.message || 'Forks lifted', !result.success);
+      if (result.success) {
+        forksStatus = "Engaged";
+        updateRobotInfoPanel();
+      }
     } catch (error) {
       console.error('Error lifting forks:', error);
       showSnackbar(`Error: ${error.message}`, true);
@@ -383,6 +413,10 @@ function initControlPanel() {
     try {
       const result = await window.control.fullLower();
       showSnackbar(result.message || 'Forks lowered', !result.success);
+      if (result.success) {
+        forksStatus = "Disengaged";
+        updateRobotInfoPanel();
+      }
     } catch (error) {
       console.error('Error lowering forks:', error);
       showSnackbar(`Error: ${error.message}`, true);
@@ -395,10 +429,10 @@ function initControlPanel() {
 // Function to update Robot Info panel
 function updateRobotInfo(info) {
   const panel = $('.robot-info-panel');
-  panel.find('p').eq(0).html(`<strong>Mode:</strong> ${info.mode}`);
+  panel.find('p').eq(0).html(`<strong>Mode:</strong> <span class="status-text">${info.mode}</span>`);
   panel.find('p').eq(1).html(`<strong>Current Location:</strong> ${info.currentLocation}`);
   panel.find('p').eq(2).html(`<strong>Target Location:</strong> ${info.targetLocation}`);
-  panel.find('p').eq(3).html(`<strong>Forks Status:</strong> ${info.forksStatus}`);
+  panel.find('p').eq(3).html(`<strong>Forks Status:</strong> <span class="status-text">${info.forksStatus}</span>`);
   panel.find('p').eq(4).html(`<strong>Task Name:</strong> ${info.taskName}`);
   panel.find('p').eq(5).html(`<strong>Task Status:</strong> ${info.taskStatus}`);
 }
