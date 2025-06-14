@@ -101,7 +101,7 @@ let onOpen = function() {
 let onSystem = function(system) {
   if(system.hostname) {
     console.log("hostname: " + system.hostname);
-    $('.mdl-layout-title').text("ROSboard: " + system.hostname);
+    $('.mdl-layout-title').text("Robot Panel (Versatile ROSboard): " + system.hostname);
   }
 
   if(system.version) {
